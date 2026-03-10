@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "source": "agent4_v3_image_prompts",
+    "version": "v3_technical_specs",
+    "input_agents": [
+      "Agent 1",
+      "Agent 2",
+      "Agent 3"
+    ],
+    "analysis_date": "2026-02-09T22:54:47.621116",
+    "analyzer_agent": "Agent 4 v3: Image Prompt Generator",
+    "description": "Detailed technical specifications for image generation from top 10 creative concepts"
+  },
+  "brand_assets": {
+    "colors": [
+      "#6460aa",
+      "#0db14b",
+      "#fcb711",
+      "#cccccc"
+    ],
+    "fonts": [
+      "Aeonik"
+    ],
+    "tone": "Professional, data-driven, aspirational"
+  },
+  "image_prompts": [
+    {
+      "brief_id": "brief_001",
+      "concept_name": "10K MRR Income Transformation",
+      "target_audience": "Solopreneurs, Sales Professionals",
+      "hook": "Turn 4-8 hours/week into $10,000 recurring monthly income with local restaurant clients",
+      "formats": [
+        {
+          "format_name": "Instagram Feed",
+          "dimensions": "1080x1080",
+          "aspect_ratio": "1:1",
+          "detailed_prompt": "Professional Instagram feed ad (1080x1080, square format) for B2B partner program.\n\nCONCEPT: 10K MRR Income Transformation\n\nLAYOUT: Income transformation chart: $0 → $10,000 progression\n\nTEXT OVERLAY:\n- Main Headline (top, bold, 44-48px): \"Turn 4-8 hours/week into $10,000 recurring monthly income with local restaurant ...\"\n- Supporting text from brief\n- CTA button at bottom\n\nKEY VISUAL ELEMENTS:\n- Income growth graph\n- Time badge (4-8 hrs/week)\n- 1,800+ partners badge\n\nCOLOR PALETTE:\n- Primary: #6460aa (brand purple)\n- Accent: #0db14b (success green)\n- Background: #FFFFFF\n- Text: #2a2832\n\nTYPOGRAPHY: Aeonik-style modern sans-serif, bold headlines\n\nTONE: Aspirational, data-driven\n\nDESIGN STYLE: Clean, professional, mobile-optimized with clear visual hierarchy\n"
+        },
+        {
+          "format_name": "Instagram Stories/Reels",
+          "dimensions": "1080x1920",
+          "aspect_ratio": "9:16",
+          "detailed_prompt": "Professional Instagram Stories ad (1080x1920, vertical 9:16 format) for B2B partner program. Mobile-first design.\n\nCONCEPT: 10K MRR Income Transformation\n\nVERTICAL LAYOUT (Top to Bottom):\n\nTOP SECTION (20%):\n- Headline (56-60px, bold): Extract from \"Turn 4-8 hours/week into $10,000 recurring monthly income wi\"\n\nUPPER-MIDDLE (20%):\n- Secondary message or question\n\nMIDDLE SECTION (30%):\n- Primary visual element: Income growth graph\n- Supporting elements: Time badge (4-8 hrs/week), 1,800+ partners badge\n\nLOWER-MIDDLE (20%):\n- Key stats or badges in pill shapes\n- Social proof elements\n\nBOTTOM (10%):\n- Large CTA button: \"See How It Works\" (rounded, centered)\n\nVISUAL ELEMENTS:\n- Income growth graph\n- Time badge (4-8 hrs/week)\n- 1,800+ partners badge\n\nCOLORS:\n- Primary: #6460aa (headline, key elements)\n- Accent: #0db14b (CTA, success indicators)\n- Background: #FFFFFF with subtle gradient\n- Text: #2a2832\n\nTYPOGRAPHY: Bold mobile-friendly sans-serif, high contrast for quick scanning\n\nTONE: Aspirational, data-driven, optimized for vertical mobile consumption\n"
+        }
+      ]
+    },
+    {
+      "brief_id": "brief_002",
+      "concept_name": "1,800+ Partners Social Proof",
+      "target_audience": "All segments",
+      "hook": "Join 1,800+ partners already earning recurring revenue from local restaurants",
+      "formats": [
+        {
+          "format_name": "Instagram Feed",
+          "dimensions": "1080x1080",
+          "aspect_ratio": "1:1",
+          "detailed_prompt": "Professional Instagram feed ad (1080x1080, square format) for B2B partner program.\n\nCONCEPT: 1,800+ Partners Social Proof\n\nLAYOUT: Partner testimonial grid + counter animation\n\nTEXT OVERLAY:\n- Main Headline (top, bold, 44-48px): \"Join 1,800+ partners already earning recurring revenue from local restaurants...\"\n- Supporting text from brief\n- CTA button at bottom\n\nKEY VISUAL ELEMENTS:\n- 1,800+ counter\n- Partner faces/logos\n- CNBC badge\n- 89% stat\n\nCOLOR PALETTE:\n- Primary: #6460aa (brand purple)\n- Accent: #0db14b (success green)\n- Background: #FFFFFF\n- Text: #2a2832\n\nTYPOGRAPHY: Aeonik-style modern sans-serif, bold headlines\n\nTONE: Trustworthy, community-driven\n\nDESIGN STYLE: Clean, professional, mobile-optimized with clear visual hierarchy\n"
+        },
+        {
+          "format_name": "Instagram Stories/Reels",
+          "dimensions": "1080x1920",
+          "aspect_ratio": "9:16",
+          "detailed_prompt": "Professional Instagram Stories ad (1080x1920, vertical 9:16 format) for B2B partner program. Mobile-first design.\n\nCONCEPT: 1,800+ Partners Social Proof\n\nVERTICAL LAYOUT (Top to Bottom):\n\nTOP SECTION (20%):\n- Headline (56-60px, bold): Extract from \"Join 1,800+ partners already earning recurring revenue from \"\n\nUPPER-MIDDLE (20%):\n- Secondary message or question\n\nMIDDLE SECTION (30%):\n- Primary visual element: 1,800+ counter\n- Supporting elements: Partner faces/logos, CNBC badge\n\nLOWER-MIDDLE (20%):\n- Key stats or badges in pill shapes\n- Social proof elements\n\nBOTTOM (10%):\n- Large CTA button: \"Join 1,800+ Partners\" (rounded, centered)\n\nVISUAL ELEMENTS:\n- 1,800+ counter\n- Partner faces/logos\n- CNBC badge\n\nCOLORS:\n- Primary: #6460aa (headline, key elements)\n- Accent: #0db14b (CTA, success indicators)\n- Background: #FFFFFF with subtle gradient\n- Text: #2a2832\n\nTYPOGRAPHY: Bold mobile-friendly sans-serif, high contrast for quick scanning\n\nTONE: Trustworthy, community-driven, optimized for vertical mobile consumption\n"
+        }
+      ]
+    },
+    {
+      "brief_id": "brief_007",
+      "concept_name": "Zero Cold Calling",
+      "target_audience": "Sales Professionals tired of prospecting",
+      "hook": "Pre-qualified warm leads delivered. Zero cold calling required.",
+      "formats": [
+        {
+          "format_name": "Instagram Feed",
+          "dimensions": "1080x1080",
+          "aspect_ratio": "1:1",
+          "detailed_prompt": "Professional Instagram feed ad (1080x1080, square format) for B2B partner program.\n\nCONCEPT: Zero Cold Calling\n\nLAYOUT: Crossed-out cold call phone + warm lead checklist\n\nTEXT OVERLAY:\n- Main Headline (top, bold, 44-48px): \"Pre-qualified warm leads delivered. Zero cold calling required....\"\n- Supporting text from brief\n- CTA button at bottom\n\nKEY VISUAL ELEMENTS:\n- ❌ Cold calling\n- ✓ Warm leads\n- 192 leads counter\n\nCOLOR PALETTE:\n- Primary: #6460aa (brand purple)\n- Accent: #0db14b (success green)\n- Background: #FFFFFF\n- Text: #2a2832\n\nTYPOGRAPHY: Aeonik-style modern sans-serif, bold headlines\n\nTONE: Empathetic, problem-solving\n\nDESIGN STYLE: Clean, professional, mobile-optimized with clear visual hierarchy\n"
+        },
+        {
+          "format_name": "Instagram Stories/Reels",
+          "dimensions": "1080x1920",
+          "aspect_ratio": "9:16",
+          "detailed_prompt": "Professional Instagram Stories ad (1080x1920, vertical 9:16 format) for B2B partner program. Mobile-first design.\n\nCONCEPT: Zero Cold Calling\n\nVERTICAL LAYOUT (Top to Bottom):\n\nTOP SECTION (20%):\n- Headline (56-60px, bold): Extract from \"Pre-qualified warm leads delivered. Zero cold calling requir\"\n\nUPPER-MIDDLE (20%):\n- Secondary message or question\n\nMIDDLE SECTION (30%):\n- Primary visual element: ❌ Cold calling\n- Supporting elements: ✓ Warm leads, 192 leads counter\n\nLOWER-MIDDLE (20%):\n- Key stats or badges in pill shapes\n- Social proof elements\n\nBOTTOM (10%):\n- Large CTA button: \"See Available Leads\" (rounded, centered)\n\nVISUAL ELEMENTS:\n- ❌ Cold calling\n- ✓ Warm leads\n- 192 leads counter\n\nCOLORS:\n- Primary: #6460aa (headline, key elements)\n- Accent: #0db14b (CTA, success indicators)\n- Background: #FFFFFF with subtle gradient\n- Text: #2a2832\n\nTYPOGRAPHY: Bold mobile-friendly sans-serif, high contrast for quick scanning\n\nTONE: Empathetic, problem-solving, optimized for vertical mobile consumption\n"
+        }
+      ]
+    },
+    {
+      "brief_id": "brief_004",
+      "concept_name": "89% CNBC Authority Stat",
+      "target_audience": "All segments (authority-seekers)",
+      "hook": "89% of SMBs hire local partners, not in-house. Be that partner.",
+      "formats": [
+        {
+          "format_name": "Instagram Feed",
+          "dimensions": "1080x1080",
+          "aspect_ratio": "1:1",
+          "detailed_prompt": "Professional Instagram feed ad (1080x1080, square format) for B2B partner program.\n\nCONCEPT: 89% CNBC Authority Stat\n\nLAYOUT: CNBC logo prominent + 89% stat visualization\n\nTEXT OVERLAY:\n- Main Headline (top, bold, 44-48px): \"89% of SMBs hire local partners, not in-house. Be that partner....\"\n- Supporting text from brief\n- CTA button at bottom\n\nKEY VISUAL ELEMENTS:\n- CNBC logo\n- 89% statistic (large)\n- Local partner icon\n- Restaurant imagery\n\nCOLOR PALETTE:\n- Primary: #6460aa (brand purple)\n- Accent: #0db14b (success green)\n- Background: #FFFFFF\n- Text: #2a2832\n\nTYPOGRAPHY: Aeonik-style modern sans-serif, bold headlines\n\nTONE: Authoritative, credible\n\nDESIGN STYLE: Clean, professional, mobile-optimized with clear visual hierarchy\n"
+        },
+        {
+          "format_name": "Instagram Stories/Reels",
+          "dimensions": "1080x1920",
+          "aspect_ratio": "9:16",
+          "detailed_prompt": "Professional Instagram Stories ad (1080x1920, vertical 9:16 format) for B2B partner program. Mobile-first design.\n\nCONCEPT: 89% CNBC Authority Stat\n\nVERTICAL LAYOUT (Top to Bottom):\n\nTOP SECTION (20%):\n- Headline (56-60px, bold): Extract from \"89% of SMBs hire local partners, not in-house. Be that partn\"\n\nUPPER-MIDDLE (20%):\n- Secondary message or question\n\nMIDDLE SECTION (30%):\n- Primary visual element: CNBC logo\n- Supporting elements: 89% statistic (large), Local partner icon\n\nLOWER-MIDDLE (20%):\n- Key stats or badges in pill shapes\n- Social proof elements\n\nBOTTOM (10%):\n- Large CTA button: \"Claim Your Territory\" (rounded, centered)\n\nVISUAL ELEMENTS:\n- CNBC logo\n- 89% statistic (large)\n- Local partner icon\n\nCOLORS:\n- Primary: #6460aa (headline, key elements)\n- Accent: #0db14b (CTA, success indicators)\n- Background: #FFFFFF with subtle gradient\n- Text: #2a2832\n\nTYPOGRAPHY: Bold mobile-friendly sans-serif, high contrast for quick scanning\n\nTONE: Authoritative, credible, optimized for vertical mobile consumption\n"
+        }
+      ]
+    },
+    {
+      "brief_id": "brief_003",
+      "concept_name": "Zero-Risk Partnership",
+      "target_audience": "Risk-averse prospects, new to partnerships",
+      "hook": "We provide the leads. You close the deals. No upfront cost, no risk.",
+      "formats": [
+        {
+          "format_name": "Instagram Feed",
+          "dimensions": "1080x1080",
+          "aspect_ratio": "1:1",
+          "detailed_prompt": "Professional Instagram feed ad (1080x1080, square format) for B2B partner program.\n\nCONCEPT: Zero-Risk Partnership\n\nLAYOUT: Risk barriers crossed out → Benefits revealed\n\nTEXT OVERLAY:\n- Main Headline (top, bold, 44-48px): \"We provide the leads. You close the deals. No upfront cost, no risk....\"\n- Supporting text from brief\n- CTA button at bottom\n\nKEY VISUAL ELEMENTS:\n- $0 upfront badge\n- Flexible hours icons\n- 30-day guarantee seal\n\nCOLOR PALETTE:\n- Primary: #6460aa (brand purple)\n- Accent: #0db14b (success green)\n- Background: #FFFFFF\n- Text: #2a2832\n\nTYPOGRAPHY: Aeonik-style modern sans-serif, bold headlines\n\nTONE: Reassuring, transparent\n\nDESIGN STYLE: Clean, professional, mobile-optimized with clear visual hierarchy\n"
+        },
+        {
+          "format_name": "Instagram Stories/Reels",
+          "dimensions": "1080x1920",
+          "aspect_ratio": "9:16",
+          "detailed_prompt": "Professional Instagram Stories ad (1080x1920, vertical 9:16 format) for B2B partner program. Mobile-first design.\n\nCONCEPT: Zero-Risk Partnership\n\nVERTICAL LAYOUT (Top to Bottom):\n\nTOP SECTION (20%):\n- Headline (56-60px, bold): Extract from \"We provide the leads. You close the deals. No upfront cost, \"\n\nUPPER-MIDDLE (20%):\n- Secondary message or question\n\nMIDDLE SECTION (30%):\n- Primary visual element: $0 upfront badge\n- Supporting elements: Flexible hours icons, 30-day guarantee seal\n\nLOWER-MIDDLE (20%):\n- Key stats or badges in pill shapes\n- Social proof elements\n\nBOTTOM (10%):\n- Large CTA button: \"Start With No Risk\" (rounded, centered)\n\nVISUAL ELEMENTS:\n- $0 upfront badge\n- Flexible hours icons\n- 30-day guarantee seal\n\nCOLORS:\n- Primary: #6460aa (headline, key elements)\n- Accent: #0db14b (CTA, success indicators)\n- Background: #FFFFFF with subtle gradient\n- Text: #2a2832\n\nTYPOGRAPHY: Bold mobile-friendly sans-serif, high contrast for quick scanning\n\nTONE: Reassuring, transparent, optimized for vertical mobile consumption\n"
+        }
+      ]
+    },
+    {
+      "brief_id": "brief_010",
+      "concept_name": "2-Day Onboarding Speed",
+      "target_audience": "Impatient action-takers",
+      "hook": "From application to earning in 2 business days. That's our promise.",
+      "formats": [
+        {
+          "format_name": "Instagram Feed",
+          "dimensions": "1080x1080",
+          "aspect_ratio": "1:1",
+          "detailed_prompt": "Professional Instagram feed ad (1080x1080, square format) for B2B partner program.\n\nCONCEPT: 2-Day Onboarding Speed\n\nLAYOUT: 2-day timeline visual with urgency elements\n\nTEXT OVERLAY:\n- Main Headline (top, bold, 44-48px): \"From application to earning in 2 business days. That's our promise....\"\n- Supporting text from brief\n- CTA button at bottom\n\nKEY VISUAL ELEMENTS:\n- 48-hour clock\n- Timeline (Day 1/Day 2)\n- Fast-track badge\n\nCOLOR PALETTE:\n- Primary: #6460aa (brand purple)\n- Accent: #0db14b (success green)\n- Background: #FFFFFF\n- Text: #2a2832\n\nTYPOGRAPHY: Aeonik-style modern sans-serif, bold headlines\n\nTONE: Urgent, action-oriented\n\nDESIGN STYLE: Clean, professional, mobile-optimized with clear visual hierarchy\n"
+        },
+        {
+          "format_name": "Instagram Stories/Reels",
+          "dimensions": "1080x1920",
+          "aspect_ratio": "9:16",
+          "detailed_prompt": "Professional Instagram Stories ad (1080x1920, vertical 9:16 format) for B2B partner program. Mobile-first design.\n\nCONCEPT: 2-Day Onboarding Speed\n\nVERTICAL LAYOUT (Top to Bottom):\n\nTOP SECTION (20%):\n- Headline (56-60px, bold): Extract from \"From application to earning in 2 business days. That's our p\"\n\nUPPER-MIDDLE (20%):\n- Secondary message or question\n\nMIDDLE SECTION (30%):\n- Primary visual element: 48-hour clock\n- Supporting elements: Timeline (Day 1/Day 2), Fast-track badge\n\nLOWER-MIDDLE (20%):\n- Key stats or badges in pill shapes\n- Social proof elements\n\nBOTTOM (10%):\n- Large CTA button: \"Start in 2 Days\" (rounded, centered)\n\nVISUAL ELEMENTS:\n- 48-hour clock\n- Timeline (Day 1/Day 2)\n- Fast-track badge\n\nCOLORS:\n- Primary: #6460aa (headline, key elements)\n- Accent: #0db14b (CTA, success indicators)\n- Background: #FFFFFF with subtle gradient\n- Text: #2a2832\n\nTYPOGRAPHY: Bold mobile-friendly sans-serif, high contrast for quick scanning\n\nTONE: Urgent, action-oriented, optimized for vertical mobile consumption\n"
+        }
+      ]
+    },
+    {
+      "brief_id": "brief_012",
+      "concept_name": "Restaurant Niche Specialization",
+      "target_audience": "Those with restaurant industry experience",
+      "hook": "Restaurants need loyalty programs. You deliver. We all win $10K MRR.",
+      "formats": [
+        {
+          "format_name": "Instagram Feed",
+          "dimensions": "1080x1080",
+          "aspect_ratio": "1:1",
+          "detailed_prompt": "Professional Instagram feed ad (1080x1080, square format) for B2B partner program.\n\nCONCEPT: Restaurant Niche Specialization\n\nLAYOUT: Restaurant visuals + loyalty card mockup\n\nTEXT OVERLAY:\n- Main Headline (top, bold, 44-48px): \"Restaurants need loyalty programs. You deliver. We all win $10K MRR....\"\n- Supporting text from brief\n- CTA button at bottom\n\nKEY VISUAL ELEMENTS:\n- Restaurant imagery\n- Loyalty card design\n- 192 leads badge\n\nCOLOR PALETTE:\n- Primary: #6460aa (brand purple)\n- Accent: #0db14b (success green)\n- Background: #FFFFFF\n- Text: #2a2832\n\nTYPOGRAPHY: Aeonik-style modern sans-serif, bold headlines\n\nTONE: Niche-focused, solution-oriented\n\nDESIGN STYLE: Clean, professional, mobile-optimized with clear visual hierarchy\n"
+        },
+        {
+          "format_name": "Instagram Stories/Reels",
+          "dimensions": "1080x1920",
+          "aspect_ratio": "9:16",
+          "detailed_prompt": "Professional Instagram Stories ad (1080x1920, vertical 9:16 format) for B2B partner program. Mobile-first design.\n\nCONCEPT: Restaurant Niche Specialization\n\nVERTICAL LAYOUT (Top to Bottom):\n\nTOP SECTION (20%):\n- Headline (56-60px, bold): Extract from \"Restaurants need loyalty programs. You deliver. We all win $\"\n\nUPPER-MIDDLE (20%):\n- Secondary message or question\n\nMIDDLE SECTION (30%):\n- Primary visual element: Restaurant imagery\n- Supporting elements: Loyalty card design, 192 leads badge\n\nLOWER-MIDDLE (20%):\n- Key stats or badges in pill shapes\n- Social proof elements\n\nBOTTOM (10%):\n- Large CTA button: \"Target Restaurants\" (rounded, centered)\n\nVISUAL ELEMENTS:\n- Restaurant imagery\n- Loyalty card design\n- 192 leads badge\n\nCOLORS:\n- Primary: #6460aa (headline, key elements)\n- Accent: #0db14b (CTA, success indicators)\n- Background: #FFFFFF with subtle gradient\n- Text: #2a2832\n\nTYPOGRAPHY: Bold mobile-friendly sans-serif, high contrast for quick scanning\n\nTONE: Niche-focused, solution-oriented, optimized for vertical mobile consumption\n"
+        }
+      ]
+    },
+    {
+      "brief_id": "brief_005",
+      "concept_name": "Recurring Revenue Machine",
+      "target_audience": "Solopreneurs looking for passive income",
+      "hook": "Build a $10K/month recurring revenue stream (not a one-time project)",
+      "formats": [
+        {
+          "format_name": "Instagram Feed",
+          "dimensions": "1080x1080",
+          "aspect_ratio": "1:1",
+          "detailed_prompt": "Professional Instagram feed ad (1080x1080, square format) for B2B partner program.\n\nCONCEPT: Recurring Revenue Machine\n\nLAYOUT: Recurring revenue timeline (Month 1 → Month 12 growth)\n\nTEXT OVERLAY:\n- Main Headline (top, bold, 44-48px): \"Build a $10K/month recurring revenue stream (not a one-time project)...\"\n- Supporting text from brief\n- CTA button at bottom\n\nKEY VISUAL ELEMENTS:\n- Recurring $$ arrows\n- MRR growth chart\n- Client accumulation visual\n\nCOLOR PALETTE:\n- Primary: #6460aa (brand purple)\n- Accent: #0db14b (success green)\n- Background: #FFFFFF\n- Text: #2a2832\n\nTYPOGRAPHY: Aeonik-style modern sans-serif, bold headlines\n\nTONE: Strategic, freedom-focused\n\nDESIGN STYLE: Clean, professional, mobile-optimized with clear visual hierarchy\n"
+        },
+        {
+          "format_name": "Instagram Stories/Reels",
+          "dimensions": "1080x1920",
+          "aspect_ratio": "9:16",
+          "detailed_prompt": "Professional Instagram Stories ad (1080x1920, vertical 9:16 format) for B2B partner program. Mobile-first design.\n\nCONCEPT: Recurring Revenue Machine\n\nVERTICAL LAYOUT (Top to Bottom):\n\nTOP SECTION (20%):\n- Headline (56-60px, bold): Extract from \"Build a $10K/month recurring revenue stream (not a one-time \"\n\nUPPER-MIDDLE (20%):\n- Secondary message or question\n\nMIDDLE SECTION (30%):\n- Primary visual element: Recurring $$ arrows\n- Supporting elements: MRR growth chart, Client accumulation visual\n\nLOWER-MIDDLE (20%):\n- Key stats or badges in pill shapes\n- Social proof elements\n\nBOTTOM (10%):\n- Large CTA button: \"Build Recurring Income\" (rounded, centered)\n\nVISUAL ELEMENTS:\n- Recurring $$ arrows\n- MRR growth chart\n- Client accumulation visual\n\nCOLORS:\n- Primary: #6460aa (headline, key elements)\n- Accent: #0db14b (CTA, success indicators)\n- Background: #FFFFFF with subtle gradient\n- Text: #2a2832\n\nTYPOGRAPHY: Bold mobile-friendly sans-serif, high contrast for quick scanning\n\nTONE: Strategic, freedom-focused, optimized for vertical mobile consumption\n"
+        }
+      ]
+    },
+    {
+      "brief_id": "brief_008",
+      "concept_name": "Proven Implementation System",
+      "target_audience": "All segments (system-seekers)",
+      "hook": "Follow our proven 3-step system. 1,800+ partners are already earning.",
+      "formats": [
+        {
+          "format_name": "Instagram Feed",
+          "dimensions": "1080x1080",
+          "aspect_ratio": "1:1",
+          "detailed_prompt": "Professional Instagram feed ad (1080x1080, square format) for B2B partner program.\n\nCONCEPT: Proven Implementation System\n\nLAYOUT: 3-step process infographic (Find → Close → Earn)\n\nTEXT OVERLAY:\n- Main Headline (top, bold, 44-48px): \"Follow our proven 3-step system. 1,800+ partners are already earning....\"\n- Supporting text from brief\n- CTA button at bottom\n\nKEY VISUAL ELEMENTS:\n- Step-by-step diagram\n- Playbook icon\n- Support badge\n\nCOLOR PALETTE:\n- Primary: #6460aa (brand purple)\n- Accent: #0db14b (success green)\n- Background: #FFFFFF\n- Text: #2a2832\n\nTYPOGRAPHY: Aeonik-style modern sans-serif, bold headlines\n\nTONE: Educational, systematic\n\nDESIGN STYLE: Clean, professional, mobile-optimized with clear visual hierarchy\n"
+        },
+        {
+          "format_name": "Instagram Stories/Reels",
+          "dimensions": "1080x1920",
+          "aspect_ratio": "9:16",
+          "detailed_prompt": "Professional Instagram Stories ad (1080x1920, vertical 9:16 format) for B2B partner program. Mobile-first design.\n\nCONCEPT: Proven Implementation System\n\nVERTICAL LAYOUT (Top to Bottom):\n\nTOP SECTION (20%):\n- Headline (56-60px, bold): Extract from \"Follow our proven 3-step system. 1,800+ partners are already\"\n\nUPPER-MIDDLE (20%):\n- Secondary message or question\n\nMIDDLE SECTION (30%):\n- Primary visual element: Step-by-step diagram\n- Supporting elements: Playbook icon, Support badge\n\nLOWER-MIDDLE (20%):\n- Key stats or badges in pill shapes\n- Social proof elements\n\nBOTTOM (10%):\n- Large CTA button: \"Get the Playbook\" (rounded, centered)\n\nVISUAL ELEMENTS:\n- Step-by-step diagram\n- Playbook icon\n- Support badge\n\nCOLORS:\n- Primary: #6460aa (headline, key elements)\n- Accent: #0db14b (CTA, success indicators)\n- Background: #FFFFFF with subtle gradient\n- Text: #2a2832\n\nTYPOGRAPHY: Bold mobile-friendly sans-serif, high contrast for quick scanning\n\nTONE: Educational, systematic, optimized for vertical mobile consumption\n"
+        }
+      ]
+    },
+    {
+      "brief_id": "brief_009",
+      "concept_name": "Remote Work Freedom",
+      "target_audience": "Professionals valuing flexibility",
+      "hook": "Work remotely. Set your own hours. Earn $10K MRR on your schedule.",
+      "formats": [
+        {
+          "format_name": "Instagram Feed",
+          "dimensions": "1080x1080",
+          "aspect_ratio": "1:1",
+          "detailed_prompt": "Professional Instagram feed ad (1080x1080, square format) for B2B partner program.\n\nCONCEPT: Remote Work Freedom\n\nLAYOUT: Remote work lifestyle imagery + income badge\n\nTEXT OVERLAY:\n- Main Headline (top, bold, 44-48px): \"Work remotely. Set your own hours. Earn $10K MRR on your schedule....\"\n- Supporting text from brief\n- CTA button at bottom\n\nKEY VISUAL ELEMENTS:\n- Laptop/coffee shop visual\n- Location pin\n- Flexible schedule icons\n\nCOLOR PALETTE:\n- Primary: #6460aa (brand purple)\n- Accent: #0db14b (success green)\n- Background: #FFFFFF\n- Text: #2a2832\n\nTYPOGRAPHY: Aeonik-style modern sans-serif, bold headlines\n\nTONE: Aspirational, lifestyle-focused\n\nDESIGN STYLE: Clean, professional, mobile-optimized with clear visual hierarchy\n"
+        },
+        {
+          "format_name": "Instagram Stories/Reels",
+          "dimensions": "1080x1920",
+          "aspect_ratio": "9:16",
+          "detailed_prompt": "Professional Instagram Stories ad (1080x1920, vertical 9:16 format) for B2B partner program. Mobile-first design.\n\nCONCEPT: Remote Work Freedom\n\nVERTICAL LAYOUT (Top to Bottom):\n\nTOP SECTION (20%):\n- Headline (56-60px, bold): Extract from \"Work remotely. Set your own hours. Earn $10K MRR on your sch\"\n\nUPPER-MIDDLE (20%):\n- Secondary message or question\n\nMIDDLE SECTION (30%):\n- Primary visual element: Laptop/coffee shop visual\n- Supporting elements: Location pin, Flexible schedule icons\n\nLOWER-MIDDLE (20%):\n- Key stats or badges in pill shapes\n- Social proof elements\n\nBOTTOM (10%):\n- Large CTA button: \"Start Working Remotely\" (rounded, centered)\n\nVISUAL ELEMENTS:\n- Laptop/coffee shop visual\n- Location pin\n- Flexible schedule icons\n\nCOLORS:\n- Primary: #6460aa (headline, key elements)\n- Accent: #0db14b (CTA, success indicators)\n- Background: #FFFFFF with subtle gradient\n- Text: #2a2832\n\nTYPOGRAPHY: Bold mobile-friendly sans-serif, high contrast for quick scanning\n\nTONE: Aspirational, lifestyle-focused, optimized for vertical mobile consumption\n"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_concepts": 10,
+    "total_prompts": 20,
+    "formats": [
+      "1080x1080 (Feed)",
+      "1080x1920 (Stories)"
+    ]
+  }
+}

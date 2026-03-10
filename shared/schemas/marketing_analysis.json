@@ -1,0 +1,132 @@
+{
+    "marketing_analysis": {
+        "type": "object",
+        "properties": {
+            "landing_analysis": {
+                "type": "object",
+                "properties": {
+                    "headline": {
+                        "type": "string"
+                    },
+                    "subheadline": {
+                        "type": "string"
+                    },
+                    "pain_points": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "benefits": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "social_proof": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "cta_structure": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "audiences": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "segment": {
+                            "type": "string"
+                        },
+                        "demographics": {
+                            "type": "string"
+                        },
+                        "psychographics": {
+                            "type": "string"
+                        },
+                        "pain_points": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "triggers": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "segment"
+                    ]
+                }
+            },
+            "value_propositions": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "headline": {
+                            "type": "string"
+                        },
+                        "supporting_points": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "target_audience": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "headline"
+                    ]
+                }
+            },
+            "offers": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "lead_magnet",
+                                "discount",
+                                "trial",
+                                "webinar",
+                                "quiz"
+                            ]
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "urgency_elements": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "required": [
+            "landing_analysis",
+            "value_propositions"
+        ]
+    }
+}

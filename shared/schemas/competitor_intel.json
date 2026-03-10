@@ -1,0 +1,125 @@
+{
+    "competitor_intel": {
+        "type": "object",
+        "properties": {
+            "search_queries": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "competitors": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "page_name": {
+                            "type": "string"
+                        },
+                        "page_id": {
+                            "type": "string"
+                        },
+                        "ad_count": {
+                            "type": "integer"
+                        },
+                        "active_since": {
+                            "type": "string",
+                            "format": "date"
+                        }
+                    }
+                }
+            },
+            "winning_creatives": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "ad_id": {
+                            "type": "string"
+                        },
+                        "page_name": {
+                            "type": "string"
+                        },
+                        "days_active": {
+                            "type": "integer"
+                        },
+                        "ad_copy": {
+                            "type": "string"
+                        },
+                        "headline": {
+                            "type": "string"
+                        },
+                        "media_type": {
+                            "type": "string",
+                            "enum": [
+                                "image",
+                                "video",
+                                "carousel"
+                            ]
+                        },
+                        "media_url": {
+                            "type": "string"
+                        },
+                        "local_path": {
+                            "type": "string"
+                        },
+                        "ad_library_url": {
+                            "type": "string"
+                        },
+                        "analysis": {
+                            "type": "object",
+                            "properties": {
+                                "hook_type": {
+                                    "type": "string",
+                                    "enum": [
+                                        "pain",
+                                        "curiosity",
+                                        "benefit",
+                                        "social_proof",
+                                        "urgency"
+                                    ]
+                                },
+                                "offer_type": {
+                                    "type": "string"
+                                },
+                                "visual_style": {
+                                    "type": "string"
+                                },
+                                "cta_type": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "required": [
+                        "ad_id",
+                        "days_active"
+                    ]
+                }
+            },
+            "patterns": {
+                "type": "object",
+                "properties": {
+                    "common_hooks": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "color_trends": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "format_distribution": {
+                        "type": "object"
+                    }
+                }
+            }
+        },
+        "required": [
+            "winning_creatives"
+        ]
+    }
+}

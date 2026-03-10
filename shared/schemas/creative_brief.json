@@ -1,0 +1,107 @@
+{
+    "creative_brief": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string"
+            },
+            "concept_name": {
+                "type": "string"
+            },
+            "target_audience": {
+                "type": "string"
+            },
+            "value_proposition": {
+                "type": "string"
+            },
+            "format": {
+                "type": "string",
+                "enum": [
+                    "static",
+                    "video",
+                    "carousel"
+                ]
+            },
+            "dimensions": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "creative_direction": {
+                "type": "object",
+                "properties": {
+                    "hook": {
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "string"
+                    },
+                    "cta": {
+                        "type": "string"
+                    },
+                    "visual_concept": {
+                        "type": "string"
+                    },
+                    "color_scheme": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "typography_style": {
+                        "type": "string"
+                    },
+                    "imagery": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": [
+                    "hook",
+                    "cta",
+                    "visual_concept"
+                ]
+            },
+            "variations": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "variant": {
+                            "type": "string"
+                        },
+                        "hook_variation": {
+                            "type": "string"
+                        },
+                        "visual_variation": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "reference_creatives": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "priority": {
+                "type": "string",
+                "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                ]
+            }
+        },
+        "required": [
+            "id",
+            "concept_name",
+            "creative_direction",
+            "format"
+        ]
+    }
+}

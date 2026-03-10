@@ -1,0 +1,317 @@
+{
+  "meta": {
+    "source": "quiz_funnel_analysis",
+    "input_file": "design_figma_analysis.json",
+    "analysis_date": "2026-02-09T14:37:28.248066",
+    "analyzer_agent": "Agent 2: Marketing Analyst",
+    "funnel_name": "Quiz Agencies Book a Call"
+  },
+  "funnel_analysis": {
+    "funnel_type": "partner_recruitment_quiz",
+    "total_screens": 21,
+    "primary_goal": "Convert prospects into booked onboarding calls for partner program",
+    "secondary_goals": [
+      "Qualify leads by time availability",
+      "Segment by expertise and work preferences",
+      "Collect ZIP, email, and calendar commitment"
+    ]
+  },
+  "audiences": [
+    {
+      "name": "Solopreneur",
+      "demographics": "Independent professionals, 1-person operations",
+      "psychographics": "Self-motivated, resourceful, looking for scalable income",
+      "pain_points": [
+        "Limited time for prospecting",
+        "Need for passive income streams",
+        "Difficulty scaling one-on-one work"
+      ],
+      "triggers": [
+        "Recurring revenue opportunity",
+        "Low time investment (2-4 hours/week)",
+        "Inbound leads (vs. cold outreach)"
+      ],
+      "evidence_from_funnel": "Quiz 02: 'Your experience as a solopreneur makes you a strong fit'"
+    },
+    {
+      "name": "Agency Owner",
+      "demographics": "Small agency owners, 2-10 person teams",
+      "psychographics": "Growth-oriented, B2B focused, seeking new revenue streams",
+      "pain_points": [
+        "Client acquisition costs",
+        "Revenue predictability",
+        "Team utilization during slow periods"
+      ],
+      "triggers": [
+        "Recurring revenue per client",
+        "Warm leads provided",
+        "Geographic exclusivity potential"
+      ],
+      "evidence_from_funnel": "Screen mentions 'Agency expertise aligns perfectly with what our partners need'"
+    },
+    {
+      "name": "Sales Professional",
+      "demographics": "Experienced B2B/B2C salespeople looking for side income",
+      "psychographics": "Results-driven, commission-comfortable, relationship-focused",
+      "pain_points": [
+        "Unstable commission income",
+        "Dependency on single employer",
+        "Lack of recurring revenue"
+      ],
+      "triggers": [
+        "Performance-based income",
+        "$400-$1,000 MRR projection",
+        "Repeatable sales process"
+      ],
+      "evidence_from_funnel": "Quiz mentions 'seasoned sales experts dramatically boost lead conversions'"
+    },
+    {
+      "name": "SMB Owner",
+      "demographics": "Small business owners with local market knowledge",
+      "psychographics": "Community-connected, entrepreneurial, multi-income mindset",
+      "pain_points": [
+        "Revenue diversification",
+        "Utilizing existing local relationships",
+        "Scaling beyond core business"
+      ],
+      "triggers": [
+        "Leverage existing network",
+        "Local lead focus",
+        "Proven SaaS product"
+      ],
+      "evidence_from_funnel": "Quiz addresses 'Small-business experts like you consistently achieve exceptional results'"
+    }
+  ],
+  "value_propositions": [
+    {
+      "primary_promise": "Turn 2-4 hours/week into $400-$1,000 recurring monthly income",
+      "unique_mechanism": "Pre-qualified warm leads delivered in your local area",
+      "transformation": {
+        "before": "Unpredictable income, active prospecting required, no recurring revenue",
+        "after": "Stable monthly income, inbound leads provided, recurring client revenue"
+      },
+      "supporting_elements": [
+        "89% of SMBs hire local implementation partners (CNBC authority)",
+        "192 leads available in target area (scarcity + localization)",
+        "4-8 new clients per month (specific outcome)",
+        "1,800+ existing partners (social proof)"
+      ],
+      "evidence": [
+        "Quiz 05: '\ud83d\udcc8 Stable growth - Devoting 4-8 hours weekly unlocks 4-8 new clients'",
+        "Quiz 03: '89% of SMBs hire local partners' (CNBC stat)",
+        "Quiz 17: 'Including 3 warm:' + specific restaurant addresses"
+      ]
+    },
+    {
+      "primary_promise": "Get verified access to local business leads ready to buy SaaS",
+      "unique_mechanism": "Partner program with geographic targeting and business type matching",
+      "transformation": {
+        "before": "Spending time on cold outreach, low conversion rates, generic leads",
+        "after": "Receiving qualified leads matching expertise, higher conversion, localized relationships"
+      },
+      "supporting_elements": [
+        "ZIP code-based lead matching",
+        "Business type qualification (Food & Beverage, Hospitality, etc.)",
+        "Pre-qualified leads only (not cold lists)",
+        "Timeline expectations (1st contract by specific date)"
+      ],
+      "evidence": [
+        "Quiz 15: 'Enter your ZIP code to see the leads currently waiting'",
+        "Quiz 08: 'What types of businesses do you have experience working with?'",
+        "Quiz 19: '192 leads in your area fit your params'"
+      ]
+    },
+    {
+      "primary_promise": " Work remotely with local clients on your schedule",
+      "unique_mechanism": "Flexible partnership model with no minimum hours requirement",
+      "transformation": {
+        "before": "Rigid 9-5 schedule, location-bound work, all-or-nothing commitment",
+        "after": "Choose your hours, work from anywhere, scale up or down as needed"
+      },
+      "supporting_elements": [
+        "Hour commitment options (<2, 2-4, 4-8, 8+ hours/week)",
+        "Remote work preference assessed",
+        "Local vs. nationwide preference captured",
+        "Inbound vs. outbound lead preference"
+      ],
+      "evidence": [
+        "Quiz 04: 'How many hours can you dedicate?'",
+        "Quiz 11-13: Remote preference, local client preference, inbound preference questions"
+      ]
+    }
+  ],
+  "offer": {
+    "primary_offer": {
+      "type": "Lead Generation Service (Partner Program Access)",
+      "what_they_get": [
+        "Access to 192 qualified leads in their ZIP code area",
+        "Pre-qualified warm leads (not cold lists)",
+        "Listing on boomerangme.com partner directory",
+        "Onboarding call and training",
+        "Geographic and niche matching"
+      ],
+      "pricing_model": "Revenue share (implied - not explicit in quiz)",
+      "value_stack": [
+        "Lead access (main offer)",
+        "Training/onboarding (value add)",
+        "Partner directory listing (value add)",
+        "Ongoing lead flow (recurring benefit)"
+      ],
+      "commitment_required": [
+        "Time: 2-4 hours/week minimum (qualified during quiz)",
+        "Email address (Quiz 18)",
+        "ZIP code (Quiz 15)",
+        "Calendar booking (Quiz 20)"
+      ],
+      "evidence": "Quiz 20: 'Complete onboarding and get your leads' + feature bullets"
+    },
+    "urgency_elements": [
+      {
+        "type": "Timeline scarcity",
+        "message": "2 business days to complete onboarding",
+        "screen": "Quiz 19"
+      },
+      {
+        "type": "Lead availability",
+        "message": "192 leads in your area (implies limited supply)",
+        "screen": "Quiz 17, 19"
+      },
+      {
+        "type": "Warm lead showcase",
+        "message": "Including 3 warm: [specific restaurant names and addresses]",
+        "screen": "Quiz 17"
+      },
+      {
+        "type": "First contract projection",
+        "message": "1st contract expected by Jul 18",
+        "screen": "Quiz 19"
+      }
+    ],
+    "risk_reversal": [
+      {
+        "type": "Social proof",
+        "element": "1,800+ partners already using the program",
+        "purpose": "Reduce perceived risk through mass adoption"
+      },
+      {
+        "type": "Authority backing",
+        "element": "CNBC statistic validation (89% of SMBs hire partners)",
+        "purpose": "Third-party credibility"
+      },
+      {
+        "type": "Transparency",
+        "element": "Specific timeline expectations (2 days onboarding, Jul 18 first contract)",
+        "purpose": "Set realistic expectations to prevent buyer's remorse"
+      },
+      {
+        "type": "Privacy assurance",
+        "element": "'We don't send spam' + 'We don't sell your data to 3rd parties'",
+        "purpose": "Reduce email capture friction"
+      }
+    ],
+    "lead_capture_funnel": [
+      {
+        "step": 1,
+        "type": "Low-barrier qualifier",
+        "ask": "ZIP code",
+        "purpose": "Localize lead preview, low commitment",
+        "screen": "Quiz 15"
+      },
+      {
+        "step": 2,
+        "type": "Contact information",
+        "ask": "Email address",
+        "purpose": "Enable notification and follow-up",
+        "screen": "Quiz 18"
+      },
+      {
+        "step": 3,
+        "type": "High-commitment conversion",
+        "ask": "Calendar booking (onboarding call)",
+        "purpose": "Firm commitment, qualification call",
+        "screen": "Quiz 20"
+      }
+    ]
+  },
+  "messaging": {
+    "tone_of_voice": "Professional yet encouraging, data-driven with emotional appeals",
+    "writing_style": "Direct address ('you', 'your'), emoji usage for warmth, specific numbers for credibility",
+    "key_phrases": [
+      "\ud83d\ude4c Yay, glad you're here! (enthusiasm + welcome)",
+      "What best describes you? (personalization setup)",
+      "89% of SMBs... (authority + statistics)",
+      "\ud83d\udcc8 Stable growth (outcome visualization)",
+      "$400-$1,000 new recurring income (specific financial outcome)",
+      "\u2611\ufe0f You're pre-qualified (positive reinforcement)",
+      "192 leads in your area (scarcity + localization)",
+      "Including 3 warm: (proof + immediacy)"
+    ],
+    "emotional_journey": [
+      "Welcome \u2192 Validation ('strong fit', 'perfect')",
+      "Education \u2192 Authority (CNBC stat, market data)",
+      "Aspiration \u2192 Visualization (MRR charts, income projections)",
+      "Qualification \u2192 Acknowledgment ('Noted!', 'pre-qualified')",
+      "Proof \u2192 Specificity (actual business addresses)",
+      "Capture \u2192 Action ('Get leads', 'Complete onboarding')",
+      "Confirmation \u2192 Excitement ('You're booked!', 'excited to get you on board')"
+    ],
+    "vocabulary_themes": {
+      "Frequency": [
+        "recurring",
+        "monthly",
+        "stable",
+        "passive"
+      ],
+      "Control": [
+        "your schedule",
+        "your area",
+        "your expertise",
+        "you dedicate"
+      ],
+      "Results": [
+        "clients per month",
+        "MRR",
+        "leads",
+        "contracts"
+      ],
+      "Qualification": [
+        "fit",
+        "qualified",
+        "pre-qualified",
+        "aligns perfectly"
+      ]
+    }
+  },
+  "search_queries_for_competitor_intel": [
+    "partner program passive income",
+    "local business leads",
+    "SaaS implementation partner",
+    "recurring income opportunity",
+    "work from home local clients",
+    "digital marketing partner program",
+    "restaurant SaaS sales",
+    "local lead generation program"
+  ],
+  "creative_angles": [
+    {
+      "hook": "Turn 2-4 hours/week into $400-$1,000 recurring income",
+      "target_audience": "Solopreneurs, Sales Professionals",
+      "pain_point": "Unpredictable income, time-intensive client acquisition"
+    },
+    {
+      "hook": "192 local business leads ready to buy \u2014 zero cold calling",
+      "target_audience": "All segments",
+      "pain_point": "Time wasted on prospecting and cold outreach"
+    },
+    {
+      "hook": "89% of SMBs hire local partners (not in-house) \u2014 be that partner",
+      "target_audience": "Agency Owners, SMB Owners",
+      "pain_point": "Competition for clients, need for revenue diversification"
+    },
+    {
+      "hook": "Get paid recurring revenue just for onboarding local restaurants",
+      "target_audience": "Solopreneurs with Food & Beverage experience",
+      "pain_point": "One-time project revenue, no recurring income"
+    }
+  ]
+}

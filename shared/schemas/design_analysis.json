@@ -1,0 +1,87 @@
+{
+    "funnel_structure": {
+        "type": "object",
+        "properties": {
+            "screens": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "welcome",
+                                "question",
+                                "result",
+                                "offer"
+                            ]
+                        },
+                        "headline": {
+                            "type": "string"
+                        },
+                        "subheadline": {
+                            "type": "string"
+                        },
+                        "cta_text": {
+                            "type": "string"
+                        },
+                        "visual_elements": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "color_scheme": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "typography": {
+                            "type": "object",
+                            "properties": {
+                                "heading": {
+                                    "type": "string"
+                                },
+                                "body": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "type"
+                    ]
+                }
+            },
+            "flow": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "brand_assets": {
+                "type": "object",
+                "properties": {
+                    "logo_url": {
+                        "type": "string"
+                    },
+                    "color_palette": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "required": [
+            "screens",
+            "flow"
+        ]
+    }
+}

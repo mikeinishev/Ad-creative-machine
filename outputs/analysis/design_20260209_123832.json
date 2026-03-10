@@ -1,0 +1,236 @@
+{
+    "funnel_structure": {
+        "source_file": "funnel-sources/Boomerang Product.pdf",
+        "analysis_method": "PDF Vision Analysis",
+        "timestamp": "2026-02-09T12:38:32+04:00",
+        "screens": [
+            {
+                "id": "welcome",
+                "type": "welcome",
+                "headline": "Boomerang: Smart Loyalty for Restaurants",
+                "subheadline": "Answer 3 quick questions to see how Boomerang can boost your repeat customers",
+                "cta_text": "Start Quiz",
+                "visual_elements": [
+                    "boomerang_logo",
+                    "restaurant_illustration",
+                    "trust_badges"
+                ],
+                "color_scheme": [
+                    "#FF6B35",
+                    "#004E89",
+                    "#FFFFFF"
+                ],
+                "typography": {
+                    "heading": "Bold Sans-Serif",
+                    "body": "Regular Sans-Serif"
+                },
+                "notes": "Welcome screen introduces Boomerang product and value proposition for restaurant owners"
+            },
+            {
+                "id": "question_1",
+                "type": "question",
+                "headline": "What type of restaurant do you operate?",
+                "subheadline": "",
+                "question_text": "Select your restaurant category",
+                "answer_options": [
+                    "Quick Service / Fast Food",
+                    "Casual Dining",
+                    "Fine Dining",
+                    "Cafe / Bakery",
+                    "Other"
+                ],
+                "cta_text": "Next",
+                "visual_elements": [
+                    "progress_indicator_1_of_3",
+                    "restaurant_category_icons"
+                ],
+                "color_scheme": [
+                    "#FF6B35",
+                    "#004E89",
+                    "#FFFFFF"
+                ],
+                "typography": {
+                    "heading": "Bold Sans-Serif",
+                    "body": "Regular Sans-Serif"
+                },
+                "notes": "Segmentation question to understand restaurant type"
+            },
+            {
+                "id": "question_2",
+                "type": "question",
+                "headline": "What's your biggest customer retention challenge?",
+                "subheadline": "",
+                "question_text": "Choose the challenge you face most",
+                "answer_options": [
+                    "Getting customers to return",
+                    "Competing with delivery apps",
+                    "Building customer loyalty",
+                    "Tracking customer visits",
+                    "Word-of-mouth marketing"
+                ],
+                "cta_text": "Next",
+                "visual_elements": [
+                    "progress_indicator_2_of_3",
+                    "challenge_icons"
+                ],
+                "color_scheme": [
+                    "#FF6B35",
+                    "#004E89",
+                    "#FFFFFF"
+                ],
+                "typography": {
+                    "heading": "Bold Sans-Serif",
+                    "body": "Regular Sans-Serif"
+                },
+                "notes": "Pain point identification question"
+            },
+            {
+                "id": "question_3",
+                "type": "question",
+                "headline": "How many customers visit your restaurant monthly?",
+                "subheadline": "",
+                "question_text": "Select your average monthly traffic",
+                "answer_options": [
+                    "Under 500",
+                    "500-1,000",
+                    "1,000-2,500",
+                    "2,500-5,000",
+                    "5,000+"
+                ],
+                "cta_text": "See My Results",
+                "visual_elements": [
+                    "progress_indicator_3_of_3",
+                    "customer_volume_graphic"
+                ],
+                "color_scheme": [
+                    "#FF6B35",
+                    "#004E89",
+                    "#FFFFFF"
+                ],
+                "typography": {
+                    "heading": "Bold Sans-Serif",
+                    "body": "Regular Sans-Serif"
+                },
+                "notes": "Qualification question to gauge business size and potential value"
+            },
+            {
+                "id": "result",
+                "type": "result",
+                "headline": "Here's Your Personalized Boomerang Strategy",
+                "subheadline": "Based on your answers, here's how Boomerang can help",
+                "cta_text": "Get Your Custom Plan",
+                "visual_elements": [
+                    "personalized_results_card",
+                    "roi_calculator",
+                    "success_metrics",
+                    "testimonial_snippet"
+                ],
+                "color_scheme": [
+                    "#FF6B35",
+                    "#004E89",
+                    "#FFFFFF",
+                    "#F0F0F0"
+                ],
+                "typography": {
+                    "heading": "Bold Sans-Serif",
+                    "body": "Regular Sans-Serif"
+                },
+                "content_elements": [
+                    "Your restaurant type: [Dynamic]",
+                    "Your main challenge: [Dynamic]",
+                    "Recommended solution: Digital loyalty program",
+                    "Estimated ROI: +25% repeat visits"
+                ],
+                "notes": "Personalized result screen showing tailored recommendations based on quiz answers"
+            },
+            {
+                "id": "offer",
+                "type": "offer",
+                "headline": "Get Boomerang for Your Restaurant",
+                "subheadline": "Join 10,000+ restaurants building customer loyalty",
+                "offer_details": {
+                    "product": "Boomerang Loyalty Platform",
+                    "pricing": "Starting at $99/month",
+                    "value_stack": [
+                        "Digital loyalty cards",
+                        "SMS marketing automation",
+                        "Customer analytics dashboard",
+                        "24/7 support"
+                    ],
+                    "guarantee": "30-day money-back guarantee"
+                },
+                "cta_text": "Start Free Trial",
+                "secondary_cta": "Schedule a Demo",
+                "visual_elements": [
+                    "pricing_card",
+                    "feature_list",
+                    "social_proof_logos",
+                    "testimonials",
+                    "guarantee_badge"
+                ],
+                "color_scheme": [
+                    "#FF6B35",
+                    "#004E89",
+                    "#FFFFFF",
+                    "#28A745"
+                ],
+                "typography": {
+                    "heading": "Bold Sans-Serif",
+                    "body": "Regular Sans-Serif"
+                },
+                "urgency_elements": [
+                    "Limited time: First month free",
+                    "Join 10,000+ restaurants"
+                ],
+                "notes": "Final offer screen with clear pricing, value proposition, and CTA"
+            }
+        ],
+        "flow": [
+            "welcome",
+            "question_1",
+            "question_2",
+            "question_3",
+            "result",
+            "offer"
+        ],
+        "brand_assets": {
+            "primary_brand_name": "Boomerang",
+            "logo_description": "Boomerang logo with stylized return icon",
+            "color_palette": [
+                "#FF6B35",
+                "#004E89",
+                "#FFFFFF",
+                "#F0F0F0",
+                "#28A745"
+            ],
+            "color_meanings": {
+                "#FF6B35": "Primary brand color (orange)",
+                "#004E89": "Secondary brand color (navy blue)",
+                "#FFFFFF": "Background",
+                "#F0F0F0": "Light background",
+                "#28A745": "CTA / success color (green)"
+            },
+            "typography_system": {
+                "headings": "Bold Sans-Serif (likely Montserrat or similar)",
+                "body": "Regular Sans-Serif (likely Open Sans or Inter)",
+                "cta_buttons": "Bold Sans-Serif"
+            }
+        },
+        "funnel_characteristics": {
+            "total_screens": 6,
+            "total_questions": 3,
+            "funnel_type": "Lead qualification + Product offer",
+            "target_audience": "Restaurant owners and managers",
+            "industry": "Restaurant / Hospitality",
+            "product_category": "SaaS - Customer Loyalty Platform",
+            "conversion_goal": "Free trial signup or demo booking",
+            "key_value_proposition": "Increase repeat customers through digital loyalty",
+            "main_pain_points_addressed": [
+                "Customer retention",
+                "Competition from delivery apps",
+                "Building loyalty",
+                "Tracking customer behavior"
+            ]
+        }
+    }
+}
