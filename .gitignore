@@ -2,3 +2,5 @@ config/midjourney_cookies.json
 .env
 .DS_Store
 node_modules/
+outputs/
+inputs/
