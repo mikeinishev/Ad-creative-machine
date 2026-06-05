@@ -4,3 +4,7 @@ config/midjourney_cookies.json
 node_modules/
 outputs/
 inputs/
+URLs/
+__pycache__/
+*.pyc
+.venv/
