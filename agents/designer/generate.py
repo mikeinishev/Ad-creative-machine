@@ -145,7 +145,8 @@ def _scene_prompt(concept_name: str, visual_concept: str, colors: List[str], p: 
 
 
 def _baked_prompt(concept_name: str, visual_concept: str, hook: str, subhead: str,
-                  cta: str, colors: List[str], p: Placement, audience: str = "") -> str:
+                  cta: str, colors: List[str], p: Placement, audience: str = "",
+                  cta_sub: str = "") -> str:
     """One cohesive, finished ad — text DESIGNED INTO the image. Minimal copy: an audience
     BADGE + ONE headline + ONE short money-focused line + a CTA button. No paragraphs."""
     try:
@@ -155,6 +156,7 @@ def _baked_prompt(concept_name: str, visual_concept: str, hook: str, subhead: st
     palette = ", ".join(colors) if colors else "a clean, premium brand palette"
     sub = (subhead or "").strip()
     badge = (audience or "").strip()
+    csub = (cta_sub or "").strip()
     n = 1
     lines = []
     if badge:
@@ -175,6 +177,11 @@ def _baked_prompt(concept_name: str, visual_concept: str, hook: str, subhead: st
         f"stands out. Place a realistic white MOUSE CURSOR (an arrow pointer with a thin dark "
         f"outline, or a hand/pointer cursor) hovering over the button's lower-right area as if about "
         f"to click it — a deliberate click-prompt to boost CTR.\n")
+    if csub:
+        n += 1
+        lines.append(f"  {n}) ONE small SUPPORTING LINE directly BELOW the CTA button (smaller than "
+                     f"the headline and subhead, but still crisply legible on a phone), reading "
+                     f"exactly: \"{csub}\". It reinforces exclusivity/scarcity under the button.\n")
     return (
         f"Design ONE single, cohesive, finished professional Meta Ads creative — a complete "
         f"advertisement where the typography is DESIGNED INTO the composition together with the "
@@ -215,6 +222,8 @@ def _jobs_from_briefs(data: Dict[str, Any]) -> List[Dict[str, Any]]:
             subhead = " ".join(words[:12]) + ("…" if len(words) > 12 else "")
         # audience call-out badge (segments the viewer); fall back to target_audience
         audience = (b.get("audience_callout") or "").strip()
+        # optional small line rendered directly UNDER the CTA button (scarcity/exclusivity)
+        cta_sub = (b.get("cta_subtext") or (b.get("cta", {}) or {}).get("subtext") or "").strip()
         formats = []
         for fmt in cd.get("formats", []):
             p = resolve_placement(aspect_ratio=fmt.get("aspect_ratio", ""),
@@ -223,7 +232,7 @@ def _jobs_from_briefs(data: Dict[str, Any]) -> List[Dict[str, Any]]:
                 "placement": p,
                 "has_scene": True,
                 "scene_prompt": _scene_prompt(concept, vc, colors, p),
-                "baked": {v: _baked_prompt(concept, vc, h, subhead, cta, colors, p, audience)
+                "baked": {v: _baked_prompt(concept, vc, h, subhead, cta, colors, p, audience, cta_sub)
                           for v, h in hooks.items() if h},
             })
         jobs.append({
