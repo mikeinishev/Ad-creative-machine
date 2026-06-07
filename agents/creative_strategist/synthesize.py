@@ -25,7 +25,10 @@ Brief JSON is Agent-5-ready. Each brief in creative_briefs[]:
     "brief_id", "concept_name", "priority",
     "opportunity": {"audience","value_proposition","hook_type","score","reasoning"},
     "target_audience", "value_proposition",
+    "audience_callout": "<short audience badge/tag NAMING the target, e.g. 'Restaurant Owner?'
+                          or 'For Restaurant Owners' — segments the viewer on the creative>",
     "hook_variations": {"hook_a","hook_b","hook_c"},   # real A/B/C copy: proven / alt / experimental
+    "subhead": "<one short money-focused supporting line, ≤~12 words>",
     "body_copy", "cta": {"primary","secondary"},
     "creative_direction": {
        "visual_concept": "<rich, cinematic 15-40 line scene for gpt-image-2>",

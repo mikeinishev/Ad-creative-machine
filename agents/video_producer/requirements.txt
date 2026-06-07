@@ -1,0 +1,4 @@
+# Agent 7 — Video Producer
+google-genai>=2.0    # Veo 3 (generate_videos: submit → poll → download); all text rendered IN-SCENE by Veo
+# System dependency (NOT pip): ffmpeg on PATH  →  brew install ffmpeg
+# Env: GEMINI_API_KEY / GOOGLE_API_KEY in .env for live Veo rendering.

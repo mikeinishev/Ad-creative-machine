@@ -1,0 +1,1354 @@
+{
+  "playbook": {
+    "best_practices": {
+      "hooks": [
+        "LAYER THE HOOK ACROSS 3 CHANNELS in the first 1-3s simultaneously: VISUAL (disruptive first frame / motion / facial reaction / prop reveal / 0.3s flash of the end result), VERBAL (one bold spoken line, ~10-14 words), and TEXT (burned-in caption restating the claim so it lands on mute). Best UGC creators stack 2+ hook types.",
+        "Lead with one of the 3 best-converting 2026 archetypes: (1) CONTRARIAN CLAIM ('Stop buying X — do this instead', '[common belief] is a total lie'); (2) MISTAKE/WARNING ('The #1 mistake [audience] make', 'You're doing this wrong'); (3) LIST TEASE ('3 reasons X beats Y', '7 things no one tells you about X'). They stack curiosity + self-relevance + a clear promise in one line.",
+        "Map the Agent-4 audience_callout into a self-identifying opening so the right viewer feels 'that's me' in <2s — e.g. badge 'Restaurant Owner?' becomes the spoken/text hook 'Restaurant owners — you're losing money on this.' Self-identifying questions over-perform.",
+        "Convert the Agent-4 headline (hook) directly into the verbal+text hook; A/B the three hook_variations (hook_a/b/c) as swappable first-3s modules against a fixed body.",
+        "Land the hook by 2-2.5s, leaving a ~0.5s buffer before the 3s cutoff; skip 'hi/welcome', start mid-action, deliver slightly faster than normal speech.",
+        "Other reliable hook families: Problem/Pain ('If you're still dealing with X, watch this'), Question ('Is [product] really worth it?'), Testimonial/Discovery ('I thought this'd be a waste of money… I was wrong'), Comparison ('Still using X? Here's why I switched'), Social-proof/trend ('TikTok made me buy it'), Honest review ('An honest review after 30 days'), Emotional/relatable ('This is embarrassing to admit, but…').",
+        "First frame doubles as the sound-off thumbnail: high-contrast, in-focus, immediate motion, big readable text. Never open on a dark, cluttered frame or a logo sting.",
+        "Test 5-10 hook variations per concept; the hook is the single highest-leverage edit — swapping just the first 3s is the first fix when a creative fatigues."
+      ],
+      "structures": [
+        {
+          "name": "Hook -> Body -> CTA (the universal spine)",
+          "arc": "Hook 1-3s (~10-15% runtime) | Body 70-80% | CTA/Payoff last 3-5s (~10-20%). Build the 4 modules (hook, body, proof, CTA) as isolated, swappable A/B variables. The body is filled by one of the arcs below.",
+          "best_for": "Every platform; the default container for ALL short-form ads."
+        },
+        {
+          "name": "PAS — Problem -> Agitate -> Solution",
+          "arc": "Name the pain in the customer's words -> agitate the real cost (time/money/stress) for 3-5s WITHOUT insulting the viewer ('nobody told you about this', not 'you don't know better') -> present product as the obvious fix -> CTA.",
+          "best_for": "The recommended 2026 DEFAULT — problem-first hooks engage best; works for almost any problem-solving product. Maps cleanly to a pain-led Agent-4 concept."
+        },
+        {
+          "name": "BAB — Before -> After -> Bridge",
+          "arc": "Lead with the dream 'After' state UPFRONT to hook instantly -> contrast the 'Before' pain -> position the product/offer as the Bridge -> CTA.",
+          "best_for": "Fast social hooks where you want resolution upfront; transformation, wellness, ecom, money/income outcomes."
+        },
+        {
+          "name": "Hook-Story-Offer",
+          "arc": "Surprising/emotional opener -> short empathetic credible story that builds trust -> irresistible, urgency-based offer.",
+          "best_for": "Founder/narrative ads, higher-consideration or info products, high-ticket trust categories."
+        },
+        {
+          "name": "Direct Response (DR) formula",
+          "arc": "Hook -> Problem -> Solution -> Value Prop -> Social Proof -> CTA.",
+          "best_for": "Performance/acquisition campaigns that need every persuasion beat packed into one ad."
+        },
+        {
+          "name": "Founder-to-camera",
+          "arc": "Real person (ideally founder) to camera, no logo/grade, native-looking. First 3s = ONE specific customer objection or problem -> candid demo/answer -> CTA. Even a phone selfie outconverts most studio creative.",
+          "best_for": "Native trust plays in 2026; the format that 'refuses to die'. Wins on specificity."
+        },
+        {
+          "name": "Testimonial / UGC mashup",
+          "arc": "Stitch multiple real customer clips organized by pain point + quantified result -> close on a unified CTA.",
+          "best_for": "Social proof at scale; supplements, apps, ecom with many reviews."
+        },
+        {
+          "name": "Listicle / numbered tease",
+          "arc": "Hook = number promise ('3 reasons…/7 things…') -> rapid-fire items, one visual cut per item -> reveal the key payoff ~2/3 through (open loop) -> CTA.",
+          "best_for": "Education-led TikTok/Shorts; high hold rate via open loop."
+        }
+      ],
+      "pacing": [
+        "Change something visually every 2-3s on TikTok, every 3-5s on Reels; never let a speech segment run >8s without a visual change. This maps to roughly one Veo 8s clip per 2-3 cuts — choreograph multiple beats inside a clip with timestamp prompting.",
+        "VARY the interrupt spacing (3s / 5s / 2.5s) so the edit stays unpredictable — viewers map a metronomic pattern after ~8-9s and retention drops once prediction replaces curiosity. Cap at ~5 interrupt types so it doesn't feel chaotic.",
+        "Rotate camera angles (close-up / medium / over-the-shoulder) every 5-8s; static talking-head with no visual change is the fastest engagement killer.",
+        "Place a deliberate interrupt (angle change, music drop, SFX, text pop) at the 25-35s drift point to recover the mid-video dip.",
+        "Using 3+ native editing features yields ~84% more watch time and ~2.1x conversions (TikTok). The algorithm rewards retention RATE, not raw watch time.",
+        "Engineer a seamless loop (last frame flows back into the first, visual + audio) or pack enough density that a second watch is needed — rewatch/replay is the most heavily weighted signal on TikTok (replay rate >1.2 boosts distribution) and counts strongly on Reels.",
+        "Target the retention bars: 80%+ hold at 3s, 60%+ at midpoint, 70%+ average percentage viewed. Below ~55-60% hold at 3s, kill and re-test the hook."
+      ],
+      "captions_sound": [
+        "Design captions-first / sound-OFF by default — up to 85% of Facebook video and 60-85% of mobile viewing is muted. Burn in captions PLUS the key headline/offer/proof as text overlay so the ad fully lands silent; comprehension must never depend on audio.",
+        "Burned-in (open) captions add 12-40% to watch time and make 80% of consumers more likely to finish. Keep lines to 4-6 words, high-contrast, each line on screen >=2s, synced to the voice. Don't over-stuff — long lines force read-vs-watch and viewers quit.",
+        "Layer sound-ON for lift: voiceover/dialogue (Veo generates native lip-synced audio), SFX, ambient bed, and music. IG/Reels skews sound-on; in-stream plays with sound on by default.",
+        "Use trending audio adopted within 24-48h (lift drops sharply after ~7 days). On Veo, request the music/SFX in the prompt per shot; for trend audio, leave the Veo music bed minimal and swap the trending track in post. Place audio crescendos/drops at 5-10s intervals as mini-cliffhangers and sync cuts/text to the beat.",
+        "Keep all captions, faces, logos and CTAs inside the cross-platform safe zone (central 900x1400 of a 1080x1920 canvas) so platform UI never buries them."
+      ],
+      "cta": [
+        "CTA formula = action verb + tangible outcome + low-commitment timeframe ('Download and [outcome] in 5 minutes today'). Build the CTA from the Agent-4 offer + cta.primary.",
+        "Reinforce the CTA across 3 channels in the last 3-5s: voiceover + on-screen text + a visual cue (finger tapping the button / arrow to the CTA chip).",
+        "Pre-empt micro-objections inline: 'No credit card required', 'Cancel anytime', 'Takes 30 seconds', 'Risk-free guarantee' — pull these from the Agent-4 offer/differentiators (e.g. guarantee, exclusive territory).",
+        "Platform CTA nuances: comment-keyword CTAs drive ~1.5-2.2x more comments; 'save' CTAs lift Reels reach over 7-14 days; on Shorts 'link in bio' beats 'link in comments'.",
+        "Don't bake your only CTA into the bottom band where platform UI (CTA button, handle, audio attribution) renders — keep the spoken/text CTA in the central safe zone and let the platform CTA button do the click.",
+        "Don't bury or soften the CTA, and don't stack multiple competing CTAs — one clear ask."
+      ],
+      "dos": [
+        "Make it look NATIVE/UGC, not a studio ad — the single biggest lever: ~1.8% vs ~1.1% CTR (~64% lift), 20-40% lower CPI, higher hook rate. Run a ~60/40 UGC-to-polished mix; use UGC/founder-to-camera for direct response, polished for brand recall and high-ticket trust categories.",
+        "Open mid-action with the payoff in the first frame; land a text+spoken hook by 2-2.5s and target 80%+ hold at 3s.",
+        "Default to PAS for the body; agitate the pain for 3-5s before revealing the solution (kindly).",
+        "Add a varied pattern interrupt every 2-3s (TikTok) / 3-5s (Reels), rotate angles every 5-8s, and use 3+ native editing features.",
+        "Burn in high-contrast captions (4-6 words/line, >=2s) on every video and design the whole ad to work on mute.",
+        "Engineer a seamless loop or rewatch hook to push completion over 100%.",
+        "Keep all faces/text/logos/CTAs inside the 900x1400 cross-platform safe zone; always shoot native 9:16.",
+        "Make the CTA = action verb + tangible outcome + low-commitment timeframe, reinforced across text + voiceover + a visual tap cue, with objections pre-empted.",
+        "Edit for TikTok's retention bar first (hardest), then cross-post to Shorts/Reels.",
+        "Test 5-10 hooks per concept and 3-5 variants per angle on 3-5 day cycles; build hook/body/proof/CTA as isolated swappable modules and queue the next variant before the current fatigues."
+      ],
+      "donts": [
+        "Don't open slow — anything past ~1.7s with no hook loses up to 65% of viewers in 3s. No 'hi/welcome', logo sting, slow build, or dark/cluttered first frame.",
+        "Don't make it look like a polished traditional ad for direct response — audiences scroll past anything that reads as a commercial.",
+        "Don't run a static talking head for >8s of speech (or more than a few seconds) without b-roll, cuts, or graphics.",
+        "Don't rely on audio for comprehension — most viewers are muted; and don't over-stuff captions (>6 words/line).",
+        "Don't agitate by insulting the viewer ('you don't know better'); frame it as 'nobody told you about this'.",
+        "Don't keep a predictable, metronomic editing rhythm; vary interrupt spacing so prediction doesn't replace curiosity.",
+        "Don't place text/faces/CTAs in the lower third or near right-side UI buttons, and don't post non-9:16 (~35% lower dwell, ~28% lower shares).",
+        "Don't ask Veo to render on-screen brand text/logos/legal copy — text rendering is unreliable; overlay all typography in post.",
+        "Don't ship one hero spot and let it ride — TikTok creative loses ~50% effectiveness in ~72h.",
+        "Don't exceed 60s (CTR/retention decline steeply); don't bury or stack multiple competing CTAs."
+      ],
+      "per_platform_notes": [
+        {
+          "platform": "Instagram Reels + Facebook Reels (Meta)",
+          "ideal_duration": "15-30s for conversion (best CTR ~1.72%); 7-15s viral-reach lane. Hook in first ~1.5s. Practical Reels surface cap 90s.",
+          "notes": "9:16, 1440x2560 recommended (1080x1920 safe). Reels gives standalone retention the LEAST weight — saves + DM-sends per reach can let a 45%-retention Reel beat a 65% one, so add a save-worthy payoff and a share/'save this' prompt. Cut every 3-5s. Unified 9:16 safe zone (March 2026): top 14%, bottom 35% (Reels), sides 6% — keep CTA/handle/audio UI band clear. One correctly-built 9:16 master also serves FB/IG Stories. ~60/40 UGC-to-polished."
+        },
+        {
+          "platform": "TikTok (In-Feed / Spark)",
+          "ideal_duration": "6-15s optimal for in-feed conversion (~0.96% CTR); a 24-38s value lane wins on completion (the #1 TikTok metric). Hook in first 3s. Never exceed ~60s.",
+          "notes": "9:16, 1080x1920 target (official min 540x960), <=500MB, video bitrate >=516kbps. Most retention-demanding platform: needs ~65% avg watch time in the test wave and 70%+ completion for broad push; rewatch is king (replay >1.2). Cut every 2-3s. Creative fatigues fastest (~50% effectiveness lost in ~72h). Trending audio within 24-48h. Caption is fixed white system text (no links/@/#); use a Spark Ad off an organic-looking post for max native feel. Edit to TikTok's bar FIRST. Non-Spark display name <=20 Latin chars; Spark caption <=100 chars."
+        },
+        {
+          "platform": "YouTube Shorts",
+          "ideal_duration": "10-30s recommended for action ads; <60s recommended (only first 60s plays in the Shorts feed). 6-60s is the general Shorts range; 30-45s value lane retains well.",
+          "notes": "9:16, 1080x1920. Shorts prioritizes completion to the LAST frame + whether the viewer stays in the feed afterward (immediate exit = dissatisfaction) — so nail a satisfying final frame and a loop. CTA button auto-appears ~3s in for Demand Gen/PMax/App, ~10s for Video View/Reach. Headline <=40 chars, description <=90 chars. Supply a 9:16 master; optionally a 16:9 companion for in-stream. Lowest standalone-retention bar of the three but still wants meaningful watch time. 'Link in bio' beats 'link in comments'."
+        },
+        {
+          "platform": "Meta Feed (FB/IG) + In-stream (cross-post)",
+          "ideal_duration": "Feed 15-30s (hook in first ~3s, performance drops past 30s); In-stream 5-15s (brand/message in first ~3s, sound ON by default).",
+          "notes": "Feed video best as 4:5 (1080x1350) or 9:16; 1:1 is the square fallback. In-stream 16:9 or 1:1, min 1080x1080, skippable after 5s so front-load brand in first ~5s. A vertical 9:16 master plus an optional 4:5 / 16:9 crop covers feed + in-stream. Burn in captions; keep key text out of extreme top/bottom edges."
+        }
+      ]
+    },
+    "platform_specs": [
+      {
+        "platform": "Meta Ads (Facebook + Instagram) — Video, 2026 (verified vs official Meta ads-guide, June 2026)",
+        "placements": [
+          {
+            "name": "Reels (FB Reels + IG Reels)",
+            "aspect_ratio": "9:16",
+            "resolution": "1440x2560 px recommended (official); 1080x1920 is a widely-used safe upload target. Min WIDTH 250px (<30s ads) / 500px (30s+ IG Reels).",
+            "duration_min_s": 0,
+            "duration_max_s": 90,
+            "recommended_duration": "15-30s (hook in first ~1.5s; many run 6-15s). Meta's ads-guide now states 'no maximum limit' for the spec field; 90s is the practical Reels-surface cap.",
+            "max_file_size": "4 GB",
+            "container": "MP4, MOV, or GIF (no edit lists / special boxes in container)",
+            "video_codec": "H.264 (only officially documented codec; H.265/HEVC NOT confirmed — use H.264)",
+            "audio_codec": "Stereo AAC, 128 kbps+",
+            "fps": "Fixed/constant frame rate, progressive scan, square pixels (official). No official 30/60 fps figure — 30 fps is industry convention.",
+            "bitrate": "No official target published. 15-30 Mbps is industry estimate only; upload highest-quality source.",
+            "safe_zones": "Keep text/logos/key creative out of top ~14% (~358px on 1440x2560, ~270px on 1080x1920), bottom ~35% (~896px / ~672px), sides ~6% (~87px / ~65px). Unified 9:16 zone (March 2026) = top 14% / bottom 35% / sides 6% covers Reels AND Stories.",
+            "caption_cta": "Platform renders CTA button / handle / audio attribution in bottom ~35% — don't bake your CTA there. Keep on-screen text/logo centered in middle ~60%. Burn in captions. Primary text ~125 chars recommended (Reels link-clicks objective can be as low as 40 chars / headline 55 chars / overlay headline ~10 chars).",
+            "notes": "Dominant vertical surface in 2026. One correctly-built 9:16 master serves FB Reels, IG Reels, FB Stories, IG Stories after March 2026 safe-zone unification. Aspect-ratio tolerance 1%."
+          },
+          {
+            "name": "Stories (FB Stories + IG Stories)",
+            "aspect_ratio": "9:16",
+            "resolution": "1440x2560 px recommended; 1080x1920 fine. Min WIDTH 250px.",
+            "duration_min_s": 1,
+            "duration_max_s": 120,
+            "recommended_duration": "6-15s per card. IG plays video ads under 35s in full; ads 15s+ may split into separate Story cards (1-3 before a 'Keep watching' prompt). Design within one short card.",
+            "max_file_size": "4 GB",
+            "container": "MP4, MOV, or GIF",
+            "video_codec": "H.264 (H.265/HEVC not in official docs)",
+            "audio_codec": "Stereo AAC, 128 kbps+",
+            "fps": "Fixed frame rate, progressive scan, square pixels (official). No official fps figure.",
+            "bitrate": "No official target. 15-30 Mbps is industry guidance only.",
+            "safe_zones": "Meta's own docs are inconsistent (FB Stories ~14% top / ~20% bottom; IG Stories awareness ~14%/35%/6%). SAFEST: design to the stricter unified zone — top 14%, bottom 35%, sides 6%.",
+            "caption_cta": "Profile/handle + timer in top ~14%; swipe-up/CTA sticker in bottom band — keep both clear. Burn in captions. Primary text ~125 chars.",
+            "notes": "Max duration differs by surface: FB Stories 120s; IG Stories technical max 60 min (long videos split into cards). Keep to one short card for ads."
+          },
+          {
+            "name": "Feed - 4:5 vertical (FB + IG Feed) — recommended",
+            "aspect_ratio": "4:5 (recommended for FB Feed; IG Feed video now defaults its recommendation to 9:16 but still accepts 4:5/1:1)",
+            "resolution": "1440x1800 px recommended (FB Feed official); 1080x1350 accepted. Min 120x120 (FB); IG Feed min width 250px.",
+            "duration_min_s": 1,
+            "duration_max_s": 14460,
+            "recommended_duration": "15-30s (hook in first ~3s; performance drops beyond 30s)",
+            "max_file_size": "4 GB",
+            "container": "MP4, MOV, or GIF (no edit lists / special boxes)",
+            "video_codec": "H.264 (H.265/HEVC not in official docs)",
+            "audio_codec": "Stereo AAC, 128 kbps+",
+            "fps": "Fixed frame rate, progressive scan, square pixels (official).",
+            "bitrate": "No official target.",
+            "safe_zones": "No persistent UI overlay ON the video; ad footer (profile, like/comment bar, CTA) renders below/around it. Keep logo/key text off extreme top/bottom edges. ~14% top / ~20% bottom is industry convention, not an official feed figure.",
+            "caption_cta": "CTA button renders in feed UI below the video. Burn in captions. FB Feed text limits: primary 50-150 chars, headline 27 chars, description ~30 chars.",
+            "notes": "Max duration: FB Feed ~241 min (14,460s); IG Feed 60 min (3,600s). 4:5 outperforms 1:1 (more vertical space). Aspect-ratio tolerance 1%."
+          },
+          {
+            "name": "Feed - 1:1 square (FB + IG Feed) — supported fallback",
+            "aspect_ratio": "1:1 (supported but no longer the recommended feed video ratio — 4:5 or 9:16 preferred)",
+            "resolution": "1080x1080 px min (common target); '1440x1440 recommended' is industry convention, not official. Use square pixels.",
+            "duration_min_s": 1,
+            "duration_max_s": 14460,
+            "recommended_duration": "15-30s",
+            "max_file_size": "4 GB",
+            "container": "MP4, MOV, or GIF",
+            "video_codec": "H.264 (H.265/HEVC not in official docs)",
+            "audio_codec": "Stereo AAC, 128 kbps+",
+            "fps": "Fixed frame rate, progressive scan, square pixels (official).",
+            "bitrate": "No official target.",
+            "safe_zones": "Same as 4:5 feed — keep logo/key text clear of top/bottom edges. No official hard percentages for feed.",
+            "caption_cta": "CTA in feed UI below video. Burn in captions. FB Feed primary text 50-150 chars.",
+            "notes": "Cross-placement square fallback (also carousel/Marketplace/in-stream mobile). FB Feed max 241 min; IG Feed max 60 min."
+          },
+          {
+            "name": "In-stream (FB in-stream / mid-roll)",
+            "aspect_ratio": "16:9 or 1:1",
+            "resolution": "Min 1080x1080 (official). 1920x1080 (16:9) recommended landscape target.",
+            "duration_min_s": 5,
+            "duration_max_s": 600,
+            "recommended_duration": "5-15s (brand/message in first ~3s). Official: desktop 5-15s; mobile 5s-10 min. Skippable after 5s so front-load brand in first ~5s.",
+            "max_file_size": "4 GB",
+            "container": "MP4, MOV, or GIF",
+            "video_codec": "H.264 (H.265/HEVC not in official docs)",
+            "audio_codec": "Stereo AAC, 128 kbps+",
+            "fps": "Fixed frame rate, progressive scan, square pixels (official).",
+            "bitrate": "No official target.",
+            "safe_zones": "No persistent overlay during playback. Keep logos/legal text out of extreme bottom where a countdown/skip control and 'Sponsored' label sit (~10% bottom is convention, not official). Center key messaging.",
+            "caption_cta": "Plays with sound ON by default; still burn in captions. CTA/end-card can be baked into last few seconds. Avoid critical text in lowest portion.",
+            "notes": "Duration may vary by objective (official wording). 16:9 primary, 1:1 supported as mobile fallback."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Awareness Video Ad Specs on Facebook Reels — Meta Business (official; 1440x2560, 14/35/6 safe zone)",
+            "url": "https://www.facebook.com/business/ads-guide/update/video/facebook-facebook-reels"
+          },
+          {
+            "title": "Awareness Video Ad Specs on Instagram Reels — Meta Business (official; min width 250px <30s / 500px 30s+)",
+            "url": "https://www.facebook.com/business/ads-guide/update/video/instagram-reels"
+          },
+          {
+            "title": "Awareness Video Ad Specs on Facebook Stories — Meta Business (official; 1s to 2 min, 14% top / 20% bottom)",
+            "url": "https://www.facebook.com/business/ads-guide/update/video/facebook-story"
+          },
+          {
+            "title": "Awareness Video Ad Specs on Facebook In-Stream Video — Meta Business (official; 16:9 or 1:1, min 1080x1080)",
+            "url": "https://www.facebook.com/business/ads-guide/update/video/facebook-instream-video"
+          },
+          {
+            "title": "Engagement Video Ad Specs on Facebook Feed — Meta Business (official; primary 50-150, headline 27)",
+            "url": "https://www.facebook.com/business/ads-guide/update/video/facebook-feed/outcome-engagement"
+          },
+          {
+            "title": "Meta Ads Safe Zones: 2026 Unified Creative Updates — Billo (corroborates March 2026 unified 9:16 zone)",
+            "url": "https://billo.app/blog/meta-ads-safe-zones/"
+          }
+        ]
+      },
+      {
+        "platform": "YouTube (Shorts ads + Video Action / Demand Gen) — 2026 (verified vs Google Ads / YouTube Help, June 2026)",
+        "placements": [
+          {
+            "name": "YouTube Shorts ad (vertical, primary)",
+            "aspect_ratio": "9:16 (best suited for Shorts)",
+            "resolution": "1080x1920 px recommended (1080p Full HD). '720x1280 minimum' is third-party convention, not an official Google figure.",
+            "duration_min_s": 6,
+            "duration_max_s": 180,
+            "recommended_duration": "Under 60s recommended; Google specifically recommends 10-30s vertical for action ads. Only the first 60s plays in the Shorts feed (overlay at ~50s invites finishing on the watch page). The 6-60s 'Shorts' range comes from the general video-specs page; the Shorts ads page states only a 3-min max + '<60s recommended'.",
+            "max_file_size": "Up to 256 GB (Google Ads limit). ~250 MB practical is advisory only.",
+            "container": "MP4 recommended (Fast Start / moov atom front). Also: MPG (MPEG-2/4), WMV, AVI, MOV, FLV, MPEG-1, MPEGPS, 3GPP, WebM, DNxHR, ProRes, CineForm, HEVC. Audio-only (MP3/WAV) NOT accepted.",
+            "video_codec": "H.264 High Profile (progressive, CABAC, 2 B-frames, closed GOP at half frame rate, 4:2:0). HEVC/H.265 also accepted.",
+            "audio_codec": "AAC-LC (also Opus / Eclipsa), 48 kHz, stereo 384 kbps (5.1 = 512 kbps)",
+            "fps": "Encode at source frame rate; common 24, 25, 30, 48, 50, 60 fps. Deinterlace before upload.",
+            "bitrate": "YouTube recommended SDR upload — 1080p: 8 Mbps @ 24-30fps, 12 Mbps @ 48-60fps; 720p: 5 / 7.5 Mbps. (Upload-quality targets, not Ads ingestion requirements.)",
+            "safe_zones": "Google shows safe-zone DIAGRAMS but publishes NO numeric pixel values. Community estimates (advisory): top ~120-180px, bottom ~300-450px, right ~96-150px (like/comment/share/subscribe rail), central safe box ~888-984 x 1500px. Principle holds: reserve top for status, bottom for title/CTA/music ticker, right for engagement rail, keep content center-weighted.",
+            "caption_cta": "Headline max 40 chars; description / long headline max 90 chars. CTA button auto-appears ~3s in for Performance Max / App / Demand Gen, ~10s for Video View / Video Reach. Lead with the hook in first 1-3s; keep captions/CTA clear of bottom UI strip.",
+            "notes": "Horizontal assets serve with blurred bars in the vertical Shorts experience (or use Video Enhancements to auto-generate vertical). Vertical 9:16 recommended for native delivery."
+          },
+          {
+            "name": "Skippable in-stream / Video Action (VAC) — horizontal companion",
+            "aspect_ratio": "16:9 recommended; 1:1 (1080x1080) and 9:16 (1080x1920) also supported (Demand Gen adds 4:5 1080x1350). Supply a 9:16 companion to cover Shorts inventory.",
+            "resolution": "1920x1080 px recommended (1080p HD). '720p minimum' is third-party convention.",
+            "duration_min_s": 10,
+            "duration_max_s": 180,
+            "recommended_duration": "No official max for skippable in-stream ('no limit'); <3 min performs best, 15-30s typical. Video Action requires >=10s (under 10s won't serve on in-stream). Bumper = 6s fixed. Non-skippable = up to 30s (auction) / 60s (reservation). 180 here is the recommended ceiling, not a hard cap.",
+            "max_file_size": "Up to 256 GB (Google Ads limit)",
+            "container": "MP4 (H.264) recommended; MPG, MOV, AVI, WMV, FLV, WebM, 3GPP, MPEGPS, DNxHR, ProRes, CineForm, HEVC also accepted.",
+            "video_codec": "H.264 High Profile (HEVC/H.265 accepted)",
+            "audio_codec": "AAC-LC, 48 kHz, stereo 384 kbps (Opus / Eclipsa also accepted)",
+            "fps": "24, 25, 30, 48, 50, 60 fps (match source)",
+            "bitrate": "1080p SDR: 8 Mbps @ 24-30fps, 12 Mbps @ 48-60fps (YouTube upload recommendation)",
+            "safe_zones": "No official numeric pixel values published. Advisory: keep text/logos within the central ~90% title-safe area; on mobile the skip button is bottom-right and the CTA/headline + companion card render along the bottom — keep critical content out of the lower portion, esp. lower-right.",
+            "caption_cta": "Headline max 40 chars; description max 90 chars (from campaign settings). Skippable after 5s — front-load brand + message in first ~5s. CTA chip character cap not officially published.",
+            "notes": "One Video Action / Demand Gen campaign can serve a single video across in-stream, in-feed AND Shorts. Best practice: supply BOTH 9:16 and 16:9 (optionally 1:1 / 4:5) for native rendering everywhere."
+          }
+        ],
+        "sources": [
+          {
+            "title": "YouTube Shorts ads: Asset specs and best practices — Google Ads Help (answer/16041697)",
+            "url": "https://support.google.com/google-ads/answer/16041697?hl=en"
+          },
+          {
+            "title": "Video ads specs and format requirements — Google Ads Help (answer/17091270)",
+            "url": "https://support.google.com/google-ads/answer/17091270?hl=en"
+          },
+          {
+            "title": "Demand Gen campaign creative: Asset specifications — Google Ads Help (answer/13704860)",
+            "url": "https://support.google.com/google-ads/answer/13704860?hl=en"
+          },
+          {
+            "title": "YouTube recommended upload encoding settings — YouTube Help (answer/1722171)",
+            "url": "https://support.google.com/youtube/answer/1722171?hl=en"
+          },
+          {
+            "title": "Skippable in-stream ads — Google Ads Help (answer/6055025)",
+            "url": "https://support.google.com/google-ads/answer/6055025?hl=en"
+          }
+        ]
+      },
+      {
+        "platform": "TikTok Ads (In-Feed / Spark) — 2026 (verified vs official TikTok Ads Manager help, June 2026)",
+        "placements": [
+          {
+            "name": "In-Feed Ad (Non-Spark) — Vertical 9:16 (primary/recommended)",
+            "aspect_ratio": "9:16 recommended (1:1 and 16:9 also accepted)",
+            "resolution": "Official min vertical 9:16 >= 540x960. Production target 1080x1920 (best-practice, not an official min).",
+            "duration_min_s": 1,
+            "duration_max_s": 600,
+            "recommended_duration": "Advisory, not in official spec: ~9-15s sweet spot with hook in first 3s (older Creative Center guidance was 21-34s). Official article states duration up to 10 minutes, no recommended window.",
+            "max_file_size": "<= 500 MB (official)",
+            "container": ".mp4, .mov, .mpeg, .3gp, .avi (official; MP4/MOV recommended)",
+            "video_codec": "Not mandated by the official article. H.264 is the safe de-facto recommendation.",
+            "audio_codec": "Not mandated by the official article. AAC stereo de-facto; '>=128 kbps' is best-practice.",
+            "fps": "Not mandated by the official article. 30 fps de-facto; 23.976-60 fps commonly accepted.",
+            "bitrate": "Video bitrate >= 516 kbps (official minimum). Higher recommended.",
+            "safe_zones": "Detailed pixel safe zones are NOT official (only the optional profile photo: 98x98px, key element in 66x66px). Third-party estimates on 1080x1920 disagree: top ~130-150px, bottom ~440-484px (larger for ads due to CTA + 'Sponsored'), right ~60-140px (icon stack), left ~44-60px. Keep key visuals/text in a central ~896-960 x 1306-1330px box; verify in TikTok ad preview. Bottom + right are the most overlaid.",
+            "caption_cta": "Non-Spark caption is fixed white uniform font, no clickable links/@/hashtags (official). Display name one line, <=20 Latin chars (10 CJK). Standard system CTA button ('Shop Now', 'Learn More'). Avoid key text in the overlaid bottom region.",
+            "notes": "Confirmed official: ratios, resolution minimums, 500 MB cap, file formats, >=516 kbps bitrate, 600s ceiling, caption rules. Flagged/unverified as official: 1s min duration, recommended window, codec, audio codec, fps, audio bitrate, detailed pixel safe zones."
+          },
+          {
+            "name": "In-Feed Ad (Non-Spark) — Square 1:1 (allowance)",
+            "aspect_ratio": "1:1 (accepted; 9:16 preferred for full-screen real estate)",
+            "resolution": "Min 640x640 (official). Recommended 1080x1080.",
+            "duration_min_s": 1,
+            "duration_max_s": 600,
+            "recommended_duration": "Advisory only — no recommended window in official spec (~9-15s sweet spot).",
+            "max_file_size": "<= 500 MB (official)",
+            "container": ".mp4, .mov, .mpeg, .3gp, .avi (official)",
+            "video_codec": "Not officially mandated. H.264 de-facto.",
+            "audio_codec": "Not officially mandated. AAC stereo de-facto.",
+            "fps": "Not officially mandated. 30 fps de-facto.",
+            "bitrate": ">= 516 kbps video (official min); higher recommended.",
+            "safe_zones": "Same unofficial-estimate caveat as vertical; same UI overlays (bottom caption/CTA, right icon stack). Center subject; keep text out of bottom + right. 9:16 preferred for performance.",
+            "caption_cta": "Same as vertical In-Feed: fixed white uncustomizable caption, no links/@/#; system CTA button; display name 20 Latin / 10 CJK chars.",
+            "notes": "Accepted allowance, not the recommended ratio — lower immersion than full-screen 9:16."
+          },
+          {
+            "name": "In-Feed Ad (Non-Spark) — Horizontal 16:9 (allowance)",
+            "aspect_ratio": "16:9 (accepted but discouraged for native In-Feed)",
+            "resolution": "Min 960x540 (official). Recommended 1920x1080.",
+            "duration_min_s": 1,
+            "duration_max_s": 600,
+            "recommended_duration": "Advisory only — no recommended window in official spec.",
+            "max_file_size": "<= 500 MB (official)",
+            "container": ".mp4, .mov, .mpeg, .3gp, .avi (official)",
+            "video_codec": "Not officially mandated. H.264 de-facto.",
+            "audio_codec": "Not officially mandated. AAC stereo de-facto.",
+            "fps": "Not officially mandated. 30 fps de-facto.",
+            "bitrate": ">= 516 kbps video (official min); higher recommended.",
+            "safe_zones": "Same unofficial-estimate caveat. Horizontal shows pillarboxed/centered with large black bands top/bottom; bottom caption + right CTA/icon UI still overlay. Weakest-performing ratio.",
+            "caption_cta": "Same fixed white caption (no links/@/#) + system CTA button; display name 20 Latin / 10 CJK chars.",
+            "notes": "Best only for repurposing landscape assets; discouraged for native In-Feed."
+          },
+          {
+            "name": "Spark Ads (boosts an existing organic-looking TikTok post)",
+            "aspect_ratio": "No restriction (9:16 in practice since it's native TikTok content)",
+            "resolution": "No restriction (inherits organic video, typically 1080x1920)",
+            "duration_min_s": 1,
+            "duration_max_s": 600,
+            "recommended_duration": "Advisory only — ~9-15s sweet spot. 10-min max on sparkable video (official).",
+            "max_file_size": "No restriction (official); 10-min max sparkable length.",
+            "container": ".mp4 or .mov (official Spark formats); inherits organic post.",
+            "video_codec": "Inherited from organic post — no restriction. H.264 typical.",
+            "audio_codec": "Inherited — no restriction. AAC typical.",
+            "fps": "Inherited — no restriction.",
+            "bitrate": "No restriction — inherits organic post.",
+            "safe_zones": "Same unofficial-estimate caveat as Non-Spark, PLUS the organic caption, real @handle and creator-added stickers/text further tighten the effective safe area. Keep text in a central ~896-960px-wide region; verify in preview.",
+            "caption_cta": "Uses the real organic post's display name + caption; CANNOT be edited in Ads Manager once authorized. Caption may include @mentions, emoji, hashtags, or be blank; max 100 chars; displays up to 4 lines incl. emojis. A system CTA button can be added on top.",
+            "notes": "No technical restrictions on ratio/resolution/file type/duration/bitrate/file size; only hard limits are the 10-min sparkable length and 10,000 Spark-Ads-per-account cap. Highest native feel — preferred for UGC-style direct response."
+          }
+        ],
+        "sources": [
+          {
+            "title": "TikTok Auction In-Feed Ads — TikTok Ads Manager (official; PRIMARY In-Feed source)",
+            "url": "https://ads.tiktok.com/help/article/tiktok-auction-in-feed-ads"
+          },
+          {
+            "title": "About Spark Ads — TikTok Ads Manager (official; PRIMARY Spark source)",
+            "url": "https://ads.tiktok.com/help/article/spark-ads"
+          },
+          {
+            "title": "TikTok safe zones: 2026 guide with practical templates — Zeely (third-party estimates only)",
+            "url": "https://zeely.ai/blog/tiktok-safe-zones/"
+          }
+        ]
+      }
+    ],
+    "veo3": {
+      "summary": "Google Veo 3 / 3.1 (the brief's 'VR3' is a mistranscription of 'Veo 3') is the production text-to-video model line, available via Gemini API, Google AI Studio, Vertex AI, and the Flow app. The atomic unit is an 8-SECOND clip at 24fps with NATIVE single-pass audio (synchronized lip-synced dialogue, SFX, ambient noise, and musical score at 48kHz stereo, all driven entirely by the text prompt). Max single-clip length is 8s (selectable 4/6/8s; 8s is required to unlock 1080p, 4K, reference images, and extension). Resolutions: 720p default, 1080p, native 4K (4K added Jan 2026; 1080p/4K need an 8s clip). Aspect ratios: 16:9 (default) and 9:16 ONLY — there is NO native 1:1, so square placements must be cropped from a 16:9 or 9:16 render. Prompt as a single dense descriptive paragraph (or timestamped block) covering Subject, Context/Setting, Action, Style, Camera framing & motion, Composition, Focus/lens, Ambiance/lighting, and Audio; dialogue goes in quotes, SFX labeled 'SFX:', ambient described explicitly. For ads >8s you STITCH clips: a 15s ad ~= 2 clips, a 30s ad ~= 4 clips. Two official continuity mechanisms: (1) Scene Extension continues a prior clip (~7s added per extension, up to ~20x, but capped at 720p); (2) 'Ingredients to Video' supplies up to 3 reference images (character/object/scene-style) to keep the same look across separately generated shots. Within one 8s clip, timestamp prompting ([00:00-00:02]…[00:02-00:04]…) choreographs several mini-shots with their own camera moves and SFX. Key limits: hard 8s cap, no native square, extension limited to 720p, unreliable on-screen text rendering (overlay brand text/logos in post), imperfect cross-shot consistency, SynthID watermark on all output, 2-day server storage (download promptly), 11s-6min latency, person-generation regionally restricted (EU/UK/CH/MENA), and audio cannot carry into an extension unless present in the final ~1s of the prior clip.",
+      "clip_length": "Maximum 8 seconds per single generation (selectable 4, 6, or 8s). 8s is required to unlock 1080p, 4K, reference images, and extension. Longer ads = stitch clips or use Scene Extension (~7s added per extension, up to ~20x = a minute+, but extension capped at 720p). Frame rate 24fps.",
+      "resolution": "720p (default), 1080p, and native 4K (4K added Jan 2026, reconstructs texture rather than upscaling). 1080p and 4K require an 8-second clip. Scene Extension is limited to 720p.",
+      "aspect_ratios": [
+        "16:9 (landscape, default)",
+        "9:16 (portrait/vertical)"
+      ],
+      "audio_support": "Native single-pass audio is the core feature: synchronized DIALOGUE with accurate lip-sync, SOUND EFFECTS, AMBIENT/environmental noise, and MUSICAL SCORE, all generated with the video at 48kHz stereo and controlled entirely via the text prompt (dialogue in quotes, SFX labeled 'SFX:', ambient soundscape described, music cue requested). Caveats: the 'add/remove object' edit path falls back to Veo 2 and produces NO audio; voice cannot carry into an extension unless present in the final ~1s of the prior clip.",
+      "prompting_best_practices": [
+        "Write one dense, descriptive paragraph (or timestamped block), not a keyword list — Google's rule: 'the more detail you add, the more control you'll have.'",
+        "Cover DeepMind's components in order: Subject, Context/Setting, Action, Style, Camera framing & motion, Composition, Focus/lens, Ambiance/lighting, and Audio.",
+        "Specify camera language explicitly: shot type (wide / medium / close-up / extreme close-up / two-shot, low/high angle) and motion (dolly, tracking, crane, aerial, slow pan, POV).",
+        "Specify lens and focus for a cinematic look: shallow depth of field, macro, wide-angle, deep focus; add 'portrait' to sharpen facial detail.",
+        "Put spoken dialogue in quotation marks for lip-synced speech (e.g. \"This must be the key,\" she said); or give characters a topic to improvise.",
+        "Call out sound design directly: label SFX ('SFX: tires screeching'), describe ambient noise, request a music cue when you want a score.",
+        "For multi-beat action inside one 8s clip use timestamp prompting: [00:00-00:02] shot A … [00:02-00:04] shot B …, each with its own framing, action, and SFX.",
+        "Describe characters with specific physical detail (hair, freckles, wardrobe, age) and REUSE the exact same description across every shot of the campaign for consistency.",
+        "Set lighting/color/ambiance deliberately (warm tones, neon night, film-noir) to lock the brand mood across shots — match it to the Agent-4 color_scheme.",
+        "Budget iteration time: latency is 11s-6min, so expect several regenerations per beat before a clean stitch."
+      ],
+      "limitations": [
+        "Hard 8-second cap per single generation — anything longer must be stitched or scene-extended.",
+        "No native 1:1 / square output; only 16:9 and 9:16 — square placements require cropping (plan safe margins so cropping doesn't cut subjects).",
+        "Scene Extension is limited to 720p, so a minute-long extended sequence can't stay at 1080p/4K.",
+        "Cross-shot consistency of characters/sets is imperfect; up to 3 reference images mitigate but don't guarantee identical faces/wardrobe/lighting across separate generations.",
+        "On-screen text rendering (logos/words) is unreliable — overlay all brand text/headline/CTA/legal copy in post, not via Veo.",
+        "All output carries SynthID watermarking.",
+        "Generated videos are stored on Google's servers only 2 days — download promptly.",
+        "Person generation is regionally restricted (EU, UK, Switzerland, MENA).",
+        "Latency per clip ranges ~11s-6min, slowing iterative storyboarding.",
+        "Audio/voice can't be extended into a new clip unless present in the final ~1s of the prior clip; the add/remove-object edit falls back to Veo 2 and yields no audio.",
+        "Complex multi-step motion and precise physics can drift — choreograph with timestamp prompting and keep each beat simple."
+      ],
+      "storyboard_implications": [
+        "Design every ad as a series of 8-SECOND beats — that is the atomic unit. A 15s ad ~= 2 clips (8s + ~7s), a 30s ad ~= 4 clips of ~8s each. Plan shot boundaries on 8s lines.",
+        "Write a self-contained Veo prompt per shot/clip — the model does NOT remember prior shots, so each prompt must restate character, setting, style, and lighting.",
+        "Specify audio inside every shot's prompt (dialogue in quotes, 'SFX:' tags, ambient bed, optional music cue) — audio is per-clip and prompt-driven, so a silent/wrong-SFX beat must be re-prompted on that beat.",
+        "Lock character + set identity by generating 3 reference images once and feeding them as 'Ingredients to Video' into every shot's prompt; reuse the Agent-4 product/scene description verbatim across shots.",
+        "Make cuts feel continuous with Scene Extension (continue the action from the last clip) for same-location action, or first/last-frame interpolation to bridge two key frames — but remember extension drops you to 720p.",
+        "For a single dramatic 8s hero shot with several internal moves, use timestamp prompting instead of stitching.",
+        "Render 9:16 for Reels/Shorts/TikTok and 16:9 for YouTube in-stream/feed; produce 1:1 by center-cropping a 9:16 or 16:9 master (Veo has no native square) — keep subjects/text within a central crop-safe margin.",
+        "Keep ALL brand logos / headline / subhead / CTA / legal copy as post-production overlays (e.g. Agent 5's typography layer), never Veo-rendered text — this is also why the storyboard separates 'veo_prompt' (visual+audio) from 'on_screen_text'.",
+        "Carry continuity audio across cuts only if the carried voice is present in the final second of the outgoing clip; otherwise re-establish audio fresh and smooth in the edit.",
+        "Budget iteration: with 11s-6min latency and imperfect consistency, expect multiple regenerations per beat, and download masters within 2 days before server deletion."
+      ],
+      "resolution_note": "Generate hero/cut shots at 1080p or 4K (requires 8s clips); only fall to 720p when using Scene Extension. Render 9:16 master then crop for any 1:1/4:5/16:9 placement.",
+      "sources": [
+        {
+          "title": "Generate videos with Veo 3.1 in Gemini API — Google AI for Developers",
+          "url": "https://ai.google.dev/gemini-api/docs/video"
+        },
+        {
+          "title": "Introducing Veo 3.1 and new creative capabilities in the Gemini API — Google Developers Blog",
+          "url": "https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/"
+        },
+        {
+          "title": "How to create effective prompts with Veo 3 — Google DeepMind (prompt guide)",
+          "url": "https://deepmind.google/models/veo/prompt-guide/"
+        },
+        {
+          "title": "Ultimate prompting guide for Veo 3.1 — Google Cloud Blog",
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1"
+        },
+        {
+          "title": "Veo 3.1 | Gemini API model reference — Google AI for Developers",
+          "url": "https://ai.google.dev/gemini-api/docs/models/veo-3.1-generate-preview"
+        }
+      ]
+    },
+    "storyboard_fields": [
+      "shot_no — integer ordinal of the shot in the sequence (1, 2, 3…)",
+      "clip_id — which Veo 8s generation this shot belongs to (e.g. 'clip_1'); multiple shots can share one clip via timestamp prompting",
+      "beat_role — narrative function: hook | problem | agitate | solution/demo | proof | cta (or list-item / before / after / bridge depending on arc)",
+      "start_s / end_s — shot timecode within the ad (e.g. 0.0-2.5)",
+      "duration_s — shot length in seconds (sum of shots in a clip must be <=8s; whole ad sized to platform target)",
+      "visual — plain-language description of what is on screen (subject, action, setting) for human review",
+      "veo_prompt — the production-ready Veo 3 prompt: single dense paragraph (or timestamped [00:00-00:02]… block) covering Subject, Context/Setting, Action, Style, Camera framing & motion, Composition, Focus/lens, Ambiance/lighting, and Audio. Restates character/set/style every shot. Excludes on-screen brand text.",
+      "camera — shot type + movement (e.g. 'close-up, slow push-in'; 'medium, handheld'; 'over-the-shoulder, static') — rotate every 5-8s",
+      "on_screen_text — burned-in caption / headline / subhead text to OVERLAY in post (never Veo-rendered); 4-6 words/line, high-contrast, inside the safe zone",
+      "text_position — where the overlay sits within the 900x1400 / central safe zone (e.g. 'upper-center', 'center', away from bottom 35% and right rail)",
+      "voiceover — spoken line for this shot (put inside the Veo prompt in quotes for lip-sync; also drives the caption); ~10-14 words for the hook shot",
+      "sfx_music — sound effects (label 'SFX:'), ambient bed, and music/trending-audio cue for this beat (request in Veo prompt; swap trending track in post)",
+      "transition — how it cuts to the next shot (hard cut / match cut / whip pan / scene-extension continue / loop-back to shot 1)",
+      "reference_images — which of the up-to-3 'Ingredients to Video' refs (character / product / scene-style) to feed this shot for consistency",
+      "aspect_ratio — 9:16 master (16:9 only for YouTube in-stream companion); note crop-safe margins for 1:1/4:5 derivatives",
+      "resolution — target render (1080p or 4K for hero/cut shots; 720p only if using Scene Extension)",
+      "pattern_interrupt — the deliberate interrupt at this beat (angle change / b-roll cut / zoom-punch / SFX / music drop / text pop) to sustain retention",
+      "platform_variant — any per-platform tweak for this shot (e.g. TikTok faster cut, Shorts satisfying final frame, Reels save-prompt)",
+      "safe_zone_check — confirmation that faces/text/CTA sit inside the central safe zone and clear of platform UI bands",
+      "notes — director's notes, fatigue/A-B tag (which hook variation), and iteration reminders"
+    ],
+    "storyboard_arc_recommendation": "Map an Agent-4 STATIC concept (audience_callout badge + headline hook + money subhead + offer + brand colors/typography) into a vertical 9:16 short-form VIDEO using the universal HOOK -> BODY -> CTA spine, with the body defaulting to PAS (or BAB for transformation/income outcomes). Build it on Veo 3's 8-SECOND beat grid and keep ALL Agent-4 typography as post-production overlays (Veo can't render text reliably). The four Agent-4 fields map 1:1 onto the spine: audience_callout -> the self-identifying HOOK; headline hook -> the verbal+text HOOK line; subhead -> the money/value payoff in the SOLUTION/PROOF beat; offer + cta -> the CTA beat.\\n\\nCANONICAL 15s ARC (2 Veo clips, ~8s + ~7s) — best for TikTok in-feed and Reels viral lane:\\n- 0.0-2.5s HOOK (clip 1): cold-open mid-action with a disruptive first frame (sound-off thumbnail). Burn the audience_callout as a self-identifying overlay ('Restaurant Owner?') and deliver the headline hook as the spoken+text line layered over a Contrarian/Mistake/List-tease framing. Camera: tight close-up or 0.3s flash of the end result then hard cut. Land by 2.5s.\\n- 2.5-6s PROBLEM/AGITATE (clip 1, timestamp-prompted second beat): name the pain in the customer's words, then agitate the real cost for ~3s without insulting. New camera angle, pattern interrupt.\\n- 6-12s SOLUTION + PROOF (clip 2): reveal the product/brand in use; drop the money subhead as a bold center overlay and show one quantified result or social-proof beat. Brand colors/typography from Agent-4 applied in the overlay layer. Cut/angle change here.\\n- 12-15s CTA (clip 2 tail): reinforce offer + cta across voiceover + on-screen text + a visual tap cue; pre-empt one objection from the offer ('cancel anytime' / guarantee / 'takes 30 seconds'). End on a frame that loops back to the hook for rewatch.\\n\\nCANONICAL 30s ARC (4 Veo clips of ~8s) — best for founder/UGC explainer, Shorts/Reels value lane, higher consideration: 0-3s HOOK (audience_callout + headline) / 3-8s PROBLEM / 8-16s AGITATE + STORY / 16-26s SOLUTION + DEMO + money subhead + PROOF / 26-30s CTA (offer). One reference-image set (character/product/scene-style) reused across all 4 clips for consistency; deliberate interrupt at the 25-35s drift point.\\n\\nPER-PLATFORM TUNING:\\n- TikTok (In-Feed/Spark, 9:16): aim 9-15s (or a 24-38s completion lane), cut every 2-3s, lead with native/UGC founder-to-camera, hook in first 3s, trending audio swapped in post, engineer a seamless loop (rewatch is king). Keep text in the central ~896-960px box, clear of bottom + right UI. Prefer a Spark-style organic look.\\n- YouTube Shorts (9:16): 10-30s, ensure a SATISFYING final frame and a loop (Shorts rewards completion-to-last-frame + staying in feed). Headline overlay <=40 chars feel; CTA chip auto-appears ~3s in, so don't fight it with a baked CTA in the same spot.\\n- Meta Reels (9:16): 15-30s (or 7-15s reach lane), cut every 3-5s, add a save-worthy payoff + 'save this' prompt (saves/DM-sends per reach can outweigh raw retention). Keep CTA/text out of bottom 35% + sides 6%.\\n\\nPRODUCTION NOTES: render the 9:16 master at 1080p/4K (8s clips) and center-crop for any 1:1/4:5 (Meta feed) or 16:9 (YouTube in-stream) derivative, keeping subjects within crop-safe margins. Generate 5-10 hook variants by swapping only the first 3s (the hook_a/b/c lines) against a fixed body for A/B testing on 3-5 day cycles. Each shot carries its own self-contained Veo prompt with per-shot audio; overlay the Agent-4 headline/subhead/CTA/logo as the typography layer on top of the rendered, captioned, looped cut.",
+    "sources": [
+      {
+        "title": "Hook, Body, CTA Video Ad Framework (2026 Guide) — Sovran",
+        "url": "https://sovran.ai/blog/hook-body-cta-video-editor-the-ultimate-guide-to-creating-high-converting-video-ads-in-2025"
+      },
+      {
+        "title": "8 High-Converting Ad Script Examples for 2026 — Sovran",
+        "url": "https://sovran.ai/blog/ad-script-examples"
+      },
+      {
+        "title": "Ad Creative Benchmarks 2026: CTR, Hook Rate & More — Benly",
+        "url": "https://benly.ai/learn/ad-creative/ad-creative-benchmarks-2026"
+      },
+      {
+        "title": "UGC Advertising in 2026: Winning Ads on Meta & TikTok — Reloop",
+        "url": "https://reloop.so/blog/article/ugc-advertising/"
+      },
+      {
+        "title": "TikTok Ad Creative Best Practices for 2026 — Stackmatix",
+        "url": "https://www.stackmatix.com/blog/tiktok-ad-creative-best-practices-2026"
+      },
+      {
+        "title": "TikTok Retention Rate Benchmarks 2026 by Video Length — Retensis",
+        "url": "https://retensis.com/blog/tiktok-retention-rate-benchmarks-2026"
+      },
+      {
+        "title": "YouTube Shorts Retention Rate (2026): What Works — Shortimize",
+        "url": "https://www.shortimize.com/blog/youtube-shorts-retention-rate"
+      },
+      {
+        "title": "Ideal Video Length for TikTok, Reels & YouTube Shorts 2026 — Joyspace",
+        "url": "https://joyspace.ai/ideal-video-length-social-platform-2026"
+      },
+      {
+        "title": "Pattern Interrupts in TikTok 2026 — Edicion Video Pro",
+        "url": "https://edicionvideopro.com/en/editing-for-platforms-video-marketing/pattern-interrupts-tiktok-retention-guide/"
+      },
+      {
+        "title": "Safe Zone Hub 2026: Reels, TikTok, Shorts Dimensions — Kreatli",
+        "url": "https://kreatli.com/guides/safe-zone-guide"
+      },
+      {
+        "title": "How to create effective prompts with Veo 3 — Google DeepMind",
+        "url": "https://deepmind.google/models/veo/prompt-guide/"
+      },
+      {
+        "title": "Generate videos with Veo 3.1 in Gemini API — Google AI for Developers",
+        "url": "https://ai.google.dev/gemini-api/docs/video"
+      },
+      {
+        "title": "Awareness Video Ad Specs on Facebook Reels — Meta Business (official)",
+        "url": "https://www.facebook.com/business/ads-guide/update/video/facebook-facebook-reels"
+      },
+      {
+        "title": "YouTube Shorts ads: Asset specs and best practices — Google Ads Help",
+        "url": "https://support.google.com/google-ads/answer/16041697?hl=en"
+      },
+      {
+        "title": "TikTok Auction In-Feed Ads — TikTok Ads Manager (official)",
+        "url": "https://ads.tiktok.com/help/article/tiktok-auction-in-feed-ads"
+      }
+    ]
+  },
+  "raw": {
+    "scripts": {
+      "summary": "In 2026 short-form video ads (Meta/IG Reels, FB, TikTok, YouTube Shorts) live or die in the first 1-3 seconds. The dominant winning architecture is a modular Hook -> Body -> CTA spine, with the body filled by a proven arc (PAS, BAB, Hook-Story-Offer, DR formula, listicle, testimonial/UGC mashup, or founder-to-camera). Hook gets ~10-15% of runtime (1-3s), body ~70-80%, CTA ~10-15% (last 3-5s). Concrete benchmarks: a strong hook (3s view) rate to aim for is ~28% median / 45% top on Meta and ~33% / 55% on TikTok; below ~20% hook rate you are burning CPMs. UGC-style ads beat polished on hook rate (34% vs 26%) and CTR (1.88% vs 1.41%) on Meta for direct response, while polished still wins brand recall and high-ticket trust categories — best practice is a ~60/40 UGC-to-polished mix. Design captions-first / sound-off (up to 85% of FB video is watched muted) but sweeten with sound-on. Cut/change something visually every 2-3s (TikTok) to 3-5s (Reels); using 3+ native editing features yields ~84% more watch time. Creative fatigues fast (effectiveness halves ~72h on TikTok); refresh on a 3-5 day test cycle, test 5-10 hooks per concept and 3-5 variants per angle. Best 2026 hooks: Contrarian Claim, Mistake/Warning, and List Tease, layered as visual + verbal + on-screen text simultaneously.",
+      "findings": [
+        "TIMING SPLIT (the universal spine): Hook = first 1-3s (~10-15% of runtime, roughly 10-14 spoken words); Body = 70-80% of runtime; CTA/Payoff = last 3-5s (~10-20%). Sovran's by-duration templates: 6s ad = 0-2s hook / 2-5s proof / 5-6s CTA; 15s = 0-3s hook / 4-10s problem+proof / 11-15s CTA; 30s = 0-3s hook / 4-12s problem / 13-24s demo/proof / 25-30s CTA.",
+        "THE 1.7-SECOND RULE: Mobile users scroll past in ~1.7s if nothing grabs them; up to 65% of viewers abandon a video ad within 3s without a strong hook; 70%+ of viral videos have a strong hook in the first 3s; 90% of TikTok ad-recall impact lands in the first 6s. Watching the first 3s makes a viewer ~50% more likely to remember the brand.",
+        "HOOK RATE BENCHMARKS (3s view rate), 2026: Meta 28% median / 45% top 10%; TikTok 33% median / 55% top 10%; YouTube 22% median / 38% top 10%. Treat sub-20% hook rate as a fail. A high-impact visual in the first frame can cut CPA up to 40%.",
+        "CTR BENCHMARKS 2026: Meta video 1.62% median / 3.10% top; TikTok in-feed 0.84% median / 1.80% top; YouTube in-stream 0.42% median / 0.96% top. Completion: Meta 18%/32%, TikTok 24%/42%, YouTube 31%/56%.",
+        "THE THREE BEST-CONVERTING HOOK ARCHETYPES IN 2026: (1) Contrarian Claim ('Stop buying X — do this instead', '[common belief] is a total lie'); (2) Mistake/Warning ('The #1 mistake new [X] make', 'You're doing this wrong'); (3) List Tease ('3 reasons X beats Y', '7 things no one tells you about X'). They stack curiosity + self-relevance + a clear promise in one sentence.",
+        "HOOK MUST BE LAYERED across 3 channels simultaneously: VISUAL hook (motion, facial reaction, fast cut, prop, disruptive first frame), VERBAL hook (bold spoken line in first 3s), and TEXT hook (burned-in on-screen caption restating the claim). Best UGC creators combine 2+ hook types (e.g. thought-provoking line + trending sound + scroll-stopping visual).",
+        "PROVEN BODY ARCS: PAS (Problem -> Agitate -> Solution) is the recommended default; BAB (Before -> After -> Bridge) delivers resolution upfront so it hooks fast; Hook-Story-Offer for narrative/founder ads; DR formula (Hook -> Problem -> Solution -> Value Prop -> Social Proof -> CTA); plus Testimonial/UGC mashup, Listicle, FOMO/urgency, Transformation/benefit, Curiosity-gap/open-loop, and Social-proof/authority.",
+        "AGITATION GUARDRAIL: Amplify the pain for 3-5s before the solution, but don't insult the viewer. 'You're wasting money because nobody told you about this' (keeps them on your side) beats 'You're wasting money because you don't know better' (makes them defensive).",
+        "PACING / CUT FREQUENCY: change something visually every 2-3s on TikTok, every 3-5s on Reels; never let a speech segment run >8s without a visual change. Videos using 3+ native editing features get ~84% more watch time and 2.1x more conversions (TikTok). The algorithm rewards retention rate, not raw watch time.",
+        "IDEAL LENGTH: Meta/IG 15-30s for conversion (best CTR ~1.72%); TikTok 6-15s optimal (~0.96% CTR); ads over 60s show steep CTR decline. Reels can go even shorter (7-15s) with Hook-Value-CTA or BAB.",
+        "UGC vs POLISHED: UGC wins direct-response on Meta — hook rate 34% vs 26% (+31%), CTR 1.88% vs 1.41% (+33%), up to ~29% higher conversions and ~64% CTR lift in some analyses. Polished wins brand recall (62% vs 44%) and high-ticket (>$200) / high-trust categories (supplements, fintech). Optimal blend ~60/40 UGC-to-polished, which beats either-alone by 18-25% on blended ROAS.",
+        "SOUND-ON vs CAPTIONS-FIRST: up to 85% of Facebook video is watched muted; IG/Reels users skew sound-on. Design for BOTH — burn in captions + key headline/offer/proof as text overlay so the ad lands on mute, then layer voiceover/trending audio to lift engagement when sound is on. Never outsource comprehension to audio.",
+        "CTA TECHNIQUES: formula = action verb + tangible outcome + low-commitment timeframe ('Download and learn a language in 5 minutes today'). Reinforce CTA across 3 channels (voiceover + on-screen text + visual cue like a finger tapping the button). Pre-empt micro-objections ('No credit card required', 'Cancel anytime', 'Takes 30 seconds'). 2026 platform-specific: comment-keyword CTAs drive ~1.5-2.2x more comments; 'save' CTAs lift Reels reach over 7-14 days; on Shorts, 'link in bio' wording beats 'link in comments'.",
+        "FOUNDER-TO-CAMERA is the format that 'refuses to die' in 2026 — a real person (ideally the founder) talking to camera, no logo, no color grade, native-looking. Wins on specificity: address ONE specific customer objection/problem in the first 3s. Even a phone selfie converts better than most studio creative.",
+        "CREATIVE FATIGUE / VELOCITY: TikTok creative loses ~50% effectiveness after ~72h (down from ~120h in 2024). Run 3-5 day test cycles; queue the next variant before the current fatigues. Test 5-10 hook variations per concept and 3-5 variants per angle, each tagged by hook type/format/proof/audience. Fatigue signals vs 7-day baseline: CTR drop >=15%, CPM rise >=10%, hook-rate drop >=20%, frequency >3.5 on prospecting, rising negative feedback. Early fix = swap the first 3s / change the hook before overhauling the concept.",
+        "MODULAR TESTING PRINCIPLE: build hook, body, social proof, and CTA as isolated, swappable variables (not full rewrites) so you can A/B the hook against a fixed body. If a skim-reader can't see hook, body and CTA distinctly, it's too muddy to shoot or test."
+      ],
+      "details_md": "## The 2026 short-form video ad operating system\n\n### 1. The universal spine: Hook -> Body -> CTA\nEvery high-performing short-form ad is a **Hook -> Body -> CTA/Payoff** sandwich. The body is where you drop in one of the proven arcs below. Time budget:\n\n| Segment | Share of runtime | Duration (15-30s ad) | Job |\n|---|---|---|---|\n| Hook | ~10-15% | 1-3s | Stop the scroll |\n| Body | ~70-80% | bulk | Problem, proof, demo, story |\n| CTA/Payoff | ~10-20% | last 3-5s | Tell them exactly what to do |\n\nBy-duration scripts (Sovran):\n- **6s** (retargeting/reminder): 0-2s hook / 2-5s proof or payoff / 5-6s CTA\n- **15s** (Meta+TikTok acquisition): 0-3s hook / 4-10s problem+proof / 11-15s CTA\n- **30s** (founder/UGC explainer, higher consideration): 0-3s hook / 4-12s problem / 13-24s demo or proof / 25-30s CTA\n\n### 2. The first 1.7 seconds decide everything\n- Users scroll past in ~1.7s if unhooked; ~65% abandon within 3s without a hook.\n- Aim for hook rates above the median: **Meta 28% / TikTok 33%**; below ~20% you're paying premium CPMs for impressions that never convert.\n- Put the product/brand cue in-frame within the first 2-3s; a strong first-frame visual can cut CPA up to 40%.\n\n### 3. Layer the hook across 3 channels at once\nA great hook hits **visual + verbal + text simultaneously**:\n- **Visual**: disruptive first frame, motion, facial reaction, fast cut, prop reveal.\n- **Verbal**: one bold spoken line (10-14 words) in the first 3s.\n- **Text**: burned-in on-screen caption restating the claim (works on mute).\n\nThe three most consistently viral hook archetypes in 2026:\n1. **Contrarian Claim** — \"Stop buying X. Do this instead.\" / \"[Common belief] is a total lie.\"\n2. **Mistake/Warning** — \"The #1 mistake new [X] make.\" / \"You're doing this wrong.\"\n3. **List Tease** — \"3 reasons X beats Y.\" / \"7 things no one tells you about X.\"\n\nOther reliable hook families (with templates): Problem/Pain (\"If you're still dealing with X, watch this\"), Question (\"Is [product] really worth it?\"), Testimonial/Discovery (\"I thought this'd be a waste of money… I was wrong\"), Comparison (\"Still using X? Here's why I switched\"), Social proof/trend (\"TikTok made me buy it\"), Honest review (\"An honest review after 30 days\"), Emotional/relatable (\"This is embarrassing to admit, but…\").\n\n### 4. The proven body arcs\nPick the arc that fits the offer; **default to PAS** because most products solve a problem and problem-first hooks engage best.\n\n- **PAS — Problem -> Agitate -> Solution.** Name the pain in the customer's words, amplify the real cost for 3-5s, present the product as the obvious fix. *Guardrail:* agitate without insulting (\"nobody told you about this,\" not \"you don't know better\").\n- **BAB — Before -> After -> Bridge.** Lead with the dream \"after\" state to hook instantly, then position the product as the bridge. Great for fast social hooks.\n- **Hook-Story-Offer.** Surprising/emotional hook -> empathetic credible story -> irresistible, urgency-based offer. Best for founder/narrative ads.\n- **DR formula** — Hook -> Problem -> Solution -> Value Prop -> Social Proof -> CTA.\n- **Testimonial/UGC mashup.** Weave multiple customer clips by pain point + quantified result.\n- **Listicle.** \"3 reasons…/7 things…\"; reveal the payoff ~2/3 through to hold viewers.\n- **FOMO/Urgency, Transformation/Benefit, Curiosity-gap/Open-loop, Social-proof/Authority** as alternates.\n- **Founder-to-camera.** The format that \"refuses to die\" in 2026 — real person, no logo, no grade, native; wins on specificity (one objection in the first 3s).\n\n### 5. Pacing, sound, and captions\n- **Cut frequency:** change something visually every **2-3s on TikTok, 3-5s on Reels**; no speech segment longer than 8s without a visual change. 3+ native editing features = ~84% more watch time, 2.1x conversions (TikTok). Algorithm rewards retention *rate*, not total watch time.\n- **Captions-first / sound-off by default:** up to 85% of FB video is watched muted. Burn in captions + headline/offer/proof so the ad lands silent; add voiceover/trending audio to lift sound-on viewers. Never outsource comprehension to audio.\n\n### 6. CTA techniques\n- Formula: **action verb + tangible outcome + low-commitment timeframe** (\"Download and learn a language in 5 minutes today\").\n- Reinforce across **voiceover + on-screen text + a visual cue** (finger tapping button).\n- Kill micro-objections inline: \"No credit card required,\" \"Cancel anytime,\" \"Takes 30 seconds.\"\n- 2026 platform nuances: comment-keyword CTAs ~1.5-2.2x more comments; \"save\" CTAs lift Reels reach over 7-14 days; \"link in bio\" beats \"link in comments\" on Shorts.\n\n### 7. UGC vs polished\n- **UGC wins direct response on Meta:** hook 34% vs 26%, CTR 1.88% vs 1.41%, up to ~29% higher conversions.\n- **Polished wins** brand recall (62% vs 44%) and high-ticket (>$200) / high-trust categories.\n- **Best practice:** ~60/40 UGC-to-polished mix; beats either-alone by 18-25% blended ROAS.\n\n### 8. Volume, testing, and fatigue (the part most teams get wrong)\n- TikTok creative loses ~50% effectiveness after ~72h (was ~120h in 2024) — refresh is constant.\n- Run **3-5 day test cycles**; queue the next variant before the current fatigues.\n- Test **5-10 hooks per concept** and **3-5 variants per angle**, tagged by hook type/format/proof/audience.\n- Build hook/body/proof/CTA as **isolated swappable modules** so you A/B the hook against a fixed body.\n- Fatigue tripwires vs 7-day baseline: CTR drop ≥15%, CPM rise ≥10%, hook-rate drop ≥20%, frequency >3.5 on prospecting, rising negative feedback. First fix: swap the first 3s before overhauling the concept.\n\n### Quick-start template (15s UGC, PAS)\n- **0-3s Hook (visual+verbal+text):** \"The #1 mistake people make with [X]…\" (close-up reaction, big caption).\n- **4-7s Problem:** name the pain in their words.\n- **7-10s Agitate:** the real cost (time/money/stress) — kindly.\n- **10-13s Solution + proof:** product in use + one quantified result/social proof.\n- **13-15s CTA:** \"Tap below and [outcome] today — takes 30 seconds, cancel anytime.\"",
+      "frameworks": [
+        {
+          "name": "Hook -> Body -> CTA (the universal spine)",
+          "structure": "Hook 1-3s (~10-15% runtime) | Body 70-80% | CTA/Payoff last 3-5s (~10-20%). The body is filled by one of the arcs below.",
+          "best_for": "Every platform; the default container for all short-form ads. Build the 4 modules as swappable A/B variables.",
+          "example": "30s ad: 0-3s hook / 4-12s problem / 13-24s demo+proof / 25-30s CTA."
+        },
+        {
+          "name": "PAS — Problem -> Agitate -> Solution",
+          "structure": "Problem (name pain in customer's words) -> Agitate 3-5s (real cost: time/money/stress, without insulting) -> Solution (product as obvious fix) -> CTA.",
+          "best_for": "The recommended 2026 DEFAULT — problem-first hooks get the highest engagement; works for almost any problem-solving product.",
+          "example": "Hook 'Your team communicates in chaos' -> agitate the wasted hours/lost revenue -> Monday.com as the fix -> CTA."
+        },
+        {
+          "name": "BAB — Before -> After -> Bridge",
+          "structure": "Before (current pain state) -> After (dream outcome, shown UPFRONT to hook) -> Bridge (product connects the two) -> CTA.",
+          "best_for": "Fast social hooks where you want resolution upfront; transformation/wellness/ecom.",
+          "example": "'Before: 3 hrs sleep, groggy all day. After: waking up actually rested. Bridge: the supplement that makes the difference.'"
+        },
+        {
+          "name": "Hook-Story-Offer",
+          "structure": "Hook (surprising/emotional opener) -> Story (empathetic, credible narrative that builds trust) -> Offer (high-value, urgency-based CTA).",
+          "best_for": "Founder ads, narrative UGC, higher-consideration or info products.",
+          "example": "Founder: 'I almost shut the company down…' -> the struggle + turnaround story -> 'Get it 50% off before midnight.'"
+        },
+        {
+          "name": "Direct Response (DR) formula",
+          "structure": "Hook -> Problem -> Solution -> Value Prop -> Social Proof -> CTA.",
+          "best_for": "Performance/acquisition campaigns needing every persuasion beat in one ad.",
+          "example": "Hook objection -> name problem -> product -> why it's better -> '10,000+ happy customers' -> 'Get started free.'"
+        },
+        {
+          "name": "Founder-to-camera",
+          "structure": "Real person (founder) speaks to camera, no logo/grade. First 3s = ONE specific customer objection or problem; then candid demo/answer; then CTA.",
+          "best_for": "Native-looking trust plays in 2026; the format that 'refuses to die.' Even a phone selfie outconverts most studio creative.",
+          "example": "'If you think [product] is too expensive, watch this…' -> founder breaks down the math -> 'Try it risk-free.'"
+        },
+        {
+          "name": "Testimonial / UGC mashup",
+          "structure": "Stitch multiple real customer clips into one narrative, organized by pain point + quantified result; close on a unified CTA.",
+          "best_for": "Social proof at scale; supplements, apps, ecom with many reviews.",
+          "example": "HelloFresh-style montage of different customers each showing a recipe/result, then 'Get 50% off your first box.'"
+        },
+        {
+          "name": "Listicle / numbered tease",
+          "structure": "Hook = number promise ('3 reasons…/7 things…') -> rapid-fire items with a visual cut per item -> reveal the key payoff ~2/3 in -> CTA.",
+          "best_for": "Education-led TikTok/Shorts; high hold rate via open loop.",
+          "example": "'3 reasons this beats [competitor]…' counts down with on-screen numbers and B-roll per point."
+        }
+      ],
+      "dos": [
+        "Layer the hook across visual + verbal + on-screen text in the first 1-3s, and lead with a Contrarian Claim, Mistake/Warning, or List Tease",
+        "Burn in captions and the key headline/offer/proof so the ad fully lands on mute (assume sound-off), then add voiceover/trending audio for sound-on lift",
+        "Cut or change something visually every 2-3s (TikTok) / 3-5s (Reels); use 3+ native editing features",
+        "Default to PAS for the body; agitate the pain for 3-5s before revealing the solution",
+        "Make the CTA = action verb + tangible outcome + low-commitment timeframe, reinforced by text + voiceover + a visual tap cue, and pre-empt objections ('no card required', 'cancel anytime')",
+        "Run a 60/40 UGC-to-polished mix; use UGC/founder-to-camera for direct response, polished for brand recall and high-ticket trust categories",
+        "Test 5-10 hooks per concept and 3-5 variants per angle on 3-5 day cycles; build hook/body/proof/CTA as isolated swappable modules",
+        "Keep ads 15-30s on Meta, 6-15s on TikTok; never exceed 60s",
+        "Queue the next creative variant before the current one fatigues; watch CTR -15%, CPM +10%, hook-rate -20%, frequency >3.5 as tripwires"
+      ],
+      "donts": [
+        "Don't open slow — anything past ~1.7s with no hook loses up to 65% of viewers in 3 seconds",
+        "Don't agitate by insulting the viewer ('you don't know better'); frame the pain as 'nobody told you about this'",
+        "Don't rely on audio for comprehension — up to 85% of Facebook video is watched muted",
+        "Don't run static talking-head shots with no visual change for >8s of speech",
+        "Don't bury or soften the CTA, and don't pile on multiple competing CTAs",
+        "Don't ship one polished hero spot and let it ride — TikTok creative loses ~50% effectiveness in ~72h",
+        "Don't make generic testimonials; specificity (one concrete objection in the first 3s) beats vague praise",
+        "Don't over-produce direct-response ads — polished color grades and motion graphics can underperform native UGC for DR",
+        "Don't exceed 60s; CTR declines steeply past that"
+      ],
+      "sources": [
+        {
+          "title": "50+ Viral Hook Templates for Ads, Reels, TikTok, or Captions (2026) — MarketingBlocks",
+          "url": "https://www.marketingblocks.ai/50-viral-hook-templates-for-ads-reels-tiktok-or-captions-2026-frameworks-examples-ai-prompts-included/"
+        },
+        {
+          "title": "10 Viral Hook Templates for 1M+ Views (2026 Guide) — Virvid",
+          "url": "https://virvid.ai/blog/ai-shorts-script-hook-ultimate-guide-2026"
+        },
+        {
+          "title": "7 Viral Hook Frameworks for Short-Form Video Creators — CreatorsJet",
+          "url": "https://www.creatorsjet.com/blog/7-viral-hook-frameworks-for-short-form-video-creators"
+        },
+        {
+          "title": "120 UGC Hooks for Your Next Video in 2026 — Influee",
+          "url": "https://influee.co/blog/hooks"
+        },
+        {
+          "title": "The 3-Second Hook: Scripting Video Ads that Stop the Scroll — uLegendary",
+          "url": "https://ulegendary.com/blog/the-3-second-hook-scripting-video-ads-that-stop-the-scroll"
+        },
+        {
+          "title": "What Actually Stops the Scroll in 2026? — Advanced Creative Media",
+          "url": "https://www.advancedcreativemedia.co/post/what-actually-stops-the-scroll-in-2026"
+        },
+        {
+          "title": "TikTok ad hooks: 35 native openers for 2026 — Zeely",
+          "url": "https://zeely.ai/blog/hooks-for-tiktok-video-ads/"
+        },
+        {
+          "title": "8 High-Converting Ad Script Examples for 2026 — Sovran",
+          "url": "https://sovran.ai/blog/ad-script-examples"
+        },
+        {
+          "title": "Hook, Body, CTA Video Ad Framework (2026 Guide) — Sovran",
+          "url": "https://sovran.ai/blog/hook-body-cta-video-editor-the-ultimate-guide-to-creating-high-converting-video-ads-in-2025"
+        },
+        {
+          "title": "3 UGC Ad Script Structures That Work — InReels",
+          "url": "https://www.inreels.ai/blog/ugc-ad-frameworks-for-tiktok-and-meta"
+        },
+        {
+          "title": "What is the best structure for a UGC ad (hook, problem, solution, proof, CTA)? — Rathly Marketing",
+          "url": "https://www.rathlymarketing.com/faq/best-ugc-ad-structure/"
+        },
+        {
+          "title": "Short-Form Video Structure: Hook, Body, Payoff — Socialync",
+          "url": "https://www.socialync.io/blog/short-form-video-structure-guide-2026"
+        },
+        {
+          "title": "Hook, Story, Offer: 3-Step Copywriting Formula (2026) — WPFunnels",
+          "url": "https://getwpfunnels.com/hook-story-offer/"
+        },
+        {
+          "title": "Mastering the BAB Framework: Before, After, Bridge — Pageblock",
+          "url": "https://pageblock.io/resources/framework/bab"
+        },
+        {
+          "title": "TikTok Ad Creative Best Practices for 2026 — Stackmatix",
+          "url": "https://www.stackmatix.com/blog/tiktok-ad-creative-best-practices-2026"
+        },
+        {
+          "title": "Creative best practices for performance ads — TikTok for Business",
+          "url": "https://ads.tiktok.com/help/article/creative-best-practices"
+        },
+        {
+          "title": "Ad Creative Benchmarks 2026: CTR, Hook Rate & More — Benly",
+          "url": "https://benly.ai/learn/ad-creative/ad-creative-benchmarks-2026"
+        },
+        {
+          "title": "UGC Advertising in 2026: Complete Guide to Winning Ads on Meta & TikTok — Reloop",
+          "url": "https://reloop.so/blog/article/ugc-advertising/"
+        },
+        {
+          "title": "The Death of Polished Ads: Why UGC App Ads Are Dominating in 2026 — SEM Nexus",
+          "url": "https://semnexus.com/the-death-of-polished-ads-why-ugc-app-ads-are-dominating-in-2026/"
+        },
+        {
+          "title": "7 Meta Ad Formats That Are Actually Converting in 2026 — Spreshapp",
+          "url": "https://spreshapp.com/article/7-meta-ad-formats-converting-2026"
+        },
+        {
+          "title": "Meta ads best practices to follow in 2026 — LeadsBridge",
+          "url": "https://leadsbridge.com/blog/meta-ads-best-practices/"
+        },
+        {
+          "title": "Meta Video Ads: Formats, Specs & Best Practices 2026 — Benly",
+          "url": "https://benly.ai/learn/meta-ads/video-ads-guide"
+        },
+        {
+          "title": "Best CTA Formats for Short Videos — DriveEditor",
+          "url": "https://driveeditor.com/blog/best-cta-formats-for-short-videos"
+        },
+        {
+          "title": "Creator Briefs: Short-Form Video Hook & CTA Strategy — Influencers Time",
+          "url": "https://www.influencers-time.com/creator-briefs-for-short-form-video-hook-and-cta-strategy/"
+        },
+        {
+          "title": "Meta Ads Creative Fatigue: Spot & Fix It Fast 2026 — AdStellar",
+          "url": "https://www.adstellar.ai/blog/meta-ads-creative-fatigue"
+        },
+        {
+          "title": "Creative Testing and Velocity: The Metric That Controls Your CAC in 2026 — Admetrics",
+          "url": "https://www.admetrics.io/en/post/ad-creative-testing-velocity"
+        },
+        {
+          "title": "25 Best Video Ad Hook Examples That Stop the Scroll — Segwise",
+          "url": "https://segwise.ai/blog/video-ad-hooks-drive-conversions"
+        }
+      ]
+    },
+    "retention": {
+      "findings": [
+        "FIRST 3 SECONDS ARE EVERYTHING: 50-60% of viewers who drop off do so within the first 3 seconds. The 2026 bar is 80%+ hold at 3s (the swipe-or-stay moment), 60%+ at midpoint, 70%+ average percentage viewed. Top-quartile creators target a 55-60% minimum hold at 3s just to unlock distribution; a >30% drop in the first 3s flags a weak hook to TikTok. Viewers who survive 3s are 65% more likely to reach 10s.",
+        "HOOK DELIVERY MECHANICS: Land the hook in 2-2.5s, leaving a half-second buffer before the 3s cutoff. Skip hi/welcome, start mid-action, deliver slightly faster than normal. Proven types: Pattern Interrupt (flash the end result 0.3s then cut to start), Direct Promise with a number ('This 5-second edit doubled my watch time'), and Information-Gap Question ('Why do your Shorts die at 40% watch time?'). Self-identifying questions perform exceptionally well.",
+        "FIRST-FRAME / THUMBNAIL: The first frame is the de-facto thumbnail and must work sound-off: high-contrast, in-focus, immediate motion, big readable text. Avoid dark or cluttered opening frames. Pair an on-screen text hook with the spoken hook for redundancy.",
+        "OPTIMAL DURATION PER PLATFORM (2026): TikTok 24-38s (completion rate is the #1 metric); YouTube Shorts 30-45s; Instagram Reels has two lanes: 7-15s for viral reach, 30-45s for value/saves. The 'shortest possible' era is over; platforms optimize for meaningful watch time.",
+        "TIKTOK RETENTION BENCHMARKS BY LENGTH: under 15s avg 60-70% (strong >75%, exceptional >85%, poor <50%); 15-30s avg 50-60% (strong >65%, top >70%); 30-60s avg 40-50% (strong >55%); 60s-3min avg 30-40% (strong >45%); over 3min avg 20-30%. Baseline ~40-50%. Gate: ~65% avg watch time in the test wave triggers broader distribution; ~20% in the first 100 viewers stalls it.",
+        "REWATCH/LOOP IS THE TOP SIGNAL: On TikTok a replay rate >1.2 (total plays / unique viewers) substantially boosts distribution; rewatch rate >15-20% is excellent. One viewer watching 3x beats 3 viewers watching once. Seamless loops (end flows back into start) and high-density 'watch-again-to-catch-everything' content push Average View Duration over 100%. Instagram explicitly counts rewatches as a strong signal: a 9s Reel watched twice beats an 18s Reel watched once.",
+        "NATIVE/UGC BEATS POLISHED (biggest ad lever): UGC creator-style video gets ~1.8% CTR vs 1.1% for polished studio spots (~64% lift), 20-35% lower CPC, 20-40% lower CPI, up to 4x higher CTR. TikTok's 2026 forecast: audiences want unfiltered stories, BTS, and 'real process and people over curated perfection.' Anything that looks like a traditional ad gets scrolled past.",
+        "PATTERN INTERRUPTS: One every 3-5 seconds is ideal (fewer than 3 feels flat, more than 5 feels chaotic). VARY intervals (3s, then 5s, then 2.5s) so structure stays unpredictable: viewers map editing patterns after ~8-9s and retention drops once prediction replaces curiosity. Place a deliberate interrupt (angle change, music drop, SFX) at the 25-35s drift point. Rotate angles (close-up/medium/over-the-shoulder) every 5-8s.",
+        "CAPTIONS / BURNED-IN TEXT: 60-85% of mobile viewing is sound-off (85% of Facebook video, 80%+ of TikTok in many contexts). Burned-in (open) captions get the most watch time and add 12-40% to viewing duration; 80% of consumers more likely to finish a captioned video. Keep lines to 4-6 words, high-contrast, on screen >=2s. Don't over-stuff: lines too long force reading-vs-watching and viewers quit.",
+        "SOUND DESIGN: TikTok weights audio and trending-sound patterns heavily. Use trending audio but adopt within 24-48 hours (engagement potential drops sharply after ~7 days). Combine snippets of 2-4 popular sounds and place each crescendo/drop at 5-10s intervals to build a retention loop that pulls viewers to the next beat. Sync cuts and text to the beat.",
+        "B-ROLL vs TALKING HEAD: Static talking-head footage is the fastest engagement killer in short-form. Cut to b-roll, graphics, or angle changes every few seconds (movement/pacing increases recall per Nielsen attention studies). Talking head still works for authenticity (48% of marketers favor live-action for connection) but only when broken up with visual variety and tight pacing: format-driven pieces retain 30-37% vs 20-25% for pure talking-head at the same length.",
+        "9:16 FRAMING & SAFE ZONES: Cross-platform safe zone is 900x1400 px centered in 1080x1920: keep ALL faces, text, logos, CTAs inside it. UI blocks: TikTok top 108px / bottom 320px / left 60px / right 120px; Reels bottom ~310px + right 84px. Treat the lower third as blocked (comments, tags, audio UI) and keep key elements higher and centered. Non-9:16 correlates with ~35% lower dwell time and ~28% lower share rate; vertical gets ~90% higher completion than horizontal.",
+        "PER-PLATFORM ALGORITHM DIFFERENCES: TikTok weights watch time + completion + rewatch most (needs 70%+ completion for viral push) and is the most retention-demanding. Shorts prioritizes viewer satisfaction + completion to the LAST frame and whether the viewer stays in the feed afterward (immediate exit = dissatisfaction). Reels gives standalone retention the least weight: saves and DM-sends per reach can let a 45%-retention Reel beat a 65%-retention one. Edit for TikTok's bar first, then cross-post.",
+        "NICHE RETENTION TARGETS (TikTok, under ~30s): Entertainment/Comedy 70%+, Food/Recipe 60%+, Fitness 55%+, Educational 50%+, Gaming highlights 45%+, Finance informational 40%+ (50%+ for quick tips). Set the bar by niche, not one universal number."
+      ],
+      "sources": [
+        {
+          "title": "TikTok Retention Rate Benchmarks 2026 by Video Length - Retensis",
+          "url": "https://retensis.com/blog/tiktok-retention-rate-benchmarks-2026"
+        },
+        {
+          "title": "YouTube Shorts Retention Rate (2026): What Works - Shortimize",
+          "url": "https://www.shortimize.com/blog/youtube-shorts-retention-rate"
+        },
+        {
+          "title": "YouTube Shorts Hook Formulas That Drive 3-Second Holds - OpusClip",
+          "url": "https://www.opus.pro/blog/youtube-shorts-hook-formulas"
+        },
+        {
+          "title": "The Ideal YouTube Shorts Length & Format for Retention - OpusClip",
+          "url": "https://www.opus.pro/blog/ideal-youtube-shorts-length-format-retention"
+        },
+        {
+          "title": "YouTube Audience Retention Benchmarks 2026 - Humble & Brag",
+          "url": "https://humbleandbrag.com/blog/youtube-audience-retention-benchmarks"
+        },
+        {
+          "title": "Ideal Video Length for TikTok, Reels & YouTube Shorts 2026 - Joyspace",
+          "url": "https://joyspace.ai/ideal-video-length-social-platform-2026"
+        },
+        {
+          "title": "What Is a Good TikTok Retention Rate? (70% in 2026) - Socialync",
+          "url": "https://www.socialync.io/blog/tiktok-viral-retention-rate-2026"
+        },
+        {
+          "title": "TikTok Algorithm Changes 2026 [Updated May] - Socialync",
+          "url": "https://www.socialync.io/blog/tiktok-algorithm-2026-what-works-now"
+        },
+        {
+          "title": "How the TikTok Algorithm Works in 2026 - Sprout Social",
+          "url": "https://sproutsocial.com/insights/tiktok-algorithm/"
+        },
+        {
+          "title": "Pattern Interrupts in TikTok 2026: How to Multiply Retention - Edicion Video Pro",
+          "url": "https://edicionvideopro.com/en/editing-for-platforms-video-marketing/pattern-interrupts-tiktok-retention-guide/"
+        },
+        {
+          "title": "TikTok UGC Ads Strategy: Complete Guide for 2026 - Stackmatix",
+          "url": "https://www.stackmatix.com/blog/tiktok-ugc-ads-strategy"
+        },
+        {
+          "title": "UGC Ads vs Traditional Ads in 2026 - Zeely",
+          "url": "https://zeely.ai/blog/ugc-ads-vs-traditional-ads/"
+        },
+        {
+          "title": "UGC Advertising in 2026: Winning Ads on Meta & TikTok - Reloop",
+          "url": "https://reloop.so/blog/article/ugc-advertising/"
+        },
+        {
+          "title": "TikTok Caption & Subtitle Best Practices in 2026 - OpusClip",
+          "url": "https://www.opus.pro/blog/tiktok-caption-subtitle-best-practices"
+        },
+        {
+          "title": "Using Video Captions to Increase Watch Time - Fresh Content Society",
+          "url": "https://freshcontentsociety.com/using-video-captions-to-increase-watch-time-key-strategies/"
+        },
+        {
+          "title": "2026 Trending TikTok and Instagram Reels Audio - HeyOrca",
+          "url": "https://www.heyorca.com/blog/trending-audio-for-reels-tiktok"
+        },
+        {
+          "title": "How to Find Trending TikTok Sounds in 2026 - Buffer",
+          "url": "https://buffer.com/resources/how-to-find-trending-tiktok-sounds/"
+        },
+        {
+          "title": "TikTok Safe Zones: 2026 Guide with Practical Templates - Zeely",
+          "url": "https://zeely.ai/blog/tiktok-safe-zones/"
+        },
+        {
+          "title": "Safe Zone Hub 2026: Reels, TikTok, Shorts Dimensions - Kreatli",
+          "url": "https://kreatli.com/guides/safe-zone-guide"
+        },
+        {
+          "title": "TikTok Loop Content Strategy 2026: Rewatch Signals Boost FYP - SMMNut",
+          "url": "https://smmnut.com/blog/tiktok-loop-content-strategy-2025/"
+        },
+        {
+          "title": "What Is a Looping Video? Makes People Watch You Twice - Slidy Creator",
+          "url": "https://slidycreator.com/blog/what-is-looping-video/"
+        },
+        {
+          "title": "YouTube Shorts Best Practices (2026): 10 Proven Tips - JoinBrands",
+          "url": "https://joinbrands.com/blog/youtube-shorts-best-practices/"
+        },
+        {
+          "title": "How the YouTube Algorithm Actually Works in 2026 - John Isaacson",
+          "url": "https://johnisaacson.co.uk/how-youtube-algorithm-works-2026/"
+        },
+        {
+          "title": "TikTok Algorithm Explained (2026): Win With Rewatches & Search - Darkroom",
+          "url": "https://www.darkroomagency.com/observatory/how-tiktok-algorithm-works-2026"
+        },
+        {
+          "title": "Short-Form Video Statistics 2026: TikTok, Reels & Shorts Data - AutoFaceless",
+          "url": "https://autofaceless.ai/blog/short-form-video-statistics-2026"
+        }
+      ],
+      "summary": "In 2026, short-form retention is won or lost in the first 0-3 seconds, where 50-60% of all drop-off happens; the new bar is an 80%+ three-second hold, 60%+ at midpoint, and 70%+ average percentage viewed. Retention is no longer \"as short as possible\" - algorithms now reward meaningful watch time, so optimal lengths crept up: TikTok 24-38s, Shorts 30-45s, Reels split between a 7-15s viral lane and a 30-45s value lane. The single biggest ad lever is making creative NOT look like an ad: native/UGC creator-style content delivers ~64% higher CTR and 20-40% lower CPI than polished studio spots. Mechanically, retention is driven by a pattern interrupt every 3-5s, burned-in captions (60-85% watch sound-off; captions add 12-40% watch time), trending audio with crescendos at 5-10s intervals, b-roll/cuts over static talking heads, and seamless loops that push completion over 100% and make rewatches the most heavily weighted algorithm signal. All text/faces/CTAs must sit inside the 900x1400 cross-platform safe zone or UI overlays bury them; non-9:16 framing correlates with ~35% lower dwell time.</summary>\n<parameter name=\"dos\">[\"Open mid-action with the payoff in the first frame; land a text+spoken hook within 2-2.5 seconds and target an 80%+ three-second hold.\", \"Make the creative look native/UGC: a real person's organic post, not a studio ad (the single biggest CTR/CPI lever: ~64% CTR lift, 20-40% lower CPI).\", \"Add a varied pattern interrupt every 3-5 seconds (angle change, b-roll cut, SFX, text pop, music drop) and rotate angles every 5-8 seconds.\", \"Burn in high-contrast captions (4-6 words/line, on screen >=2s) on every video: assume 60-85% of viewers are sound-off.\", \"Engineer a seamless loop or rewatch hook to push completion over 100%; rewatch is the most heavily weighted signal on TikTok and counts strongly on Reels.\", \"Use trending audio adopted within 24-48 hours and place audio crescendos at 5-10 second intervals as retention cliffhangers.\", \"Keep all faces, text, logos, and CTAs inside the 900x1400 px cross-platform safe zone, away from the lower third and right-side UI; always shoot native 9:16.\", \"Tune length per platform (TikTok 24-38s, Shorts 30-45s, Reels 7-15s or 30-45s) and judge against niche-specific retention benchmarks.\", \"Edit for TikTok's retention bar first, then cross-post to Shorts/Reels where saves, sends, and completion-to-last-frame can compensate.\"]",
+      "donts": [
+        "Don't open with hi/welcome, a logo sting, a slow build, or a dark/cluttered first frame: you lose 50-60% of viewers in the first 3 seconds.",
+        "Don't make it look like a polished traditional ad; audiences scroll past anything that reads as a commercial (1.1% vs 1.8% CTR penalty).",
+        "Don't run a static talking head for more than a few seconds without b-roll, cuts, or graphics: it's the fastest engagement killer.",
+        "Don't ship without burned-in captions, and don't over-stuff text: lines longer than ~6 words force read-vs-watch and viewers quit.",
+        "Don't keep a predictable editing rhythm; viewers map your pattern after ~8-9s and retention drops once prediction replaces curiosity (and >5 interrupts feels chaotic).",
+        "Don't place text, faces, or CTAs in the lower third or near right-side buttons, and don't post non-9:16 (~35% lower dwell time, ~28% lower shares).",
+        "Don't default to 'as short as possible': 2026 algorithms reward meaningful watch time, and too-short can underperform the 24-45s value range.",
+        "Don't reuse stale trending sounds after ~7 days; early adoption (24-48h) is where the algorithmic lift lives."
+      ],
+      "frameworks": [
+        {
+          "name": "The 3-Second Hook Stack",
+          "best_for": "Maximizing intro retention (the single highest-leverage moment) on TikTok, Reels, and Shorts",
+          "structure": "Frame 0 = sound-off thumbnail (high-contrast, motion, big text). 0-2.5s = spoken hook + burned-in text hook delivered fast, mid-action. Hook type = Pattern Interrupt OR numeric Direct Promise OR information-gap Question. Half-second buffer before the 3s cutoff.",
+          "example": "Cold-open with a 0.3s flash of the end result, hard cut to start, on-screen text 'This 5-second edit doubled my watch time' while the voice says it, no intro, no logo."
+        },
+        {
+          "name": "Varied Pattern-Interrupt Cadence",
+          "best_for": "Sustaining retention from 3s to the end and beating the ~8-9s pattern-prediction drop",
+          "structure": "Insert a visual or audio interrupt every 3-5s but VARY the spacing (3s / 5s / 2.5s). Rotate camera angles every 5-8s. Force a deliberate interrupt (angle change, music drop, SFX) at the 25-35s drift point. Cap at ~5 interrupt types so it doesn't feel chaotic.",
+          "example": "Talking-head line (3s) then b-roll cut (5s) then zoom-punch + SFX (2.5s) then graphic overlay then beat-synced text pop, never on a metronome."
+        },
+        {
+          "name": "Sound-Off Caption Layer",
+          "best_for": "Comprehension and watch-time lift when 60-85% of viewers have audio off",
+          "structure": "Burned-in (open) captions on every video, 4-6 words per line, high-contrast, each line on screen >=2s, kept inside the 900x1400 safe zone (above the lower-third UI). Redundant with the spoken track.",
+          "example": "Word-by-word or short-phrase animated captions that pop in sync with the voice, centered and raised so TikTok/Reels comment and button UI never covers them."
+        },
+        {
+          "name": "Retention Loop (Audio + Narrative)",
+          "best_for": "Pushing Average View Duration past 100% and triggering the heavily-weighted rewatch signal",
+          "structure": "Build the edit so the last frame flows seamlessly back into the first (visual + audio loop), OR pack enough detail that a second watch is needed to catch it all. Layer 2-4 trending-sound snippets with each crescendo at 5-10s intervals as mini-cliffhangers pulling to the next beat.",
+          "example": "End the clip on the exact framing/line it opened with so an autoplay loop feels continuous; viewers watch 2-3x, replay rate climbs above 1.2, and the algorithm reads it as a strong-interest quality signal."
+        },
+        {
+          "name": "Per-Platform Optimization Order",
+          "best_for": "Cross-posting one asset efficiently across TikTok, Shorts, and Reels",
+          "structure": "Cut to TikTok's bar first (hardest: 70%+ completion, rewatch-driven). Then adjust for Shorts (must complete to LAST frame + keep viewer in feed). Then for Reels (lean on saves + DM-sends per reach, which can cover lower retention). Keep duration in each platform's sweet spot.",
+          "example": "A 32s TikTok edit that hits ~65% watch time ports cleanly to Shorts (ensure a satisfying last frame) and Reels (add a save-worthy payoff + share prompt) without a re-shoot."
+        }
+      ],
+      "details_md": "## Concrete 2026 production checklist (ad-machine ready)\n\n**0-3s (the only frame budget that matters)**\n- First frame doubles as the thumbnail: high-contrast, in-focus, big readable text, immediate motion. No dark/cluttered opens, no logo intros.\n- Deliver the hook in 2-2.5s. Use one of: 0.3s flash of the end result then cut to start (pattern interrupt); numeric direct promise; or an information-gap/self-identifying question.\n- Burn the hook as on-screen text AND say it. Target 80%+ hold at 3s; below ~55-60% means kill the hook and re-test.\n\n**3s to end (sustain)**\n- Pattern interrupt every 3-5s with VARIED spacing (3s/5s/2.5s) so structure stays unpredictable past the ~8-9s prediction point.\n- Cut to b-roll/graphics/angle change constantly; never let a static talking head run more than a few seconds. Rotate angles every 5-8s.\n- Burned-in captions throughout: 4-6 words/line, high-contrast, on screen >=2s. Assume sound-off.\n- Trending audio adopted within 24-48h; place audio crescendos at 5-10s intervals as mini-cliffhangers; sync cuts/text to beat.\n\n**Loop / rewatch (free distribution)**\n- Engineer a seamless end-into-start loop or pack enough density that a second watch is needed. Replay rate >1.2 on TikTok and any rewatch on Reels are the highest-weighted signals available.\n\n**Length targets**\n- TikTok 24-38s, Shorts 30-45s, Reels 7-15s (reach) or 30-45s (saves/value). Match the niche retention target.\n\n**Framing**\n- Design inside 900x1400 px safe zone on a 1080x1920 canvas. Keep faces/text/CTA out of the lower third and away from right-side buttons. Always native 9:16.\n\n**Format/positioning (highest-ROI decision)**\n- Make it look like a real person's organic post, not a studio ad. UGC/native style is ~64% higher CTR and 20-40% lower CPI - this single choice outweighs production polish.\n\n## Platform retention math cheat-sheet\n- TikTok viral gate: ~65% avg watch time in test wave; 70%+ completion for broad push; rewatch is king.\n- Shorts: must reach the LAST frame + keep the viewer in the feed afterward (no immediate exit).\n- Reels: saves + DM-sends per reach can outweigh raw retention.\n\n## TikTok retention benchmarks by length (2026)\n| Length | Avg | Strong | Exceptional |\n|---|---|---|---|\n| <15s | 60-70% | >75% | >85% |\n| 15-30s | 50-60% | >65% | >70% |\n| 30-60s | 40-50% | >55% | - |\n| 60s-3min | 30-40% | >45% | >55% |\n| >3min | 20-30% | >35% | - |"
+    },
+    "veo3": {
+      "summary": "Google's current production text-to-video model line is Veo 3 / Veo 3.1 (the \"VR3\" in the brief is a mistranscription of \"Veo 3\"). It is available through the Gemini API, Google AI Studio, Vertex AI, and the Flow app. KEY SPECS (as of 2026): Maximum SINGLE-CLIP length is 8 seconds (selectable 4, 6, or 8s; 8s is required to unlock 1080p, 4K, reference images, and extension). Frame rate is 24fps. Resolutions: 720p (default), 1080p, and native 4K (4K added in the Jan 2026 update; 4K/1080p require 8s clips). Aspect ratios: 16:9 (landscape, default) and 9:16 (portrait) are the officially documented options in the Gemini API — there is NO native 1:1 square output, so square/1:1 ad placements must be produced by cropping a 16:9 or 9:16 render. NATIVE AUDIO is the headline feature and is generated in a single model pass: synchronized dialogue with accurate lip-sync, sound effects, ambient/environmental noise, and musical score, at 48kHz stereo. You drive audio entirely through the text prompt. RECOMMENDED PROMPT STRUCTURE (per Google DeepMind's official prompt guide): a single descriptive paragraph (or timestamped block) covering Subject, Context/Setting, Action, Style, Camera framing & motion (e.g. dolly, tracking, crane, POV, aerial), Composition (wide/close-up/two-shot), Focus/lens (shallow DoF, macro, wide-angle), Ambiance/lighting, and Audio. Dialogue goes in quotation marks; sound effects are labeled \"SFX:\"; ambient noise is described explicitly. More detail = more control. KEY LIMITATIONS: hard 8s per-generation cap; latency 11s–6min per clip; videos stored on Google's servers only 2 days; all output carries SynthID watermarking; person-generation is regionally restricted (EU/UK/CH/MENA); the \"add/remove object\" edit path still falls back to Veo 2 and produces no audio; voice/audio cannot be extended unless present in the final ~1 second of the prior clip; text rendering and perfect cross-shot consistency remain weak spots (mitigated, not solved, by reference images). CONSISTENCY & LONGER VIDEOS: For an ad longer than 8s you must stitch multiple clips. Two official mechanisms: (1) Scene Extension — feed a previously generated Veo clip back in to continue the action, adding ~7s per extension, up to ~20 times (a minute or more total), but extension is limited to 720p; (2) \"Ingredients to Video\" — supply up to 3 reference images (character, object, scene/style) so the same character/set looks consistent across separately generated shots, then stitch in an editor. Within a single 8s clip you can also use timestamp prompting ([00:00-00:02] … [00:02-00:04] …) to choreograph several mini-shots with their own camera moves and SFX. STORYBOARD IMPLICATIONS: design ad storyboards around 8-second beats; a 15s ad ≈ 2 clips, a 30s ad ≈ 4 clips; specify audio (dialogue/SFX/ambient/music) per shot inside each prompt; lock character/set look with 3 reference images reused across every shot, and use first/last-frame interpolation or scene extension to make cuts feel continuous.",
+      "clip_length": "Maximum 8 seconds per single generation (selectable 4, 6, or 8s). 8s is required to unlock 1080p, 4K, reference images, and extension. For longer ads you stitch clips or use Scene Extension (~7s added per extension, up to ~20x = a minute+, but extension capped at 720p). Frame rate: 24fps.",
+      "resolution": "720p (default), 1080p, and native 4K. 4K was added in the January 2026 update (reconstructs texture detail rather than upscaling). 1080p and 4K require an 8-second clip. Scene extension is limited to 720p.",
+      "aspect_ratios": [
+        "16:9 (landscape, default)",
+        "9:16 (portrait/vertical)"
+      ],
+      "audio_support": "Native single-pass audio is the core feature: synchronized DIALOGUE with accurate lip-sync, SOUND EFFECTS, AMBIENT/environmental noise, and MUSICAL SCORE — all generated together with the video at 48kHz stereo. Audio is controlled entirely via the text prompt (dialogue in quotation marks, sound effects labeled 'SFX:', ambient soundscape described). Caveat: the 'add/remove object' edit path uses Veo 2 and generates no audio, and voice cannot be carried into an extension unless it is present in the final ~1 second of the prior clip.",
+      "prompting_best_practices": [
+        "Write a single, dense, descriptive paragraph (or timestamped block) rather than a keyword list — Google's rule is 'the more detail you add, the more control you'll have.'",
+        "Cover Google DeepMind's components in order: Subject, Context/Setting, Action, Style, Camera framing & motion, Composition, Focus/lens, Ambiance/lighting, and Audio.",
+        "Specify camera language explicitly: shot type (wide / medium / close-up / extreme close-up / two-shot, low/high angle) and motion (dolly, tracking, crane, aerial, slow pan, POV).",
+        "Specify lens and focus for a cinematic ad look: shallow depth of field, macro lens, wide-angle, deep focus; add 'portrait' to sharpen facial detail.",
+        "Put spoken dialogue inside quotation marks (e.g. \"This must be the key,\" he murmured) for lip-synced speech; alternatively give characters a topic to improvise.",
+        "Call out sound design directly: label sound effects as 'SFX: tires screeching' and describe ambient noise ('the quiet hum of a starship bridge'); request a music cue when you want a score.",
+        "For multi-beat action inside one 8s clip, use timestamp prompting: [00:00-00:02] shot A … [00:02-00:04] shot B …, each with its own framing, action, and SFX.",
+        "Describe characters with specific physical detail (hair, freckles, wardrobe, age) so they re-render consistently; reuse the exact same description across every shot of the campaign.",
+        "Set lighting and color/ambiance deliberately (warm tones, neon night, film-noir) to lock the brand mood across shots.",
+        "Iterate prompts per shot; latency is 11s–6min, so budget for several regenerations per beat."
+      ],
+      "limitations": [
+        "Hard 8-second cap per single generation — anything longer must be stitched or scene-extended.",
+        "No native 1:1 / square output; only 16:9 and 9:16 are documented, so square ad placements require cropping.",
+        "Scene extension is limited to 720p, so a minute-long extended sequence cannot stay at 1080p/4K.",
+        "Cross-shot consistency of characters/sets is imperfect; reference images (up to 3) mitigate but do not guarantee identical faces/wardrobe/lighting across separate generations.",
+        "Text rendering (on-screen logos/words) is unreliable — overlay brand text/logos in post rather than asking Veo to render them.",
+        "All output carries SynthID watermarking.",
+        "Generated videos are stored on Google's servers for only 2 days — download promptly.",
+        "Person generation is regionally restricted (EU, UK, Switzerland, MENA).",
+        "Latency per clip ranges from ~11 seconds to ~6 minutes, which slows iterative storyboarding.",
+        "Audio/voice cannot be extended into a new clip unless it is present in the final ~1 second of the prior clip; the add/remove-object edit falls back to Veo 2 and produces no audio.",
+        "Complex multi-step motion and precise physics can still drift; choreograph with timestamp prompting and keep each beat simple."
+      ],
+      "storyboard_implications": [
+        "Design every ad as a series of 8-second beats — that is the atomic unit. A 15s ad ≈ 2 clips (8s + 7s), a 30s ad ≈ 4 clips of ~8s each.",
+        "Write a self-contained prompt per shot/clip; do NOT assume the model remembers prior shots. Each prompt must restate character, setting, style, and lighting.",
+        "Specify audio inside every shot's prompt (dialogue in quotes, 'SFX:' tags, ambient bed, optional music cue) — audio is per-clip and prompt-driven, so silence or wrong SFX on one beat must be re-prompted on that beat.",
+        "Lock character + set identity by generating 3 reference images once (e.g. with Gemini Flash Image) and feeding them as 'Ingredients to Video' into every shot's prompt for consistency.",
+        "To make cuts feel continuous, use Scene Extension (continue the action from the last clip) for the same-location action, or first/last-frame interpolation to bridge two key frames — but remember extension drops you to 720p.",
+        "For a single dramatic 8s hero shot with several internal moves, use timestamp prompting ([00:00-00:02] … etc.) instead of stitching.",
+        "Render at 9:16 for Reels/Shorts/TikTok and 16:9 for YouTube/feed; produce 1:1 by center-cropping a 16:9 or 9:16 master since Veo has no native square output. Plan safe margins so cropping doesn't cut subjects.",
+        "Carry continuity audio across cuts only if the carried voice is present in the final second of the outgoing clip; otherwise re-establish audio fresh and smooth it in the edit.",
+        "Keep brand logos/legal text/end-card copy as post-production overlays, not Veo-rendered text.",
+        "Budget iteration time: with 11s–6min latency and imperfect consistency, expect multiple regenerations per beat before a clean stitch, and download masters within 2 days before server deletion."
+      ],
+      "sources": [
+        {
+          "title": "Generate videos with Veo 3.1 in Gemini API — Google AI for Developers",
+          "url": "https://ai.google.dev/gemini-api/docs/video"
+        },
+        {
+          "title": "Introducing Veo 3.1 and new creative capabilities in the Gemini API — Google Developers Blog",
+          "url": "https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/"
+        },
+        {
+          "title": "How to create effective prompts with Veo 3 — Google DeepMind",
+          "url": "https://deepmind.google/models/veo/prompt-guide/"
+        },
+        {
+          "title": "Ultimate prompting guide for Veo 3.1 — Google Cloud Blog",
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1"
+        },
+        {
+          "title": "Veo 3.1 — Google AI Studio",
+          "url": "https://aistudio.google.com/models/veo-3"
+        },
+        {
+          "title": "Veo 3.1 | Gemini API model reference — Google AI for Developers",
+          "url": "https://ai.google.dev/gemini-api/docs/models/veo-3.1-generate-preview"
+        },
+        {
+          "title": "Generate videos with Veo — Gemini Enterprise Agent Platform, Google Cloud Documentation",
+          "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/overview"
+        },
+        {
+          "title": "Google Veo 3.1 Review 2026: Native 4K Audio-Sync Video Generation — ComputerTech",
+          "url": "https://computertech.co/veo-3-1-review/"
+        }
+      ]
+    },
+    "specs": [
+      {
+        "platform": "Meta Ads (Facebook + Instagram) — Video Placements, 2026 [ADVERSARIALLY VERIFIED against official Meta ads-guide pages, June 2026]",
+        "placements": [
+          {
+            "name": "Reels (Facebook Reels + Instagram Reels)",
+            "aspect_ratio": "9:16 (full-screen vertical). CONFIRMED official. Aspect-ratio tolerance 1% per Meta (spec said ~1% — confirmed).",
+            "resolution": "CORRECTED. Meta's official ads-guide RECOMMENDS 1440 x 2560 px (NOT 1080 x 1920). Minimum WIDTH: 250 px for ads under 30 s; 500 px for ads 30 s and longer (IG Reels). The spec's 'minimum 500 x 888 / 500 x 800' is NOT in official docs and is INCORRECT — official minimum is expressed as a width only. 1080 x 1920 is a widely-used safe upload target but Meta's stated recommendation is now 1440 x 2560.",
+            "duration_min_s": 0,
+            "duration_max_s": 90,
+            "recommended_duration": "15-30 s (hook in first ~1.5 s; many advertisers run 6-15 s). NOTE on max: Meta's ads-guide pages state 'No maximum limit' for the Reels ad spec field; the 90 s figure is the practical Reels product cap commonly cited and enforced for the Reels surface. Treat 90 s as the safe upper bound, but be aware Meta's own ads-guide no longer prints a hard number.",
+            "max_file_size": "4 GB. CONFIRMED official.",
+            "container": "MP4, MOV, or GIF. CONFIRMED official (GIF is officially accepted). Videos should not contain edit lists or special boxes in the file container — CONFIRMED official wording.",
+            "video_codec": "H.264 compression. CONFIRMED official. FLAG: Meta's official ads-guide pages list ONLY 'H.264 compression' — they do NOT state that H.265/HEVC is accepted. The spec's claim 'H.265/HEVC accepted' is UNCONFIRMED by official documentation; H.264 is the only officially-documented codec. Use H.264 to be safe.",
+            "audio_codec": "Stereo AAC audio compression at 128 kbps+. CONFIRMED official wording.",
+            "fps": "FLAG / UNCONFIRMED specifics. Official docs state only 'fixed frame rate' and 'progressive scan' — they do NOT publish '30 fps recommended' or 'up to 60 fps'. Those figures are industry convention, not official. Requirement that is official: constant/fixed frame rate, progressive scan, square pixels.",
+            "bitrate": "FLAG / UNCONFIRMED. Meta does NOT publish a target video bitrate (no '15-30 Mbps' figure in official ads-guide). Official guidance is qualitative: upload highest-quality source, square pixels, progressive scan; Meta re-encodes. The '15-30 Mbps' target is an industry estimate, not official.",
+            "safe_zones": "CONFIRMED + REFINED. Official Meta Reels ads-guide pages explicitly state: keep text/logos/key creative out of ~14% of the top, ~35% of the bottom, and ~6% on each side. On a 1440 x 2560 canvas that is ~358 px top, ~896 px bottom, ~87 px sides (≈270/672/65 px on a 1080 x 1920 canvas). The March 2026 'unified 9:16 safe zone' (Meta consolidated FB/IG Reels + Stories) is CONFIRMED by Billo and a Meta-affiliated post; unified guidance = top 14%, bottom 20-35% (design to the stricter Reels 35%), sides 6%. Spec's numbers are essentially correct; bottom reserve is officially 35% for Reels.",
+            "caption_cta": "CONFIRMED in substance. Meta's UI renders the CTA button / handle / audio attribution in the bottom band — do NOT bake your own CTA into the bottom ~35%. Keep on-screen text/logo centered in the middle ~60%. Burned-in captions strongly recommended for sound-off viewing. Primary text shows ~125 chars before truncation (official 'recommended' figure). NOTE: Reels Overlay headline is limited to ~10 chars and Reels link-clicks primary text can be as low as 40 chars / headline 55 chars per Meta's per-objective pages — the 125-char figure is the primary-text recommendation, actual rendered limits vary by objective.",
+            "notes": "Reels is the dominant vertical surface in 2026. A single correctly-built 9:16 master serves FB Reels, IG Reels, FB Stories, IG Stories after Meta's March 2026 safe-zone unification — CONFIRMED. Aspect-ratio tolerance 1% — CONFIRMED official. Per-objective Meta pages give different IG Reels max durations (awareness page: up to 15 minutes; link-clicks page: 'no maximum limit') — the 90 s is the practical Reels-surface cap."
+          },
+          {
+            "name": "Stories (Facebook Stories + Instagram Stories)",
+            "aspect_ratio": "9:16 (full-screen vertical). CONFIRMED official. Aspect-ratio tolerance 1%.",
+            "resolution": "CORRECTED. Official recommendation is 1440 x 2560 px (NOT 1080 x 1920). Minimum WIDTH: 250 px (official) — NOT 500 px as the spec stated. 1080 x 1920 is a fine upload target but Meta's documented recommendation is 1440 x 2560.",
+            "duration_min_s": 1,
+            "duration_max_s": 120,
+            "recommended_duration": "6-15 s per card. IMPORTANT split behavior (CONFIRMED official): Instagram Stories plays video ads under 35 s in full; ads 15 s or longer MAY be split into separate Story cards (1-3 cards auto-shown before a 'Keep watching' prompt). Design within a single short card. NOTE the FB vs IG max-duration split below.",
+            "max_file_size": "4 GB. CONFIRMED official.",
+            "container": "MP4, MOV, or GIF. CONFIRMED official.",
+            "video_codec": "H.264 compression. CONFIRMED official. SAME FLAG as Reels: H.265/HEVC is NOT listed in official docs — unconfirmed.",
+            "audio_codec": "Stereo AAC audio compression at 128 kbps+. CONFIRMED official wording.",
+            "fps": "FLAG / UNCONFIRMED specifics. Official: 'fixed frame rate', 'progressive scan', 'square pixels' only. No official 30/60 fps figure.",
+            "bitrate": "FLAG / UNCONFIRMED. No official bitrate target published by Meta. '15-30 Mbps' is industry guidance, not official.",
+            "safe_zones": "REFINED + FLAG (Meta's own docs are inconsistent). Facebook Stories ads-guide states ~14% top (~250 px) and ~20% bottom (~340 px) clear. Instagram Stories AWARENESS ads-guide states ~14% top, ~35% bottom, ~6% sides; the IG Stories en-gb ads-guide page states ~14% top and ~20% bottom. This is a genuine inconsistency in Meta's documentation. SAFEST RULE: design to the stricter unified 9:16 zone — top 14%, bottom 35%, sides 6% — so the asset is safe across Stories AND Reels (per March 2026 unification).",
+            "caption_cta": "CONFIRMED. Profile/handle + timer occupy the top ~14%; swipe-up/CTA sticker occupies the bottom band — keep both clear of essential content. Burned-in captions recommended. Primary text recommendation ~125 chars (official).",
+            "notes": "CORRECTED max duration — there is a FB vs IG difference: Facebook Stories ads-guide states '1 second to 2 minutes' (120 s) — this CONFIRMS the spec's 120 s for FB Stories. However Instagram Stories ads-guide states '1 second to 60 minutes' as the technical max (long videos split into multiple cards). So '120 s' is correct for FB Stories but UNDERSTATES the IG Stories technical max (60 min). For ads, keep to a single short card regardless. Minimum width 250 px (not 500 px). 1% aspect-ratio tolerance — CONFIRMED."
+          },
+          {
+            "name": "Feed - 4:5 vertical (Facebook Feed + Instagram Feed) — recommended",
+            "aspect_ratio": "4:5 recommended for FB Feed (official). NOTE: Instagram Feed's ads-guide now defaults its recommendation to 9:16 / 1080 x 1920 for video, while still accepting 4:5 and 1:1. 4:5 remains the strongest single-feed video ratio. CONFIRMED with nuance.",
+            "resolution": "CORRECTED. FB Feed official recommendation is 1440 x 1800 px (NOT 1080 x 1350). 1080 x 1350 is an accepted/common size but Meta's published recommendation is 1440 x 1800. Minimum dimensions: 120 x 120 px (official). IG Feed minimum width: 250 px.",
+            "duration_min_s": 1,
+            "duration_max_s": 14460,
+            "recommended_duration": "15-30 s (hook in first ~3 s; performance generally drops beyond 30 s). CONFIRMED as best practice.",
+            "max_file_size": "4 GB. CONFIRMED official.",
+            "container": "MP4, MOV, or GIF. CONFIRMED official. No edit lists / special boxes in container — official.",
+            "video_codec": "H.264 compression. CONFIRMED official. SAME FLAG: H.265/HEVC not in official docs.",
+            "audio_codec": "Stereo AAC audio compression at 128 kbps+. CONFIRMED official.",
+            "fps": "FLAG / UNCONFIRMED specifics. Official: 'fixed frame rate', 'progressive scan', 'square pixels' only.",
+            "bitrate": "FLAG / UNCONFIRMED. No official bitrate target.",
+            "safe_zones": "Feed has no persistent UI overlay ON the video, but the ad footer (profile, like/comment bar, CTA) renders below/around it. Keep logo/key text away from the extreme top/bottom edges. Meta does not publish hard feed safe-zone percentages; the ~14% top / ~20% bottom guidance is a practical convention, not an official feed figure — FLAGGED as industry practice.",
+            "caption_cta": "CONFIRMED in substance. CTA button renders in the feed UI below the video — do not rely solely on a baked-in CTA. Burned-in captions recommended for sound-off. CORRECTED official text figures (from FB Feed ads-guide): Primary text 50-150 characters; Headline 27 characters; Description ~30 characters. The spec's '~125 / 27-40 / 30' is close; Meta's literal Feed numbers are 50-150 primary, 27 headline.",
+            "notes": "CORRECTED max durations. Facebook Feed ads-guide states '1 second to 241 minutes' (≈14,460 s) — CONFIRMED. Instagram Feed ads-guide states '1 second to 60 minutes' (3,600 s) — so the 14,460 s max applies to FB Feed only; IG Feed max is 3,600 s. Aspect-ratio tolerance 1% — CONFIRMED. FB Feed min 120 px; IG Feed min width 250 px."
+          },
+          {
+            "name": "Feed - 1:1 square (Facebook Feed + Instagram Feed) — supported alternative",
+            "aspect_ratio": "1:1 (square) — still SUPPORTED but, per Meta's 2026 ads-guide, 1:1 is no longer the recommended feed video ratio (4:5 or 9:16 preferred). CONFIRMED with nuance.",
+            "resolution": "1080 x 1080 px minimum is a common accepted target; Meta's published feed recommendation is now expressed for 4:5 (1440 x 1800). The spec's '1440 x 1440 recommended' for 1:1 is NOT an official Meta figure — FLAGGED as industry convention. Use 1080 x 1080+ square, square pixels.",
+            "duration_min_s": 1,
+            "duration_max_s": 14460,
+            "recommended_duration": "15-30 s. CONFIRMED best practice.",
+            "max_file_size": "4 GB. CONFIRMED official.",
+            "container": "MP4, MOV, or GIF. CONFIRMED official.",
+            "video_codec": "H.264 compression. CONFIRMED official. SAME FLAG on H.265/HEVC.",
+            "audio_codec": "Stereo AAC audio compression at 128 kbps+. CONFIRMED official.",
+            "fps": "FLAG / UNCONFIRMED specifics. Official: fixed frame rate, progressive scan, square pixels only.",
+            "bitrate": "FLAG / UNCONFIRMED. No official target.",
+            "safe_zones": "Same practical guidance as 4:5 feed — keep logo/key text clear of top/bottom edges. No official hard percentages published for feed — FLAGGED as convention.",
+            "caption_cta": "CTA rendered by feed UI beneath the video. Burned-in captions recommended. Primary text recommendation ~125 chars (50-150 official for FB Feed).",
+            "notes": "4:5 generally outperforms 1:1 because it occupies more vertical space; 1:1 is the cross-placement square fallback (also used for carousel/Marketplace/in-stream mobile). FB Feed max 241 min; IG Feed max 60 min (CONFIRMED). The '1440 x 1440 recommended' figure is not official."
+          },
+          {
+            "name": "In-stream (Facebook in-stream video / mid-roll)",
+            "aspect_ratio": "16:9 or 1:1. CONFIRMED official (both listed on Meta's in-stream ads-guide page).",
+            "resolution": "CORRECTED/REFINED. Official minimum stated is 1080 x 1080 px. 1920 x 1080 (16:9) is the recommended landscape target. The spec's numbers are reasonable; the only firmly OFFICIAL figure is the 1080 x 1080 minimum.",
+            "duration_min_s": 5,
+            "duration_max_s": 600,
+            "recommended_duration": "5-15 s (brand/message in first ~3 s). CONFIRMED. Official duration: Desktop 5-15 s; Mobile 5 s to 10 minutes (600 s). Meta notes 'video duration limit may vary by objective.' The spec's 5-600 s range is CONFIRMED (mobile).",
+            "max_file_size": "4 GB. CONFIRMED official.",
+            "container": "MP4, MOV, or GIF. CONFIRMED official.",
+            "video_codec": "H.264 compression. CONFIRMED official. SAME FLAG on H.265/HEVC (not in official docs).",
+            "audio_codec": "Stereo AAC audio compression at 128 kbps+. CONFIRMED official.",
+            "fps": "FLAG / UNCONFIRMED specifics. Official: fixed frame rate, progressive scan, square pixels only. No published 30/60 fps figure.",
+            "bitrate": "FLAG / UNCONFIRMED. No official bitrate target published.",
+            "safe_zones": "No persistent UI overlay during playback (official pages list no safe-zone percentages for in-stream). Keep logos/legal text out of the extreme bottom where a small countdown/skip control and 'Sponsored/partner content' label can appear. Center key messaging. The ~10% bottom figure is practical convention, not an official Meta number — FLAGGED.",
+            "caption_cta": "Plays with sound ON by default; still add burned-in captions. CTA/end-card can be baked into the last few seconds. Avoid critical text in the lowest portion where skip/label UI may sit.",
+            "notes": "CONFIRMED. Duration window 5 s to 10 minutes (mobile); 5-15 s desktop. Short edits (5-15 s) recommended because in-stream is interruptive. 'Video duration limit may vary by objective' is official Meta wording. 16:9 primary, 1:1 supported as mobile fallback."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Awareness Video Ad Specs on Instagram Stories — Meta Business (official ads-guide)",
+            "url": "https://www.facebook.com/business/ads-guide/update/video/instagram-story"
+          },
+          {
+            "title": "Awareness Video Ad Specs on Instagram Stories (en-GB) — Meta Business (official, includes split-card + safe-zone note)",
+            "url": "https://en-gb.facebook.com/business/ads-guide/update/video/instagram-story"
+          },
+          {
+            "title": "Awareness Video Ad Specs on Facebook Feed — Meta Business (official ads-guide)",
+            "url": "https://www.facebook.com/business/ads-guide/update/video"
+          },
+          {
+            "title": "Engagement Video Ad Specs on Facebook Feed — Meta Business (official; primary text 50-150, headline 27)",
+            "url": "https://www.facebook.com/business/ads-guide/update/video/facebook-feed/outcome-engagement"
+          },
+          {
+            "title": "Awareness Video Ad Specs on Instagram Feed — Meta Business (official ads-guide)",
+            "url": "https://www.facebook.com/business/ads-guide/update/video/instagram-feed"
+          },
+          {
+            "title": "Awareness Video Ad Specs on Facebook Reels — Meta Business (official ads-guide; 1440x2560, 14/35/6 safe zone)",
+            "url": "https://www.facebook.com/business/ads-guide/update/video/facebook-facebook-reels"
+          },
+          {
+            "title": "Traffic Video Ad Specs on Facebook Reels — Meta Business (official; 'No maximum limit', primary 40 / headline 55)",
+            "url": "https://www.facebook.com/business/ads-guide/update/video/facebook-facebook-reels/link-clicks"
+          },
+          {
+            "title": "Awareness Video Ad Specs on Instagram Reels — Meta Business (official; min width 250px <30s / 500px 30s+)",
+            "url": "https://www.facebook.com/business/ads-guide/update/video/instagram-reels"
+          },
+          {
+            "title": "Awareness Video Ad Specs on Facebook Stories — Meta Business (official; 1s to 2 minutes, 14% top / 20% bottom)",
+            "url": "https://www.facebook.com/business/ads-guide/update/video/facebook-story"
+          },
+          {
+            "title": "Awareness Video Ad Specs on Facebook In-Stream Video — Meta Business (official; 16:9 or 1:1, min 1080x1080, 5-15s desktop / 5s-10min mobile)",
+            "url": "https://www.facebook.com/business/ads-guide/update/video/facebook-instream-video"
+          },
+          {
+            "title": "Requirements for Facebook Reels — Meta Business Help Center (official)",
+            "url": "https://www.facebook.com/business/help/1197310377458196"
+          },
+          {
+            "title": "Meta Ads Safe Zones: A Guide to the 2026 Unified Creative Updates — Billo (corroborates March 2026 unified 9:16 safe zone; 14% top / 20-35% bottom / 6% sides)",
+            "url": "https://billo.app/blog/meta-ads-safe-zones/"
+          },
+          {
+            "title": "'In March 2026, Meta unified the 9:16 safe zone for Stories and Reels' — Billo Global (Meta-affiliated post)",
+            "url": "https://www.facebook.com/billoglobal/posts/1772285637520574/"
+          },
+          {
+            "title": "Meta Ad Sizes 2026: Every Placement Spec & Safe Zone — Ryze AI (corroborating industry spec sheet)",
+            "url": "https://www.get-ryze.ai/blog/facebook-ad-sizes-complete-specs-guide-for-2026"
+          },
+          {
+            "title": "Facebook Video Ad Specs & Placements Guide for 2026 — QuickFrame (corroborating in-stream/Reels durations)",
+            "url": "https://quickframe.com/blog/facebook-video-ad-specs"
+          },
+          {
+            "title": "Meta Video Ad Length Requirements — Jon Loomer Digital (corroborating per-placement durations; page returned 403 on fetch but indexed)",
+            "url": "https://www.jonloomer.com/meta-video-ad-length-requirements/"
+          }
+        ]
+      },
+      {
+        "platform": "YouTube (Shorts ads + YouTube video ads / Video Action & Demand Gen Campaigns) — 2026 [VERIFIED against official Google Ads / YouTube Help, June 2026]",
+        "placements": [
+          {
+            "name": "YouTube Shorts ad (vertical, primary)",
+            "aspect_ratio": "9:16 (vertical, full-screen). CONFIRMED: Google states vertical 9:16 assets are 'best suited for the Shorts format.'",
+            "resolution": "1080 x 1920 px recommended (1080p Full HD). CONFIRMED by Demand Gen creative spec (vertical 9:16 = 1080x1920px HD). Note: Google publishes 1080x1920 as the RECOMMENDED size but does NOT publish an official 720x1280 minimum in the Shorts/Demand Gen docs — the '720x1280 minimum' is a third-party convention, not an official Google figure. FLAGGED as unconfirmed.",
+            "duration_min_s": 6,
+            "duration_max_s": 180,
+            "recommended_duration": "Under 60s recommended; Google specifically recommends '10-30 second vertical videos' for action-oriented ads. CONFIRMED. CORRECTION/FLAG: The official YouTube Shorts ads page (answer/16041697) states only a 3-minute MAX and '<60s recommended' and does NOT state a 6-second minimum. The '6-60s' range comes from the separate general video-specs page (answer/17091270), which lists 'Shorts: 6-60 seconds.' The original claim that 'Google requires 6-60s for Shorts reach' and '10-60s vertical to qualify for Shorts in Performance Max' could NOT be confirmed verbatim in official docs — Performance Max/Demand Gen docs say videos under 10s won't serve on YouTube In-stream, not a Shorts-specific 10-60s rule. PARTIALLY FLAGGED.",
+            "max_file_size": "Up to 256 GB (Google Ads hard limit). CONFIRMED ('Files should be less than 256 GB'). The '~250 MB practical' figure is sound advice but is NOT an official Google limit. FLAGGED as advisory only.",
+            "container": "MP4 recommended (with moov atom at front / Fast Start). CONFIRMED accepted formats: .MPG (MPEG-2 or MPEG-4) recommended, plus .WMV, .AVI, .MOV, .FLV, .MPEG-1, .MP4, MPEGPS, 3GPP, WebM, DNxHR, ProRes, CineForm & HEVC (H.265). CONFIRMED audio-only files (MP3/WAV/PCM) are NOT accepted. NOTE: original spec listed 'MPG/MPEG-2/MPEG-4' and 'MPEG-4'—Google's exact list is as quoted.",
+            "video_codec": "H.264 (High Profile, progressive, CABAC, 2 consecutive B-frames, Closed GOP at half the frame rate, 4:2:0 chroma subsampling, variable bitrate). HEVC/H.265 also accepted. CONFIRMED by YouTube recommended upload encoding settings.",
+            "audio_codec": "AAC-LC (also Opus or Eclipsa Audio). 48 kHz sample rate. Stereo 384 kbps (5.1 = 512 kbps). CONFIRMED by YouTube encoding settings. NOTE: the '+20% conversion lift from sound' claim is a marketing best-practice stat, not a technical spec — directionally true but not an official encoding requirement. FLAGGED as advisory.",
+            "fps": "Encode/upload at the same frame rate it was recorded. Common: 24, 25, 30, 48, 50, 60 fps. Interlaced content must be deinterlaced before upload. CONFIRMED by YouTube encoding settings.",
+            "bitrate": "YouTube recommended SDR upload bitrate — 1080p: 8 Mbps @ standard (24/25/30) fps, 12 Mbps @ high (48/50/60) fps; 720p: 5 Mbps standard, 7.5 Mbps high. CONFIRMED by official YouTube encoding settings. (These are YouTube upload-quality targets, not Google Ads ingestion requirements.)",
+            "safe_zones": "FLAGGED — NOT officially published by Google as pixel values. Google's Demand Gen docs show safe-zone DIAGRAMS but do not publish numeric pixel measurements in text. The cited values (top ~120-180px, bottom ~300-450px, right ~96-150px for the like/comment/share/subscribe rail, central safe box ~888-984 x 1500px) are reasonable third-party/community estimates (Kreatli, PostPlanify, Postfast) reverse-engineered from the live UI, NOT official figures. Treat as practical guidance only. The general principle — reserve top for status/nav, bottom for title/CTA/music ticker, right for the engagement button rail, keep key content center-weighted — is correct.",
+            "caption_cta": "Headline max 40 chars; description / long headline max 90 chars. CONFIRMED ('40-character headline and a 90-character description'). CTA button auto-appears ~3s into the ad for Performance Max, App, and Demand Gen campaigns, and ~10s for Video View and Video Reach campaigns. CONFIRMED verbatim by the official Shorts page. Lead with the hook in the first 1-3s; keep burned-in captions/CTA clear of the bottom UI strip. (Truncation-after-1-line-mobile/2-lines-desktop is a reasonable rendering note but not an officially stated character-per-line rule — FLAGGED as advisory.)",
+            "notes": "CONFIRMED: only the first 60s plays in the Shorts feed even though up to 3 minutes is allowed; an overlay appears at ~50s inviting the user to finish the ad on the YouTube watch page. CONFIRMED: horizontal assets serve with blurred top/bottom bars in the vertical Shorts experience, OR you can use the Video Enhancements feature to auto-generate a vertical asset from a horizontal one. Vertical 9:16 is recommended for native Shorts delivery. (The '90-char channel description' limit is also confirmed.)"
+          },
+          {
+            "name": "YouTube skippable in-stream / Video Action Campaign (VAC) — horizontal companion",
+            "aspect_ratio": "16:9 recommended; 1:1 (square, 1080x1080) and 9:16 (vertical) also supported across Video Action / Demand Gen. CONFIRMED Google supports 16:9 1920x1080, 9:16 1080x1920, and 1:1 1080x1080 for all video types (Demand Gen adds 4:5 1080x1350). Supply a 9:16 companion to cover Shorts inventory. NOTE: original claim '4:3 also accepted' could NOT be confirmed — Google's stated set is 16:9, 1:1, 4:5, 9:16. FLAGGED/CORRECTED.",
+            "resolution": "1920 x 1080 px recommended (1080p HD). CONFIRMED. The '720p minimum' is a third-party convention, not an explicit Google minimum. FLAGGED.",
+            "duration_min_s": 10,
+            "duration_max_s": 180,
+            "recommended_duration": "CORRECTION: Skippable in-stream / Video Action has NO official maximum length — Google states 'there's no limit' but videos under ~3 minutes typically perform best (15-30s typical). Video Action campaigns require >=10s (videos under 10s won't serve on YouTube In-stream — CONFIRMED by Demand Gen docs). Bumper = 6s fixed (CONFIRMED). Non-skippable in-stream = up to 30s in auction / up to 60s in reservation (CORRECTION: original said '15/20s' — Google's actual limit is 30s auction, 60s reservation). The duration_max_s of 180 reflects only the RECOMMENDED ceiling, not a hard cap — there is no hard max for skippable in-stream.",
+            "max_file_size": "Up to 256 GB (Google Ads limit). CONFIRMED.",
+            "container": "MP4 (H.264) recommended; .MPG (MPEG-2/MPEG-4), MOV, AVI, WMV, FLV, WebM, 3GPP, MPEGPS, DNxHR, ProRes, CineForm, HEVC also accepted. CONFIRMED.",
+            "video_codec": "H.264 High Profile (HEVC/H.265 accepted). CONFIRMED.",
+            "audio_codec": "AAC-LC, 48 kHz, stereo 384 kbps (Opus / Eclipsa also accepted). CONFIRMED.",
+            "fps": "24, 25, 30, 48, 50, 60 fps (match source). CONFIRMED.",
+            "bitrate": "1080p SDR: 8 Mbps @ standard (24-30) fps, 12 Mbps @ high (48-60) fps. CONFIRMED (YouTube upload recommendation).",
+            "safe_zones": "FLAGGED — Google does not publish numeric pixel safe-zone values for 16:9 in text. The guidance (keep text/logos within the central ~90% title-safe area; on mobile the skip button sits bottom-right and the CTA/headline + sitelink/companion card render along the bottom — keep critical content out of the lower portion, esp. lower-right) is a correct directional best practice based on the live UI, not an official numeric spec. Treat as advisory.",
+            "caption_cta": "Headline max 40 chars; description max 90 chars (drawn from campaign settings); CTA button label is a short campaign-selected action label. CONFIRMED 40/90 char limits. Front-load brand + message in the first ~5s before the skip option appears (skip available after 5s on skippable in-stream — CONFIRMED). The '10-char CTA action label' is approximate/third-party; Google does not publish an exact character cap for the CTA chip. FLAGGED.",
+            "notes": "CONFIRMED: a single Video Action / Demand Gen campaign can serve one uploaded video across in-stream, in-feed AND Shorts. Best practice: supply BOTH a 9:16 vertical and a 16:9 horizontal asset (and optionally 1:1 / 4:5) so the ad renders natively in every placement, including the Shorts feed. Skippable in-stream becomes skippable after 5 seconds."
+          }
+        ],
+        "sources": [
+          {
+            "title": "YouTube Shorts ads: Asset specs and best practices - Google Ads Help (answer/16041697)",
+            "url": "https://support.google.com/google-ads/answer/16041697?hl=en"
+          },
+          {
+            "title": "Video ads specs and format requirements - Google Ads Help (answer/17091270)",
+            "url": "https://support.google.com/google-ads/answer/17091270?hl=en"
+          },
+          {
+            "title": "Demand Gen campaign creative: Asset specifications and ad format guidelines - Google Ads Help (answer/13704860)",
+            "url": "https://support.google.com/google-ads/answer/13704860?hl=en"
+          },
+          {
+            "title": "YouTube recommended upload encoding settings - YouTube Help (answer/1722171)",
+            "url": "https://support.google.com/youtube/answer/1722171?hl=en"
+          },
+          {
+            "title": "About video ad specs - Google Ads Help (answer/13547298)",
+            "url": "https://support.google.com/google-ads/answer/13547298?hl=en"
+          },
+          {
+            "title": "Skippable in-stream ads - Google Ads Help (answer/6055025) — confirms no max length, <3 min recommended, skip after 5s",
+            "url": "https://support.google.com/google-ads/answer/6055025?hl=en"
+          },
+          {
+            "title": "Non-skippable in-stream ads - Google Ads Help (answer/11462260) — confirms up to 30s auction / 60s reservation",
+            "url": "https://support.google.com/google-ads/answer/11462260?hl=en"
+          },
+          {
+            "title": "YouTube Shorts Safe Zone 2026 - Kreatli (third-party safe-zone estimate, NOT official)",
+            "url": "https://kreatli.com/guides/youtube-shorts-safe-zone"
+          },
+          {
+            "title": "YouTube Shorts Safe Zone Checker - PostPlanify (third-party safe-zone estimate, NOT official)",
+            "url": "https://postplanify.com/tools/youtube-shorts-safe-zone-checker"
+          },
+          {
+            "title": "YouTube Shorts Size: 1080x1920 (9:16) [Updated Jan 2026] - Postfast (third-party)",
+            "url": "https://postfa.st/sizes/youtube/shorts"
+          },
+          {
+            "title": "YouTube Bitrate Settings (2026) - Swarmify (third-party; confirms YouTube's 8/12 Mbps 1080p targets)",
+            "url": "https://swarmify.com/blog/what-you-need-to-know-about-the-video-bitrate/"
+          }
+        ]
+      },
+      {
+        "platform": "TikTok Ads (In-Feed / Spark Ads) — 2026 [ADVERSARIALLY VERIFIED against official TikTok Ads Manager help articles, June 2026]",
+        "placements": [
+          {
+            "name": "In-Feed Ad (Non-Spark) — Vertical 9:16 (PRIMARY / recommended)",
+            "aspect_ratio": "9:16 recommended (CONFIRMED official: 'Vertical (recommended): 9:16'). 1:1 and 16:9 also accepted (CONFIRMED — official article lists all three).",
+            "resolution": "CONFIRMED official MINIMUMS: vertical 9:16 >= 540x960px. (Square >= 640x640; horizontal >= 960x540 — see other placements.) Recommended production target 1080x1920 is best-practice, NOT stated as a minimum in the official article.",
+            "duration_min_s": 1,
+            "duration_max_s": 600,
+            "recommended_duration": "BEST-PRACTICE, NOT in the official In-Feed help article. The official article states duration 'up to 10 minutes' with no recommended window. '21-34 s' is older TikTok Creative Center guidance; current third-party/TikTok guidance leans to a ~9-15 s sweet spot with a hook in the first 3 s. Treat any recommended-length figure as advisory, not spec.",
+            "max_file_size": "<= 500 MB (CONFIRMED official: 'Less than or equal to 500 MB').",
+            "container": ".mp4, .mov, .mpeg, .3gp, .avi (CONFIRMED official file formats). MP4/MOV recommended.",
+            "video_codec": "FLAG — NOT mandated by the official help article (article specifies no codec). H.264 is the safe de-facto recommendation; unverified as an official requirement.",
+            "audio_codec": "FLAG — NOT mandated by the official help article. AAC stereo is the safe de-facto default; unverified as official. '>=128 kbps audio' is a best-practice figure, not in the official article.",
+            "fps": "FLAG — NOT mandated by the official help article (no fps stated). 30 fps de-facto recommended; 23.976-60 fps commonly accepted. Unverified as official.",
+            "bitrate": "Video bitrate >= 516 kbps (CONFIRMED official minimum: 'More than or equal to 516 kbps'). Higher bitrate for quality is best-practice. Audio '>=128 kbps stereo' is NOT in the official article (flag).",
+            "safe_zones": "FLAG / CORRECTED — the detailed pixel safe zones are NOT official TikTok numbers and vary widely by third-party source. The ONLY safe zone in TikTok's official article is for the optional profile photo (98x98px, key element centered in 66x66px). Common third-party 1080x1920 estimates DISAGREE: top ~130-150 px, bottom ~440-484 px (larger for ads due to CTA + 'Sponsored' label), right ~60-140 px (icon stack), left ~44-60 px. Net: keep key visuals/text/logos in a central ~960x1330 px (third-party) to ~896x1306 px (the value in the input) safe area — use as guidance only, verify in TikTok's ad preview. Bottom and right are the most overlaid zones.",
+            "caption_cta": "Non-Spark caption CONFIRMED official: 'Displayed in white with a uniform font that can't be customized. Does not support any clickable links, symbols (@), or hashtags.' Account/display name CONFIRMED official: 'one line, maximum 10 characters (Chinese/Japanese/Korean) or 20 characters in other languages.' System CTA button ('Shop Now', 'Learn More', etc.) is standard. Avoid key text in the overlaid bottom region.",
+            "notes": "Primary source: official 'TikTok Auction In-Feed Ads' help article. CONFIRMED: ratios, resolution minimums, 500 MB cap, file formats, >=516 kbps bitrate, 10-minute (600 s) duration ceiling, caption rules, display-name limits. FLAGGED/UNVERIFIED as official: 1 s minimum duration (article says no min stated), recommended 21-34 s window, video codec, audio codec, fps, audio bitrate, and the detailed pixel safe zones."
+          },
+          {
+            "name": "In-Feed Ad (Non-Spark) — Square 1:1 (allowance)",
+            "aspect_ratio": "1:1 (CONFIRMED accepted — official article lists 'Square: 1:1').",
+            "resolution": "Minimum 640x640 (CONFIRMED official: 'Square: 1:1, more than or equal to 640*640px'). Recommended 1080x1080 is best-practice. 9:16 still preferred for full-screen real estate.",
+            "duration_min_s": 1,
+            "duration_max_s": 600,
+            "recommended_duration": "BEST-PRACTICE only — same caveat as vertical: no recommended window in the official article. 21-34 s is advisory.",
+            "max_file_size": "<= 500 MB (CONFIRMED official).",
+            "container": ".mp4, .mov, .mpeg, .3gp, .avi (CONFIRMED official).",
+            "video_codec": "FLAG — not officially mandated. H.264 de-facto.",
+            "audio_codec": "FLAG — not officially mandated. AAC stereo de-facto.",
+            "fps": "FLAG — not officially mandated. 30 fps de-facto.",
+            "bitrate": ">= 516 kbps video (CONFIRMED official min); higher recommended (best-practice).",
+            "safe_zones": "FLAG — same unofficial-estimate caveat as vertical. Square fills less vertical space; the same UI overlays (bottom caption/CTA, right icon stack) apply. Center the subject; keep text out of the bottom and right regions. Verify in TikTok ad preview. 9:16 preferred for performance.",
+            "caption_cta": "Same as vertical In-Feed (CONFIRMED): fixed white uncustomizable caption, no links/@/hashtags; system CTA button; display name 20 Latin / 10 CJK chars.",
+            "notes": "1:1 is an accepted allowance, not the recommended ratio — yields lower immersion than full-screen 9:16. Resolution minimum CONFIRMED official; performance claim is best-practice."
+          },
+          {
+            "name": "In-Feed Ad (Non-Spark) — Horizontal 16:9 (allowance)",
+            "aspect_ratio": "16:9 (CONFIRMED accepted — official article lists 'Horizontal: 16:9').",
+            "resolution": "Minimum 960x540 (CONFIRMED official: 'Horizontal: 16:9, more than or equal to 960*540px'). Recommended 1920x1080 is best-practice.",
+            "duration_min_s": 1,
+            "duration_max_s": 600,
+            "recommended_duration": "BEST-PRACTICE only — no recommended window in the official article. 21-34 s is advisory.",
+            "max_file_size": "<= 500 MB (CONFIRMED official).",
+            "container": ".mp4, .mov, .mpeg, .3gp, .avi (CONFIRMED official).",
+            "video_codec": "FLAG — not officially mandated. H.264 de-facto.",
+            "audio_codec": "FLAG — not officially mandated. AAC stereo de-facto.",
+            "fps": "FLAG — not officially mandated. 30 fps de-facto.",
+            "bitrate": ">= 516 kbps video (CONFIRMED official min); higher recommended (best-practice).",
+            "safe_zones": "FLAG — same unofficial-estimate caveat. Horizontal video shows pillarboxed/centered in the 9:16 feed with large black bands top/bottom. Keep content centered; bottom caption and right CTA/icon UI still overlay. Weakest-performing ratio. Verify in ad preview.",
+            "caption_cta": "Same fixed white caption (CONFIRMED, no links/@/hashtags) + system CTA button; display name 20 Latin / 10 CJK chars.",
+            "notes": "16:9 accepted but discouraged for native In-Feed; best for repurposing landscape assets. Resolution minimum CONFIRMED official."
+          },
+          {
+            "name": "Spark Ads (boosts an existing organic TikTok post)",
+            "aspect_ratio": "No restriction (CONFIRMED official: 'no restrictions on video ratio'). 9:16 in practice since it is native TikTok content.",
+            "resolution": "No restriction (CONFIRMED official: 'no restrictions on... video resolution'). Inherits the organic video (typically 1080x1920).",
+            "duration_min_s": 1,
+            "duration_max_s": 600,
+            "recommended_duration": "BEST-PRACTICE only — not in the official article. 21-34 s advisory; sweet spot ~9-15 s.",
+            "max_file_size": "No file-size restriction (CONFIRMED official: 'no restrictions on... file size'). 10-minute (600 s) max on the sparkable video (CONFIRMED official: 'a 10 minute maximum on videos that can be sparked').",
+            "container": ".mp4 or .mov (CONFIRMED official Spark formats). Inherits organic post.",
+            "video_codec": "Inherited from organic post — no restriction (CONFIRMED official). H.264 typical.",
+            "audio_codec": "Inherited from organic post — no restriction. AAC typical (de-facto, not separately mandated).",
+            "fps": "Inherited from organic post — no restriction (CONFIRMED official: no fps restriction).",
+            "bitrate": "No restriction (CONFIRMED official: 'no restrictions on... bitrate'). Inherits the organic post.",
+            "safe_zones": "FLAG — same unofficial-estimate caveat as Non-Spark, PLUS the organic caption, real @handle, and any creator-added stickers/text further tighten the effective safe area. Official article only provides the profile-photo safe zone. Design organic posts keeping text in a central region (~896-960 px wide) and verify in preview.",
+            "caption_cta": "CORRECTED + CONFIRMED: Spark uses the real organic post's display name and caption and CANNOT be edited in Ads Manager once authorized (CONFIRMED official). Caption MAY include @mentions (account tagging), emoji, and hashtags, and can be left blank (CONFIRMED official). ADDED/CORRECTED: official caption limit is MAX 100 characters (the input spec omitted this). Display: max 4 lines including emojis (CONFIRMED official). A system CTA button can be added on top.",
+            "notes": "CONFIRMED official: Spark Ads have no technical restrictions on ratio/resolution/file type/duration/bitrate/file size; only hard limits are the 10-minute sparkable length and the 10,000-Spark-Ads-per-account cap. CORRECTION vs input: caption is capped at 100 characters (official). Banned/removed organic posts cannot run; a video must be un-authorized as a Spark Ad before it can be deleted from the organic account."
+          }
+        ],
+        "sources": [
+          {
+            "title": "TikTok Auction In-Feed Ads — TikTok Ads Manager (official help article; PRIMARY source for In-Feed specs)",
+            "url": "https://ads.tiktok.com/help/article/tiktok-auction-in-feed-ads"
+          },
+          {
+            "title": "About Spark Ads — TikTok Ads Manager (official help article; PRIMARY source for Spark Ads)",
+            "url": "https://ads.tiktok.com/help/article/spark-ads"
+          },
+          {
+            "title": "How to create Spark Ads for Manual and Search Campaigns in TikTok Ads Manager (official)",
+            "url": "https://ads.tiktok.com/help/article/spark-ads-creation-guide"
+          },
+          {
+            "title": "TikTok reservation in-feed ad specifications (Reach & Frequency) — TikTok Ads Manager (official)",
+            "url": "https://ads.tiktok.com/help/article/tiktok-reservation-in-feed-ads-reach-frequency?lang=en"
+          },
+          {
+            "title": "TikTok safe zones: 2026 guide with practical templates — Zeely (third-party; safe-zone estimates only, NOT official)",
+            "url": "https://zeely.ai/blog/tiktok-safe-zones/"
+          },
+          {
+            "title": "TikTok Safe Zone (2026) — Dimensions, Text Safe Area, Overlay & Template — Kreatli (third-party; safe-zone estimates only)",
+            "url": "https://kreatli.com/guides/tiktok-safe-zone"
+          },
+          {
+            "title": "TikTok Ad Specs 2026 [All Formats + Safe Zones] — AdManage.ai (third-party cross-check)",
+            "url": "https://admanage.ai/blog/tiktok-ad-specs"
+          },
+          {
+            "title": "TikTok Video Ad Specs & Placements Guide for 2026 — QuickFrame (MNTN) (third-party cross-check, duration guidance)",
+            "url": "https://quickframe.mountain.com/blog/tiktok-video-ad-specs/"
+          },
+          {
+            "title": "TikTok Ad Specs (2025): Complete Guide to Formats, Dimensions & Best Practices — Triple Whale (third-party cross-check)",
+            "url": "https://www.triplewhale.com/blog/tiktok-ad-spec"
+          }
+        ]
+      }
+    ]
+  }
+}

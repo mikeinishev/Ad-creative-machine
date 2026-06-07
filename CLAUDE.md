@@ -1,11 +1,14 @@
 # Ad Creative Machine
 
-A 5-agent pipeline that takes a **quiz/sales-funnel URL** and produces **Meta Ads
-creatives** end to end: it crawls the funnel, extracts marketing intelligence,
-researches competitor ads, writes creative briefs, and generates the images.
+A **7-agent pipeline** that takes a **quiz/sales-funnel URL** and produces **Meta Ads
+creatives** end to end — both **static images** and **short-form video**: it crawls the
+funnel, extracts marketing intelligence, researches competitor ads, writes creative
+briefs, generates the images (Agent 5), and storyboards + renders the videos (Agents 6→7).
 
-**Status:** the URL flow (Agents 1→5) is built and runnable. Verified on
-`100plus.boomerangme.com` (Richie AI restaurant funnel).
+**Status:** the full pipeline (Agents 1→7) is built and runnable. Verified on
+`100plus.boomerangme.com` (Richie AI restaurant funnel). Static creatives (Agent 5) are
+production-grade. **Video text via Veo (Agent 7) is a proven model ceiling — see Gotchas;
+that step is currently paused.**
 
 ---
 
@@ -57,19 +60,44 @@ root with the project venv: `.venv/bin/python …`. Slug = the URL host+path (e.
 | 3 | **Competitor Intel** | `agents/competitor_intel` | marketing JSON | `data_<slug>.json` + creatives | Apify Meta Ad Library (US) + OpenAI vision |
 | 4 | **Creative Strategist** | `agents/creative_strategist` | 1+2+3 outputs | `creative_briefs_<slug>.json` | **session model (Opus 4.8), no API** |
 | 5 | **Designer** | `agents/designer` | briefs | `<placement>_<variant>.png` | OpenAI **gpt-image-2** (Responses background mode) |
+| 6 | **Video Storyboard** | `agents/video_storyboard` | briefs (Agent 4) | `storyboards_<slug>.json` | **session model (Opus 4.8), no API** |
+| 7 | **Video Producer** | `agents/video_producer` | storyboards (Agent 6) | `<platform>.mp4` | **Google Veo 3** (submit→poll→download) + ffmpeg |
 
 Flow is linear (each agent consumes the previous). Agent 4 is the fan-in (merges
-design + marketing + competitor). Each agent dir has an `AGENT_PROMPT.md` with the
-authoritative spec.
+design + marketing + competitor); Agents 5 (static images) and 6 (video storyboards)
+both branch off Agent 4's briefs, and Agent 7 renders Agent 6's storyboards into video.
+Each agent dir has an `AGENT_PROMPT.md` with the authoritative spec.
+
+**Agent 6** converts the static concepts into shot-by-shot short-form VIDEO storyboards
++ scripts for TikTok / YouTube Shorts / Meta Reels, built on Google Veo 3's 8-second beat
+grid. Each shot carries a `veo_prompt`, the exact `on_screen_text`, and a `veo_text_treatment`
+(cinematic typography look) so **Agent 7 renders ALL text IN-SCENE via Veo — no post overlays**.
+```bash
+.venv/bin/python agents/video_storyboard/synthesize_video.py <slug>   # → session model writes storyboards JSON
+#    → bundle: outputs/storyboards/_storyboard_context_<slug>.md
+#    → agent writes outputs/storyboards/storyboards_<slug>_<ts>.json (9:16 master + per-platform cuts)
+```
+Specs: `agents/video_storyboard/video_specs.py` + `shared/VIDEO_ADS_SPEC.md` (+ full research
+in `shared/video_ad_playbook.json`).
+
+**Agent 7** renders the storyboards into platform MP4s with **Google Veo 3** (submit→poll→
+download, like Agent 5's background mode) + ffmpeg. One Veo render per `clip_id` (8s grid),
+trim → concat → per-platform export. **All text is generated in-camera by Veo** (cinematic
+typography from `veo_text_treatment` + `on_screen_text`) — no overlays. Needs `GEMINI_API_KEY`/
+`GOOGLE_API_KEY` + `ffmpeg`.
+```bash
+.venv/bin/python agents/video_producer/produce.py <slug> --dry-run    # production plan, no render
+.venv/bin/python agents/video_producer/produce.py <slug>              # live Veo render → outputs/videos/<brief_id>/
+```
 
 ---
 
 ## Key principles (do it this way)
 
-- **Agents 2 & 4 do NOT call any external LLM API.** Their `analyze.py`/`synthesize.py`
-  only assemble a complete context bundle; the **Claude Code session model itself
-  (always the strongest available — currently Opus 4.8, 1M context)** performs the
-  analysis and writes the JSON. No char/token caps. If a stronger model is available,
+- **Agents 2, 4 & 6 do NOT call any external LLM API.** Their `analyze.py`/`synthesize.py`/
+  `synthesize_video.py` only assemble a complete context bundle; the **Claude Code session
+  model itself (always the strongest available — currently Opus 4.8, 1M context)** performs
+  the analysis and writes the JSON. No char/token caps. If a stronger model is available,
   use it.
 - **Agent 5 uses gpt-image-2 via the Responses API `background` mode** (submit → poll
   → fetch), NOT synchronous `images.generate`. Submit all jobs up front → they render
@@ -88,6 +116,15 @@ authoritative spec.
 - Agent 2 is the source of truth for **what/where Agent 3 searches**
   (`market_targeting.niche/geo` + `competitor_research.search_queries` +
   `exclude_brand_terms`).
+- **Proven winner = the "radius magnet" angle** (`brief_002`): *"100 customers are around
+  you. We bring them all. In 14 days. Guaranteed — or you pay $0."* — geo-proximity demand +
+  14-day deadline + $0 risk-reversal, badge "Restaurant Owner?", CTA "Check if my area is
+  open". This real ad drove 2 sales from minimal traffic; lean on it.
+- **Style-variant briefs** (`outputs/briefs/radius_variations.json`) carry ONE angle across
+  visually distinct treatments (RV1 superrealism aerial, RV2 clean SaaS minimal, RV3 tech
+  radar/HUD, RV4 lifestyle owner, RV5 editorial red). When the user wants "more variety,"
+  vary `visual_concept` + `color_scheme`, not the offer. RV1/RV2/RV3 shipped in HIGH across
+  4:5 / 1:1 / 9:16.
 
 ---
 
@@ -108,15 +145,30 @@ authoritative spec.
 - **Each crawl submits a real TEST lead** to the connected CRM (authorized). Default
   identity: `test.sobaka@gmail.com`, `+13234442211`, "Test Tester" (override with
   `--email/--phone/--name`). It stops AT the paywall — never pays.
+- **Veo 3 text rendering is a proven model ceiling (Agent 7).** Across 5+ prompt iterations
+  + an automated `--qa` re-render loop, Veo reliably renders SHORT (≤3-word) titles but with
+  per-take stochastic spelling glitches ("Owner"→"Ower", "Guests"→"Guestess") and
+  hallucinated prop/background text. All-Veo perfect text is irreducible; the only
+  zero-variance path is an animated motion-graphics overlay (rejected aesthetically — looks
+  "ублюдски"). Mitigations baked into `produce.py` (≤3-word steady titles, one large
+  title-card in open frame, heavy bokeh, strip prop text, strong negative_prompt) raise the
+  hit rate but don't guarantee it. **Video is paused; static (Agent 5) is the reliable path.**
+- **Veo video-gen quota is tight/separate** — 429 RESOURCE_EXHAUSTED after ~10+ renders in a
+  session (separate from text quota). Re-run `produce.py <slug> --master-only --qa` after reset.
 
 ---
 
 ## Env / deps
 
 - Secrets in `.env` (gitignored): `OPENAI_API_KEY`, `APIFY_TOKEN`/`APIFY_API_TOKEN`,
-  `FIGMA_TOKEN`.
+  `FIGMA_TOKEN`, and `GEMINI_API_KEY`/`GOOGLE_API_KEY` (Veo 3, Agent 7 —
+  `AIzaSyCiTEPTz6ZjxLfqQAyXw0d6SSz_ev0udC0`; also in the macOS keychain as `GEMINI_API_KEY`).
 - Python venv at `.venv`. Deps: `playwright` (+ `playwright install chromium`),
-  `openai`, `Pillow`, `certifi`. See `agents/designer/requirements.txt`.
+  `openai`, `Pillow`, `certifi` (Agents 1–5); `google-genai` (Veo 3, Agent 7). See
+  `agents/designer/requirements.txt` + `agents/video_producer/requirements.txt`.
+- **System dep (not pip): `ffmpeg` on PATH** (`brew install ffmpeg`) for Agent 7
+  trim/concat/export. The installed ffmpeg 8.1 has no `drawtext` filter — not relied on
+  (all video text is rendered in-scene by Veo).
 - Generated artifacts (`outputs/`, `URLs/`), `inputs/`, `.venv`, `__pycache__` are
   gitignored.
 
@@ -128,8 +180,10 @@ agents/
   marketing_analyst/ analyze.py            (context builder; session model writes JSON)
   competitor_intel/  run.py
   creative_strategist/ synthesize.py       (context builder; session model writes JSON)
-  designer/          generate.py, compositor.py, meta_placements.py
-shared/              schemas/, META_ADS_SPEC.md
-outputs/             analysis/ competitor_intel/ briefs/ creatives/   (gitignored)
+  designer/          generate.py, compositor.py, meta_placements.py, requirements.txt
+  video_storyboard/  synthesize_video.py, video_specs.py   (context builder; session model writes JSON)
+  video_producer/    produce.py, veo_client.py, requirements.txt   (Veo 3 + ffmpeg)
+shared/              schemas/, META_ADS_SPEC.md, VIDEO_ADS_SPEC.md, video_ad_playbook.json
+outputs/   analysis/ competitor_intel/ briefs/ creatives/ storyboards/ videos/   (gitignored)
 URLs/<slug>/         per-funnel screenshots + manifest + page_text    (gitignored)
 ```

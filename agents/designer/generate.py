@@ -145,34 +145,54 @@ def _scene_prompt(concept_name: str, visual_concept: str, colors: List[str], p: 
 
 
 def _baked_prompt(concept_name: str, visual_concept: str, hook: str, subhead: str,
-                  cta: str, colors: List[str], p: Placement) -> str:
-    """One cohesive, finished ad — text DESIGNED INTO the image. Minimal copy: ONE headline +
-    ONE short money-focused line + a CTA button. No paragraphs, no tiny unreadable text."""
+                  cta: str, colors: List[str], p: Placement, audience: str = "") -> str:
+    """One cohesive, finished ad — text DESIGNED INTO the image. Minimal copy: an audience
+    BADGE + ONE headline + ONE short money-focused line + a CTA button. No paragraphs."""
     try:
         accent = "#%02X%02X%02X" % compositor.pick_accent(colors)
     except Exception:
         accent = "a vivid accent color"
     palette = ", ".join(colors) if colors else "a clean, premium brand palette"
     sub = (subhead or "").strip()
+    badge = (audience or "").strip()
+    n = 1
+    lines = []
+    if badge:
+        lines.append(f"  {n}) AUDIENCE BADGE — a small, distinct rounded pill/tag at the very TOP "
+                     f"(eyebrow above the headline), in the accent color {accent} or a contrasting "
+                     f"chip, that names who the ad is for: \"{badge}\". It must read as a tag/label, "
+                     f"clearly smaller than the headline.\n")
+        n += 1
+    lines.append(f"  {n}) HEADLINE — the single dominant element, big and bold: \"{hook}\"\n")
+    n += 1
+    if sub:
+        lines.append(f"  {n}) ONE short supporting line — large enough to read easily on a phone, "
+                     f"high contrast: \"{sub}\"\n")
+        n += 1
+    lines.append(
+        f"  {n}) CTA BUTTON — a clearly drawn rounded button filled with {accent} with the label "
+        f"\"{cta}\". Give the button a soft DROP SHADOW so it visibly lifts off the background and "
+        f"stands out. Place a realistic white MOUSE CURSOR (an arrow pointer with a thin dark "
+        f"outline, or a hand/pointer cursor) hovering over the button's lower-right area as if about "
+        f"to click it — a deliberate click-prompt to boost CTR.\n")
     return (
         f"Design ONE single, cohesive, finished professional Meta Ads creative — a complete "
         f"advertisement where the typography is DESIGNED INTO the composition together with the "
         f"imagery (a unified graphic-design layout, NOT text pasted on top of a photo). "
         f"Exact canvas {p.aspect_ratio}, {p.target[0]}x{p.target[1]}px.\n\n"
         f"CONCEPT: {concept_name}\nSCENE / IMAGERY:\n{visual_concept}\n\n"
-        f"PUT EXACTLY THESE THREE TEXT ELEMENTS AND NOTHING ELSE (modern bold sans-serif, "
-        f"perfectly spelled, fully visible, never cropped, no extra/duplicate/gibberish words):\n"
-        f"  1) HEADLINE — the single dominant element, big and bold: \"{hook}\"\n"
-        + (f"  2) ONE short supporting line — large enough to read easily on a phone, "
-           f"high contrast: \"{sub}\"\n" if sub else "")
-        + f"  3) CTA BUTTON — a clearly drawn rounded button filled with {accent}: \"{cta}\"\n\n"
-        f"STRICT: do NOT add any paragraph, body copy, fine print, or any other text beyond those "
-        f"three. Every word must be large and clearly legible on mobile — no small unreadable text.\n"
+        f"PUT EXACTLY THESE TEXT ELEMENTS AND NOTHING ELSE (modern bold sans-serif, perfectly "
+        f"spelled, fully visible, never cropped, no extra/duplicate/gibberish words):\n"
+        + "".join(lines)
+        + f"\nThe audience badge SEGMENTS the viewer — it should grab the right person ('that's me') "
+        f"before they read the headline.\n"
+        f"STRICT: do NOT add any paragraph, body copy, fine print, or any other text beyond the "
+        f"above. Every word must be large and clearly legible on mobile — no small unreadable text.\n"
         f"ART DIRECTION: integrated, premium, high-converting layout; clear hierarchy "
-        f"(headline → imagery → CTA). Text sits over clean areas / negative space / a subtle scrim "
-        f"for strong contrast. Brand palette: {palette}. Commercial photography blended with crisp "
-        f"graphic-design typography. Keep all text inside safe margins ({p.safe_zone}). Sharp, "
-        f"high-resolution, balanced. No watermark."
+        f"(audience badge → headline → imagery → CTA). Text sits over clean areas / negative space / "
+        f"a subtle scrim for strong contrast. Brand palette: {palette}. Commercial photography "
+        f"blended with crisp graphic-design typography. Keep all text inside safe margins "
+        f"({p.safe_zone}). Sharp, high-resolution, balanced. No watermark."
     )
 
 
@@ -193,6 +213,8 @@ def _jobs_from_briefs(data: Dict[str, Any]) -> List[Dict[str, Any]]:
         if not subhead:
             words = (b.get("body_copy", "") or "").split()
             subhead = " ".join(words[:12]) + ("…" if len(words) > 12 else "")
+        # audience call-out badge (segments the viewer); fall back to target_audience
+        audience = (b.get("audience_callout") or "").strip()
         formats = []
         for fmt in cd.get("formats", []):
             p = resolve_placement(aspect_ratio=fmt.get("aspect_ratio", ""),
@@ -201,7 +223,7 @@ def _jobs_from_briefs(data: Dict[str, Any]) -> List[Dict[str, Any]]:
                 "placement": p,
                 "has_scene": True,
                 "scene_prompt": _scene_prompt(concept, vc, colors, p),
-                "baked": {v: _baked_prompt(concept, vc, h, subhead, cta, colors, p)
+                "baked": {v: _baked_prompt(concept, vc, h, subhead, cta, colors, p, audience)
                           for v, h in hooks.items() if h},
             })
         jobs.append({
@@ -263,7 +285,7 @@ def _extract_image(resp) -> Optional[bytes]:
     return None
 
 
-def collect_images(client, id_map: Dict[Any, str], timeout: int = 600, poll: int = 6) -> Dict[Any, Any]:
+def collect_images(client, id_map: Dict[Any, str], timeout: int = 1200, poll: int = 6) -> Dict[Any, Any]:
     """Poll background response ids until done. Returns {key: bytes | Exception}."""
     pending = dict(id_map)
     out: Dict[Any, Any] = {}
