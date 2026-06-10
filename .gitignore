@@ -8,3 +8,4 @@ URLs/
 __pycache__/
 *.pyc
 .venv/
+.gstack/

@@ -125,6 +125,17 @@ typography from `veo_text_treatment` + `on_screen_text`) — no overlays. Needs 
   radar/HUD, RV4 lifestyle owner, RV5 editorial red). When the user wants "more variety,"
   vary `visual_concept` + `color_scheme`, not the offer. RV1/RV2/RV3 shipped in HIGH across
   4:5 / 1:1 / 9:16.
+- **Creative packs & naming (MANDATORY).** Every new angle / batch of creatives gets its own
+  dated pack folder, and files get canonical names (convention mirrors the reference pack
+  `outputs/creatives/2026.06.06_richie_100plus`):
+  `outputs/creatives/<YYYY.MM.DD>_<brand>_<pack_slug>/<seq>_<status>_<brand>_<audience>_<concept>[_<a|b|c>]_<ratio>.png`
+  — `seq` is a GLOBAL incrementing creative number (persisted in `outputs/creatives/.seq`;
+  one seq per concept+variant, shared across its ratios), `status` = `ok` (approved) /
+  `draft` (concept), `ratio` ∈ `4x5|1x1|9x16`. After approval, pack each brief with
+  `agents/designer/pack.py --pack <pack> --brief <brief_id> --audience <aud> --concept <slug>`
+  (moves PNGs out of the working `<brief_id>/` dir, assigns seq, maintains the pack's
+  `_pack.json` index). Working dirs `outputs/creatives/<brief_id>/` are scratch only —
+  nothing stays there after packing. Generation logs live in `outputs/creatives/_logs/`.
 
 ---
 
