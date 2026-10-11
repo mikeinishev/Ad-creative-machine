@@ -1,23 +1,26 @@
 #!/usr/bin/env python3
 """Pack approved creatives into dated pack folders with canonical names.
 
-Naming convention (mirrors the colleague's reference pack 2026.06.06_richie_100plus):
+Naming convention (user's canon, examples: 033_mi_restaurant_owners_revenue20_money_on_table):
 
   outputs/creatives/<YYYY.MM.DD>_<brand>_<pack_slug>/
-      <seq>_<status>_<brand>_<audience>_<concept>[_<variant>]_<ratio>.png
+      <seq3>_mi_<audience>_<offer>_<accent>[_<variant>]_<ratio>.png
 
-  - seq      : GLOBAL incrementing creative number, persisted in outputs/creatives/.seq
+  - seq3     : GLOBAL zero-padded creative number (001…), persisted in outputs/creatives/.seq
                (one seq per concept+variant; all ratios of the same creative share it)
-  - status   : ok (approved/final) | draft (concept, not approved)
-  - brand    : product brand, e.g. richie
-  - audience : who the ad calls out, e.g. restaurant_owner, toast_owner, square_owner
-  - concept  : short concept slug, e.g. radius_superreal_aero, big_offer_contract
+  - mi       : author mark — Mike Inishev (distinguishes our creatives from colleagues')
+  - audience : who the ad calls out: restaurant_owners, restaurant_gms, …
+  - offer    : the offer being sold: customers100 (100 customers/radius), revenue20 (+20%), …
+  - accent   : what the creative shows / its emphasis: money_on_table, lift_chart,
+               toast_kitchen_pass, aero_city, …
   - variant  : a/b/c — only when the source has multiple hook variants
   - ratio    : 4x5 | 1x1 | 9x16  (from feed_vertical / feed_square / stories_reels)
 
+  status (ok|draft) is NOT in the filename — it lives in the pack's _pack.json.
+
 Usage:
   pack.py --pack 2026.06.10_richie_pos --brief toast_aero_night \
-          --audience toast_owner --concept aero_night_radius [--status ok] [--copy]
+          --audience restaurant_owners --offer customers100 --accent toast_aero_radius [--copy]
 
 Moves (default) or copies all PNGs from outputs/creatives/<brief_id>/ into the pack.
 metadata.json from the source dir is merged into the pack's _pack.json index.
@@ -34,8 +37,15 @@ RATIO = {"feed_vertical": "4x5", "feed_square": "1x1", "stories_reels": "9x16",
 
 
 def next_seq() -> int:
-    n = int(SEQ_FILE.read_text().strip()) if SEQ_FILE.exists() else 200
-    return n + 1
+    """Monotonic, never-reused. Take max(.seq counter, highest seq already on disk) + 1 so a
+    lost/reset .seq can never recycle an existing creative number. Numbers only ever go up."""
+    counter = int(SEQ_FILE.read_text().strip()) if SEQ_FILE.exists() else 0
+    on_disk = 0  # only OUR creatives (mi author mark) — colleagues' packs have their own numbering
+    for p in CRE.glob("*/*.png"):
+        m = re.match(r"(\d+)_mi_", p.name)
+        if m:
+            on_disk = max(on_disk, int(m.group(1)))
+    return max(counter, on_disk) + 1
 
 
 def save_seq(n: int):
@@ -47,9 +57,11 @@ def main():
     ap.add_argument("--pack", required=True, help="pack folder name: YYYY.MM.DD_<brand>_<slug>")
     ap.add_argument("--brief", required=True, help="source brief_id dir under outputs/creatives/")
     ap.add_argument("--audience", required=True)
-    ap.add_argument("--concept", required=True)
-    ap.add_argument("--brand", default="richie")
-    ap.add_argument("--status", default="ok", choices=["ok", "draft"])
+    ap.add_argument("--offer", required=True)
+    ap.add_argument("--accent", required=True)
+    ap.add_argument("--author", default="mi")
+    ap.add_argument("--status", default="ok", choices=["ok", "draft"],
+                    help="recorded in _pack.json only (not in the filename)")
     ap.add_argument("--copy", action="store_true", help="copy instead of move")
     a = ap.parse_args()
 
@@ -79,7 +91,7 @@ def main():
         seq += 1
         for placement, p in sorted(groups[variant]):
             vpart = f"_{variant.lower()}" if multi else ""
-            new = f"{seq}_{a.status}_{a.brand}_{a.audience}_{a.concept}{vpart}_{RATIO[placement]}.png"
+            new = f"{seq:03d}_{a.author}_{a.audience}_{a.offer}_{a.accent}{vpart}_{RATIO[placement]}.png"
             (shutil.copy2 if a.copy else shutil.move)(str(p), str(dst / new))
             index_entries.append({"file": new, "seq": seq, "variant": variant,
                                   "placement": placement, "source": f"{a.brief}/{p.name}"})
@@ -90,8 +102,8 @@ def main():
     idx_path = dst / "_pack.json"
     idx = json.loads(idx_path.read_text()) if idx_path.exists() else {"pack": a.pack, "items": []}
     meta_src = src / "metadata.json"
-    entry = {"brief_id": a.brief, "audience": a.audience, "concept": a.concept,
-             "status": a.status, "files": index_entries}
+    entry = {"brief_id": a.brief, "audience": a.audience, "offer": a.offer,
+             "accent": a.accent, "status": a.status, "files": index_entries}
     if meta_src.exists():
         try:
             entry["source_metadata"] = json.loads(meta_src.read_text())

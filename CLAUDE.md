@@ -125,17 +125,34 @@ typography from `veo_text_treatment` + `on_screen_text`) — no overlays. Needs 
   radar/HUD, RV4 lifestyle owner, RV5 editorial red). When the user wants "more variety,"
   vary `visual_concept` + `color_scheme`, not the offer. RV1/RV2/RV3 shipped in HIGH across
   4:5 / 1:1 / 9:16.
-- **Creative packs & naming (MANDATORY).** Every new angle / batch of creatives gets its own
-  dated pack folder, and files get canonical names (convention mirrors the reference pack
-  `outputs/creatives/2026.06.06_richie_100plus`):
-  `outputs/creatives/<YYYY.MM.DD>_<brand>_<pack_slug>/<seq>_<status>_<brand>_<audience>_<concept>[_<a|b|c>]_<ratio>.png`
-  — `seq` is a GLOBAL incrementing creative number (persisted in `outputs/creatives/.seq`;
-  one seq per concept+variant, shared across its ratios), `status` = `ok` (approved) /
-  `draft` (concept), `ratio` ∈ `4x5|1x1|9x16`. After approval, pack each brief with
-  `agents/designer/pack.py --pack <pack> --brief <brief_id> --audience <aud> --concept <slug>`
-  (moves PNGs out of the working `<brief_id>/` dir, assigns seq, maintains the pack's
-  `_pack.json` index). Working dirs `outputs/creatives/<brief_id>/` are scratch only —
-  nothing stays there after packing. Generation logs live in `outputs/creatives/_logs/`.
+- **Creative packs & naming (MANDATORY, user's canon).** Every new angle / batch of creatives
+  gets its own dated pack folder; file names make the number, author, audience, OFFER and
+  ACCENT readable at a glance (examples set by Mike:
+  `033_mi_restaurant_owners_revenue20_money_on_table`, `021_mi_restaurant_owners_offer_toast_kitchen_pass`):
+  `outputs/creatives/<YYYY.MM.DD>_<brand>_<pack_slug>/<seq3>_mi_<audience>_<offer>_<accent>[_<a|b|c>]_<ratio>.png`
+  — `seq3` = GLOBAL zero-padded creative number (`outputs/creatives/.seq`; one seq per
+  concept+variant, shared across its ratios; currently at 035), **`mi` = Mike Inishev**
+  (author mark — distinguishes our creatives from colleagues'), `audience` ∈
+  `restaurant_owners|restaurant_gms|…`, `offer` = what we sell (`customers100`, `revenue20`),
+  `accent` = what the creative shows (`lift_chart`, `toast_kitchen_pass`, `aero_city`…),
+  `ratio` ∈ `4x5|1x1|9x16`. Status ok/draft lives in the pack's `_pack.json`, NOT the filename.
+  After approval, pack each brief with `agents/designer/pack.py --pack <pack> --brief <brief_id>
+  --audience <aud> --offer <offer> --accent <accent>`. Working dirs
+  `outputs/creatives/<brief_id>/` are scratch only — nothing stays there after packing.
+  Generation logs live in `outputs/creatives/_logs/`.
+- **Always show creatives as LINKS in chat (user's standing request).** After any generation or
+  pack step, present each creative (or ≥1 per concept + its folder) as a clickable markdown link
+  to the local file (path relative to repo root), plus an `open …` convenience command. Inline
+  image previews of a hero shot or two are a bonus, but links must always be there — Mike reviews
+  by opening the files locally.
+- **`seq3` is a MONOTONIC, NEVER-REUSED creative ID (chronology rule).** Always take the NEXT
+  number from `outputs/creatives/.seq` and increment it — `pack.py` does this automatically;
+  never hand-assign, reset, reuse, or back-fill a number. The number only ever goes UP, so the
+  sequence is a chronological log of everything we've ever made, and each `seq3` is a permanent
+  unique identifier for one creative (its 3 ratios share it). If a creative is rejected,
+  replaced, or deleted, its number is RETIRED, not recycled — a new/replacement creative gets a
+  fresh higher number. This lets us cite a creative by its number forever (e.g. "creative 030")
+  and return to it later. Do NOT renumber existing creatives when adding new ones; only append.
 
 ---
 

@@ -144,9 +144,84 @@ def _scene_prompt(concept_name: str, visual_concept: str, colors: List[str], p: 
     )
 
 
+def _native_prompt(concept_name: str, visual_concept: str, hook: str, subhead: str,
+                   cta: str, colors: List[str], p: Placement) -> str:
+    """NATIVE / UGC mode — deliberately NOT a designed ad. Looks like an organic phone-shot
+    post: no audience badge, no drawn CTA button, no mouse cursor, no polished ad layout.
+    Text (if any) reads like a story caption typed over the photo."""
+    sub = (subhead or "").strip()
+    cap = f"\"{hook}\"" + (f" and, smaller beneath it, \"{sub}\"" if sub else "")
+    return (
+        f"A REAL, UNPOLISHED PHOTO — NOT an advertisement, NOT a graphic design layout. "
+        f"Exact canvas {p.aspect_ratio}, {p.target[0]}x{p.target[1]}px.\n\n"
+        f"CONCEPT: {concept_name}\nSCENE:\n{visual_concept}\n\n"
+        f"CRITICAL — this must look like an ORGANIC POST a real small-business owner shot on "
+        f"their own phone and posted themselves:\n"
+        f"  · Shot on a modern smartphone: natural available light, slightly imperfect framing, "
+        f"real depth of field, authentic skin texture and real-world clutter. NOT studio-lit, "
+        f"NOT a commercial product shot, NOT color-graded like an ad.\n"
+        f"  · NO advertising furniture whatsoever: no audience badge/pill, no drawn CTA button, "
+        f"no mouse cursor, no logo lockup, no brand color blocks, no graphic-design layout.\n\n"
+        f"TEXT — plain social-caption style typed over the photo, exactly: {cap}\n"
+        f"  · Render it like the built-in text tool of Instagram Stories: simple clean sans-serif, "
+        f"either plain white with a soft shadow or on a small semi-transparent dark strip. "
+        f"Slightly casual placement, NOT perfectly centered typography.\n"
+        f"  · Keep it inside the safe area ({p.safe_zone}), perfectly spelled, no extra words, "
+        f"no duplicate text, no watermark.\n\n"
+        f"The whole frame must read as REAL and hand-made — if it looks like a polished ad, it has "
+        f"failed. Photoreal, authentic, believable."
+    )
+
+
+def _photo_prompt(concept_name: str, visual_concept: str, colors: List[str], p: Placement,
+                  overlay: str = "") -> str:
+    """PHOTO-ONLY mode — a straight photorealistic photograph, no ad furniture and no overlay
+    text. For website/product cards where the copy lives in the HTML next to the image. Unlike
+    _scene_prompt this ALLOWS in-scene props, screens and printed matter (a phone UI, a QR code,
+    a printed table tent) — anything described in the scene is part of the photograph itself.
+
+    `photo_overlay` opens a narrow exception: exactly the flat graphic elements it names (a status
+    badge, a label chip) may be drawn on top of the photograph, and nothing else."""
+    if overlay:
+        allowed = (
+            f"  · EXACTLY ONE EXCEPTION — these flat graphic elements ARE drawn on top of the "
+            f"photograph, and NOTHING else may be:\n{overlay}\n"
+            f"  · Beyond those elements: NO headline, NO caption, NO body copy, NO call-to-action "
+            f"button, NO mouse cursor, NO watermark, NO borders, NO graphic-design layout.\n"
+            f"  · Every other word in the frame must physically exist inside the scene — printed on "
+            f"an object or displayed on a device screen — perfectly spelled and naturally lit.\n"
+        )
+    else:
+        allowed = (
+            f"  · NO overlay text, NO headline, NO caption, NO audience badge or pill, NO "
+            f"call-to-action button, NO mouse cursor, NO logo lockup, NO graphic-design layout, NO "
+            f"watermark, NO borders.\n"
+            f"  · The ONLY words allowed in the frame are ones that physically exist inside the scene "
+            f"as described above — printed on an object or displayed on a device screen. They must be "
+            f"perfectly spelled and naturally lit, photographed as part of the scene, never typeset "
+            f"on top of it.\n"
+        )
+    return (
+        f"A single photorealistic PHOTOGRAPH. Exact canvas {p.aspect_ratio}, "
+        f"{p.target[0]}x{p.target[1]}px.\n\n"
+        f"CONCEPT: {concept_name}\nSCENE:\n{visual_concept}\n\n"
+        f"CRITICAL — THIS IS NOT AN ADVERTISEMENT:\n"
+        + allowed +
+        f"  · Any surface not described above stays blank: no invented signage, menu text, wall art, "
+        f"packaging copy or brand names anywhere in the frame.\n\n"
+        f"PHOTOGRAPHY: shot on a full-frame camera with a fast prime lens; natural soft daylight, "
+        f"believable shadows and reflections, real material texture, shallow depth of field with the "
+        f"key subject tack-sharp and the background softly blurred. True-to-life color, no heavy "
+        f"grading. Subject centered with calm breathing room on all sides so the square crop reads "
+        f"cleanly. Restrained, neutral palette that sits quietly next to {', '.join(colors[:3]) if colors else 'a neutral brand palette'}.\n"
+        f"Editorial product-photography quality: clean, premium, believable. Photoreal — if it looks "
+        f"illustrated, rendered or like a designed ad, it has failed."
+    )
+
+
 def _baked_prompt(concept_name: str, visual_concept: str, hook: str, subhead: str,
                   cta: str, colors: List[str], p: Placement, audience: str = "",
-                  cta_sub: str = "") -> str:
+                  cta_sub: str = "", no_cta: bool = False, no_headline: bool = False) -> str:
     """One cohesive, finished ad — text DESIGNED INTO the image. Minimal copy: an audience
     BADGE + ONE headline + ONE short money-focused line + a CTA button. No paragraphs."""
     try:
@@ -165,18 +240,20 @@ def _baked_prompt(concept_name: str, visual_concept: str, hook: str, subhead: st
                      f"chip, that names who the ad is for: \"{badge}\". It must read as a tag/label, "
                      f"clearly smaller than the headline.\n")
         n += 1
-    lines.append(f"  {n}) HEADLINE — the single dominant element, big and bold: \"{hook}\"\n")
-    n += 1
+    if not no_headline:
+        lines.append(f"  {n}) HEADLINE — the single dominant element, big and bold: \"{hook}\"\n")
+        n += 1
     if sub:
         lines.append(f"  {n}) ONE short supporting line — large enough to read easily on a phone, "
                      f"high contrast: \"{sub}\"\n")
         n += 1
-    lines.append(
-        f"  {n}) CTA BUTTON — a clearly drawn rounded button filled with {accent} with the label "
-        f"\"{cta}\". Give the button a soft DROP SHADOW so it visibly lifts off the background and "
-        f"stands out. Place a realistic white MOUSE CURSOR (an arrow pointer with a thin dark "
-        f"outline, or a hand/pointer cursor) hovering over the button's lower-right area as if about "
-        f"to click it — a deliberate click-prompt to boost CTR.\n")
+    if not no_cta:
+        lines.append(
+            f"  {n}) CTA BUTTON — a clearly drawn rounded button filled with {accent} with the label "
+            f"\"{cta}\". Give the button a soft DROP SHADOW so it visibly lifts off the background and "
+            f"stands out. Place a realistic white MOUSE CURSOR (an arrow pointer with a thin dark "
+            f"outline, or a hand/pointer cursor) hovering over the button's lower-right area as if about "
+            f"to click it — a deliberate click-prompt to boost CTR.\n")
     if csub:
         n += 1
         lines.append(f"  {n}) ONE small SUPPORTING LINE directly BELOW the CTA button (smaller than "
@@ -224,6 +301,16 @@ def _jobs_from_briefs(data: Dict[str, Any]) -> List[Dict[str, Any]]:
         audience = (b.get("audience_callout") or "").strip()
         # optional small line rendered directly UNDER the CTA button (scarcity/exclusivity)
         cta_sub = (b.get("cta_subtext") or (b.get("cta", {}) or {}).get("subtext") or "").strip()
+        # native/UGC mode: organic phone-shot look — no badge, no CTA button, no cursor
+        native = bool(b.get("native_mode"))
+        # video-frame mode: no CTA button and no cursor (labels live inside visual_concept)
+        no_cta = bool(b.get("no_cta"))
+        # storyboard frames: text is positioned inside visual_concept, not as a hero headline
+        no_headline = bool(b.get("no_headline"))
+        # photo-only mode: a plain photograph for website/product cards — zero overlay text
+        photo_only = bool(b.get("photo_only"))
+        # photo_only + a declared list of flat graphic elements allowed on top of the photo
+        photo_overlay = (b.get("photo_overlay") or "").strip()
         formats = []
         for fmt in cd.get("formats", []):
             p = resolve_placement(aspect_ratio=fmt.get("aspect_ratio", ""),
@@ -232,7 +319,9 @@ def _jobs_from_briefs(data: Dict[str, Any]) -> List[Dict[str, Any]]:
                 "placement": p,
                 "has_scene": True,
                 "scene_prompt": _scene_prompt(concept, vc, colors, p),
-                "baked": {v: _baked_prompt(concept, vc, h, subhead, cta, colors, p, audience, cta_sub)
+                "baked": {v: (_photo_prompt(concept, vc, colors, p, photo_overlay) if photo_only
+                              else _native_prompt(concept, vc, h, subhead, cta, colors, p) if native
+                              else _baked_prompt(concept, vc, h, subhead, cta, colors, p, audience, cta_sub, no_cta, no_headline))
                           for v, h in hooks.items() if h},
             })
         jobs.append({
