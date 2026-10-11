@@ -41,7 +41,7 @@ root with the project venv: `.venv/bin/python …`. Slug = the URL host+path (e.
 .venv/bin/python agents/creative_strategist/synthesize.py <slug>
 #    → bundle: outputs/briefs/_strategy_context_<slug>.md → agent writes briefs JSON
 
-# 5. Agent 5 — Designer (gpt-image-2). APPROVAL FLOW:
+# 5. Agent 5 — Designer (ChatGPT subscription via `codex exec` by default; --engine api = API key). APPROVAL FLOW:
 #    a) concepts in LOW quality (base format only, all A/B/C hooks) → review/approve
 .venv/bin/python agents/designer/generate.py --briefs <slug> --phase concept
 #    b) AFTER approval → resizes in HIGH quality (all other placements)
@@ -59,7 +59,7 @@ root with the project venv: `.venv/bin/python …`. Slug = the URL host+path (e.
 | 2 | **Marketing Analyst** | `agents/marketing_analyst` | crawl | `marketing_<slug>.json` | **session model (Opus 4.8), no API** |
 | 3 | **Competitor Intel** | `agents/competitor_intel` | marketing JSON | `data_<slug>.json` + creatives | Apify Meta Ad Library (US) + OpenAI vision |
 | 4 | **Creative Strategist** | `agents/creative_strategist` | 1+2+3 outputs | `creative_briefs_<slug>.json` | **session model (Opus 4.8), no API** |
-| 5 | **Designer** | `agents/designer` | briefs | `<placement>_<variant>.png` | OpenAI **gpt-image-2** (Responses background mode) |
+| 5 | **Designer** | `agents/designer` | briefs | `<placement>_<variant>.png` | **ChatGPT subscription** (`codex exec` + built-in image tool), fallback `--engine api` (gpt-image-2, Responses background) |
 | 6 | **Video Storyboard** | `agents/video_storyboard` | briefs (Agent 4) | `storyboards_<slug>.json` | **session model (Opus 4.8), no API** |
 | 7 | **Video Producer** | `agents/video_producer` | storyboards (Agent 6) | `<platform>.mp4` | **Google Veo 3** (submit→poll→download) + ffmpeg |
 
@@ -99,10 +99,15 @@ typography from `veo_text_treatment` + `on_screen_text`) — no overlays. Needs 
   model itself (always the strongest available — currently Opus 4.8, 1M context)** performs
   the analysis and writes the JSON. No char/token caps. If a stronger model is available,
   use it.
-- **Agent 5 uses gpt-image-2 via the Responses API `background` mode** (submit → poll
-  → fetch), NOT synchronous `images.generate`. Submit all jobs up front → they render
-  server-side in parallel → poll. This avoids the ~60s synchronous-connection reset
-  wall (15 creatives, 0 fails, ~76s).
+- **Agent 5 renders through the ChatGPT subscription on this Mac by default** (`--engine codex`):
+  each creative is one `codex exec -m gpt-6-astra` run that calls Codex's built-in image tool — no
+  `OPENAI_API_KEY`, no API billing, spends the subscription's Codex usage (image turns burn it 3–5×
+  faster). The image is read from `~/.codex/generated_images/<thread_id>/`; ~50–70 s per image,
+  `--concurrency` runs several in parallel. The tool has no size/quality fields: orientation +
+  8 % edge margins are asked in the prompt and every render is fitted to the exact Meta size, so
+  `--quality` is ignored. Requires `codex login status` → "Logged in using ChatGPT".
+  `--engine api` keeps the old path (gpt-image-2 via the Responses API `background` mode, explicit
+  size + low/medium/high) — use only when explicitly asked. `--qa` still needs the API key.
 - **Approval flow for creatives:** concepts first in **low** quality (fast/cheap,
   `--phase concept`) → refine copy/design with the user → **resizes in high** quality
   after approval (`--phase resize`). `--quality` default is phase-aware

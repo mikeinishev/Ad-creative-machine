@@ -1,8 +1,19 @@
 #!/usr/bin/env python3
 """
-Agent 5 — Designer: creative image generator (OpenAI gpt-image-2, medium quality).
+Agent 5 — Designer: creative image generator.
 
 Turns Agent 4 briefs into Meta-ready creatives.
+
+ENGINES (--engine):
+  codex (DEFAULT) — the ChatGPT subscription logged in on this Mac: each creative is one
+        `codex exec` run that calls Codex's built-in image tool (gpt-image family). No
+        OPENAI_API_KEY, no API billing — it spends the subscription's Codex usage allowance
+        (image turns burn it 3–5× faster than text turns). ~50 s per image; --concurrency runs
+        several in parallel. The tool has no size/quality fields: orientation is asked for in the
+        prompt and each render is fitted to the exact Meta size afterwards, so --quality is
+        ignored. Needs: `codex login status` → "Logged in using ChatGPT".
+  api — the old path: OPENAI_API_KEY + gpt-image-2 via the Responses API background mode
+        (explicit size + low/medium/high quality). Use only when explicitly asked.
 
 Default mode = ONE COHESIVE IMAGE (text designed in):
   gpt-image-2 designs the whole creative — scene + integrated headline/CTA typography — as
@@ -52,6 +63,7 @@ import io
 import json
 import os
 import re
+import subprocess
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -351,7 +363,67 @@ def _jobs_from_prompts(data: Dict[str, Any]) -> List[Dict[str, Any]]:
 
 
 # ---------------------------------------------------------------------------
-# gpt-image-2 via the Responses API BACKGROUND mode (submit → poll → fetch).
+# ENGINE "codex" (DEFAULT): the ChatGPT subscription logged in on this Mac (Codex CLI,
+# `codex login status` → "Logged in using ChatGPT"). Each creative = one `codex exec` run that
+# calls Codex's built-in image tool; no OPENAI_API_KEY and no API billing — it uses the
+# subscription's Codex usage allowance. The image lands in
+# ~/.codex/generated_images/<thread_id>/*.png; we read the thread id from `--json` events.
+# The built-in tool picks its own pixel size (no size/quality fields), so orientation is asked
+# for in the prompt and every render is fitted to the exact Meta target afterwards.
+# ---------------------------------------------------------------------------
+CODEX_IMAGES_DIR = Path.home() / ".codex" / "generated_images"
+CODEX_MODEL = "gpt-6-astra"        # standing override (Codex CLI rejects -codex models on ChatGPT auth)
+CODEX_EFFORT = "xhigh"             # Mike's standing default; pass --codex-effort to change it
+
+
+def _orientation(p: Placement) -> str:
+    w, h = p.target
+    return "square (1:1)" if abs(w - h) <= 8 else (f"portrait / vertical ({p.aspect_ratio})" if h > w
+                                                   else f"landscape / horizontal ({p.aspect_ratio})")
+
+
+def codex_render(prompt: str, p: Placement, model: str = CODEX_MODEL, effort: str = CODEX_EFFORT,
+                 timeout: int = 900) -> bytes:
+    """Render ONE image through the local ChatGPT subscription (codex exec + built-in image tool)."""
+    instruction = (
+        "Use your built-in image generation tool to create exactly ONE image. Do not write files, do not run "
+        "shell commands, do not ask questions.\n"
+        f"Canvas orientation: {_orientation(p)} — compose for that aspect ratio. The image will be trimmed "
+        "slightly to the exact ratio afterwards, so keep ALL text, badges and buttons well inside the frame "
+        "with generous margins (at least 8% from every edge).\n"
+        "Render EXACTLY the brief below; keep every quoted text verbatim and perfectly spelled:\n\n"
+        f"{prompt}\n\nWhen the image is generated, reply with the single word DONE."
+    )
+    cmd = ["codex", "exec", "-m", model, "-c", f'model_reasoning_effort="{effort}"', "-s", "read-only",
+           "--skip-git-repo-check", "--json", instruction]
+    try:
+        cp = subprocess.run(cmd, cwd=str(REPO_ROOT), stdin=subprocess.DEVNULL, capture_output=True,
+                            text=True, timeout=timeout)
+    except FileNotFoundError:
+        raise RuntimeError("codex CLI not found — install @openai/codex and `codex login` with ChatGPT")
+    except subprocess.TimeoutExpired:
+        raise RuntimeError(f"codex exec timed out after {timeout}s")
+    thread_id, last_msg = None, ""
+    for line in cp.stdout.splitlines():
+        try:
+            ev = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if ev.get("type") == "thread.started":
+            thread_id = ev.get("thread_id")
+        item = ev.get("item") or {}
+        if item.get("type") == "agent_message":
+            last_msg = item.get("text", "")
+    if not thread_id:
+        raise RuntimeError(f"codex exec gave no thread id (exit {cp.returncode}): {(cp.stderr or cp.stdout)[-300:]}")
+    pngs = sorted((CODEX_IMAGES_DIR / thread_id).glob("*.png"), key=lambda f: f.stat().st_mtime)
+    if not pngs:
+        raise RuntimeError(f"no image generated (codex said: {last_msg.strip()[:200] or 'nothing'})")
+    return pngs[-1].read_bytes()
+
+
+# ---------------------------------------------------------------------------
+# ENGINE "api": gpt-image-2 via the Responses API BACKGROUND mode (submit → poll → fetch).
 # This avoids holding a long synchronous connection (which hit a ~60s reset wall):
 # we submit all jobs (each returns an id in ~3s), they render server-side in parallel,
 # and we poll for results. Wall-clock ≈ slowest job, not the sum.
@@ -496,8 +568,9 @@ def run(args: argparse.Namespace) -> int:
     mode_lbl = "composite(scene+overlay)" if composite else "model(text baked)"
     phase_lbl = {"concept": f"CONCEPT (base={args.base}, no resizes — for approval)",
                  "resize": f"RESIZE (all but {args.base} — post-approval)", "all": "ALL"}[args.phase]
-    print(f"▶ Agent 5 · phase={phase_lbl} · {len(jobs)} briefs · {len(units)} creatives · "
-          f"variants={variants} · mode={mode_lbl} · quality={args.quality} · concurrency={args.concurrency}")
+    print(f"▶ Agent 5 · engine={args.engine} · phase={phase_lbl} · {len(jobs)} briefs · {len(units)} creatives · "
+          f"variants={variants} · mode={mode_lbl} · "
+          f"quality={'n/a (subscription tool)' if args.engine == 'codex' else args.quality} · concurrency={args.concurrency}")
     if args.dry_run:
         for u in units:
             print(f"[dry-run] {u['job']['brief_id']} · {u['fmt']['placement'].key}_{u['variant']} "
@@ -505,7 +578,22 @@ def run(args: argparse.Namespace) -> int:
         print(f"\nDry run: {len(units)} creatives planned.")
         return 0
 
-    client = make_client()
+    codex = args.engine == "codex"
+    client = None if codex else make_client()
+
+    def _codex_all(spec):  # spec: list of (key, prompt, placement) → {key: bytes|Exception}
+        res: Dict[Any, Any] = {}
+        with ThreadPoolExecutor(max_workers=max(1, args.concurrency)) as ex:
+            futs = {ex.submit(codex_render, pr, pl, args.codex_model, args.codex_effort): k for k, pr, pl in spec}
+            for i, f in enumerate(as_completed(futs), 1):
+                k = futs[f]
+                try:
+                    res[k] = f.result()
+                except Exception as e:  # noqa: BLE001
+                    res[k] = e
+                print(f"   …{i}/{len(spec)} rendered", end="\r", file=sys.stderr)
+        print(f"   {len(res)}/{len(spec)} done", file=sys.stderr)
+        return res
 
     def _submit_all(spec):  # spec: list of (key, prompt, placement) → {key: id|Exception}
         res: Dict[Any, Any] = {}
@@ -525,6 +613,9 @@ def run(args: argparse.Namespace) -> int:
         if not retry:
             return
         print(f"  ↻ {len(retry)} failed → resubmitting softened…", file=sys.stderr)
+        if codex:
+            results.update(_codex_all(retry))
+            return
         ids = _submit_all(retry)
         live = {k: v for k, v in ids.items() if not isinstance(v, Exception)}
         for k, v in collect_images(client, live).items():
@@ -537,15 +628,21 @@ def run(args: argparse.Namespace) -> int:
 
     scene_spec = [(k, soften(u["fmt"]["scene_prompt"]), u["fmt"]["placement"]) for k, u in scene_keys.items()]
     baked_spec = [(id(u), u["fmt"]["baked"][u["variant"]], u["fmt"]["placement"]) for u in model_units]
-    print(f"  submitting {len(scene_spec) + len(baked_spec)} background render jobs (gpt-image-2 {args.quality})…")
-    scene_ids = _submit_all(scene_spec)
-    baked_ids = _submit_all(baked_spec)
+    if codex:
+        print(f"  rendering {len(scene_spec) + len(baked_spec)} images via the ChatGPT subscription "
+              f"(codex exec, {args.codex_model}/{args.codex_effort}, {args.concurrency} in parallel)…")
+        scenes = _codex_all(scene_spec)
+        model_raw = _codex_all(baked_spec)
+    else:
+        print(f"  submitting {len(scene_spec) + len(baked_spec)} background render jobs (gpt-image-2 {args.quality})…")
+        scene_ids = _submit_all(scene_spec)
+        baked_ids = _submit_all(baked_spec)
 
-    # POLL — all render server-side in parallel; collect (wall-clock ≈ slowest job)
-    scenes = collect_images(client, {k: v for k, v in scene_ids.items() if not isinstance(v, Exception)})
-    scenes.update({k: v for k, v in scene_ids.items() if isinstance(v, Exception)})
-    model_raw = collect_images(client, {k: v for k, v in baked_ids.items() if not isinstance(v, Exception)})
-    model_raw.update({k: v for k, v in baked_ids.items() if isinstance(v, Exception)})
+        # POLL — all render server-side in parallel; collect (wall-clock ≈ slowest job)
+        scenes = collect_images(client, {k: v for k, v in scene_ids.items() if not isinstance(v, Exception)})
+        scenes.update({k: v for k, v in scene_ids.items() if isinstance(v, Exception)})
+        model_raw = collect_images(client, {k: v for k, v in baked_ids.items() if not isinstance(v, Exception)})
+        model_raw.update({k: v for k, v in baked_ids.items() if isinstance(v, Exception)})
 
     # moderation retry (one softened resubmit for anything that failed)
     _retry_failed(scenes, lambda k: (scene_keys[k]["fmt"]["scene_prompt"], scene_keys[k]["fmt"]["placement"]))
@@ -564,10 +661,11 @@ def run(args: argparse.Namespace) -> int:
                 model_out[uid] = e
 
     # assemble outputs
-    log: Dict[str, Any] = {"timestamp": datetime.now(timezone.utc).isoformat(), "model": MODEL,
-                           "quality": args.quality, "mode": mode_lbl, "results": []}
+    engine_lbl = f"codex-subscription:{args.codex_model}/{args.codex_effort}" if codex else f"api:{MODEL}"
+    log: Dict[str, Any] = {"timestamp": datetime.now(timezone.utc).isoformat(), "model": engine_lbl,
+                           "quality": "n/a (built-in tool)" if codex else args.quality, "mode": mode_lbl, "results": []}
     ok = fail = 0
-    qa_client = client if args.qa else None
+    qa_client = (client or make_client()) if args.qa else None  # QA uses the API (needs OPENAI_API_KEY)
     per_brief: Dict[str, List[Dict[str, Any]]] = {}
 
     for u in units:
@@ -621,7 +719,7 @@ def run(args: argparse.Namespace) -> int:
                 pass
         for c in entries:
             by_key[f"{c['placement']}_{c['variant']}"] = c
-        mpath.write_text(json.dumps({"brief_id": bid, "model": MODEL, "quality": args.quality,
+        mpath.write_text(json.dumps({"brief_id": bid, "model": engine_lbl, "quality": log["quality"],
                                      "generated_at": log["timestamp"],
                                      "creatives": list(by_key.values())}, indent=2))
 
@@ -649,11 +747,17 @@ def main() -> None:
                          "composite = scene + Pillow text overlay")
     ap.add_argument("--quality", default=None, choices=["low", "medium", "high", "auto"],
                     help="default is phase-aware: concept→low (fast iteration), resize→high, all→medium")
-    ap.add_argument("--concurrency", type=int, default=3, help="parallel gpt-image-2 calls")
+    ap.add_argument("--engine", choices=["codex", "api"], default="codex",
+                    help="codex (default) = the ChatGPT subscription on this Mac via `codex exec` (no API key, "
+                         "no API billing); api = OPENAI_API_KEY + Responses API background mode")
+    ap.add_argument("--codex-model", default=CODEX_MODEL, help=f"model for codex exec (default {CODEX_MODEL})")
+    ap.add_argument("--codex-effort", default=CODEX_EFFORT, choices=["low", "medium", "high", "xhigh"],
+                    help=f"reasoning effort for codex exec (default {CODEX_EFFORT})")
+    ap.add_argument("--concurrency", type=int, default=3, help="parallel renders (codex exec processes or API calls)")
     ap.add_argument("--skip-existing", action="store_true", help="skip placements/variants already on disk")
     ap.add_argument("--qa", action="store_true", help="run a vision QA check on each creative")
     ap.add_argument("--limit", type=int, help="only first N briefs")
-    ap.add_argument("--dry-run", action="store_true", help="plan only, no API calls")
+    ap.add_argument("--dry-run", action="store_true", help="plan only, no renders")
     args = ap.parse_args()
     sys.exit(run(args))
 
