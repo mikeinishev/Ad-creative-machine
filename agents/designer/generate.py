@@ -485,7 +485,15 @@ def _to_target_png(raw: bytes, p: Placement) -> bytes:
     """Resize a baked render to the exact Meta target, return PNG bytes."""
     from PIL import Image, ImageOps
 
-    img = ImageOps.fit(Image.open(io.BytesIO(raw)).convert("RGB"), p.target, Image.Resampling.LANCZOS)
+    src = Image.open(io.BytesIO(raw))
+    if src.mode in ("RGBA", "LA") or "transparency" in src.info:
+        # the built-in image tool sometimes returns a transparent background; a plain RGB convert turns it
+        # black (dark text becomes unreadable) — flatten onto white instead
+        rgba = src.convert("RGBA")
+        flat = Image.new("RGB", rgba.size, (255, 255, 255))
+        flat.paste(rgba, mask=rgba.split()[-1])
+        src = flat
+    img = ImageOps.fit(src.convert("RGB"), p.target, Image.Resampling.LANCZOS)
     out = io.BytesIO()
     img.save(out, format="PNG", optimize=True)
     return out.getvalue()
