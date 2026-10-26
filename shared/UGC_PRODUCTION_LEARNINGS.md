@@ -212,3 +212,15 @@ begin within0.3seconds while the practical action happens, rather than after a s
 second action. Otherwise extend the take or shorten the line; never fix rushed speech with
 an unverified synthetic replacement. Planning word counts do not prove the actual delivery
 timing.
+
+### Brand pronunciation and whole-sentence editorial cuts · 230
+Closing230v2 held the medium framing, but both local ASR models recognized its opening
+brand as Get Reports. Do not burn GetReviews over that spoken phrase as if it were an
+accurate subtitle. The whole opening sentence was removed with a checked word handle;
+both models independently matched the remaining mechanism, optional-review condition and
+CTA. The product remains visible and a separate accurate GetReviews title identifies it.
+A whole-sentence cut is valid only when the remaining story is coherent and still
+contains the required product mechanism and CTA. It does not justify removing an essential
+offer or changing the meaning. Verify the actual trimmed audio, every seam and final tail.
+For subsequent brand speech, supply a pronunciation hint and inspect the result; a hint
+is not evidence of correct pronunciation.
