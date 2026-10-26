@@ -146,3 +146,6 @@ This authorizes planning a test, not claiming voice acceptance or batch propagat
   keep listening and subjective voice acceptance marked unverified and continue
   authorized production. That instruction does not turn a new voice into an
   accepted voice, authorize a paid route, or remove an actual browser approval gate.
+
+### Confirmed free concurrency · 2026-10-26
+Higgsfield displayed the explicit rate-limit notice: only one Unlimited video/image/audio generation at a time. Preparing a second draft is allowed, but clicking while another is active does not enqueue it. Wait for the matching existing job, then submit the prepared next take after checking effective0 credits. Never switch to credit-based generation to raise concurrency. A missing receipt is not a second running job.
