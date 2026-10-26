@@ -149,3 +149,6 @@ This authorizes planning a test, not claiming voice acceptance or batch propagat
 
 ### Confirmed free concurrency · 2026-10-26
 Higgsfield displayed the explicit rate-limit notice: only one Unlimited video/image/audio generation at a time. Preparing a second draft is allowed, but clicking while another is active does not enqueue it. Wait for the matching existing job, then submit the prepared next take after checking effective0 credits. Never switch to credit-based generation to raise concurrency. A missing receipt is not a second running job.
+
+### Native speech and physical prop QA · 227, 2026-10-26
+The first closing take pronounced the conditional as si quieran (both local ASR models agreed) and laid the acrylic stand flat while removing a receipt. Reject the take; do not conceal malformed speech with corrected captions. A revised native take used the simpler explicit sentence Opinar en Google es opcional and kept hands clear of the secured upright stand; both ASR models matched all words and the full motion sheet retained the upright prop. Check the complete action interval, not only poster frames. Keep the old source/QA. Trim quiet gaps only with word handles and visible action continuity. Gain-only level matching preserves native voice; it does not prove timbre continuity or human listening approval.
