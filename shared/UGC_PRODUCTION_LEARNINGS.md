@@ -79,6 +79,14 @@ visual approval, voice approval and performance acceptance are separate statuses
 Use only authorized Seedance2.0 web Generate Unlimited, Audio On, checked after
 settings/media changes. Save settings/receipt; match a history job before retrying.
 No paid API fallback. Every new storyboard carries `production_contract` below;
+Never use the history **Rerun** control for a free-only task: it can immediately
+submit a credit-priced repeat even when the original job was Unlimited. Verify
+the current draft has Unlimited enabled and effective cost zero immediately before
+submission. A model's UNLIMITED badge alone is insufficient. Where Higgsfield's
+WebMCP submission opens a user-only approval dialog, leave that confirmation to
+the user; do not bypass it through another submission path. On an accidental
+paid submission, cancel immediately, report the incident, and distinguish confirmed
+cancellation from an unverified credit refund.
 `prepare.py --validate` enforces its presence and objective timing/identity fields.
 Semantic fidelity, natural speech and conversion still require real review/testing.
 
