@@ -166,3 +166,29 @@ Otherwise use a genuine source-captured product insert or regenerate. Keep the f
 such speech-over-B-roll crops, do not invent a phone back or UI, and inspect the return cut.
 Source229body's pickup was reviewed at8fps and stayed back-facing. No subjective voice
 approval follows from these visual checks.
+
+### Describe only props actually visible in a take · 230, 2026-10-27
+The first phone/sticky-note hook230 had exact speech in both ASR models, but generated two
+unrelated printed wheel/sign props and cropped the top of the owner’s head in its first
+second. The input reference had no tent. The shared prompt still described the complete
+product “whenever present”; remove that product paragraph entirely from a product-free hook.
+Specify only the actual phone/notes, full head and hands, and fixed framing. Preserve the
+rejected take; regenerate rather than covering an incorrect product with captions. A
+matching transcript never overrides failed visual fidelity.
+
+### Check country identity in the product artwork · PE, 2026-10-27
+The older product_PE reference incorrectly copied Colombian Doña Rosa Arepería from178.
+Peru’s existing localized product is El Muelle Cevichería from static180: blue landscape
+insert, ceviche and purple chicha photographs, original prize wheel left, headline/CTA/QR
+right and complete acrylic base. Use only the product from that old static ad; never copy
+its five-restaurant,10X,star or footer overlays. Correct reference and production
+plans238/239/262/263 before generation. Existing raster storyboards are not silently
+corrected by changing a reference file; flag them for refresh. Keep the mistaken reference
+archived, not active.
+
+### Provenance stays internal
+Legacy generators must not reintroduce on-screen production labels. Store provenance as
+internal metadata and retain a claim/evidence ledger; the validator must not require a
+display-label field. The current production contract still requires
+on_screen_demo_label=false. Removing a display label never authorizes fabricated customer
+outcomes or unsupported claims.

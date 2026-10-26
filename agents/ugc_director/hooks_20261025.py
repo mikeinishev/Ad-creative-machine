@@ -58,7 +58,7 @@ STYLE='Raw vertical 9:16 smartphone UGC, natural skin texture and available mixe
 OUT.mkdir(parents=True,exist_ok=True)
 for a in pack['creatives']:
  aid=a['source_id'];hook,line,bridge=changes[aid]
- a['visual_hook']=hook;a['disclosure']='Internal provenance only: generated product demonstration; no on-screen label.'
+ a['visual_hook']=hook;a.pop('disclosure',None);a['provenance']='Generated product workflow; internal production record only.'
  a['scenes'][0].update(visual=actions[hook],dialogue=line,overlay=line,purpose_ru=f'Визуальный хук {hook}: действие с первого кадра, развязка до второй секунды.')
  a['scenes'][1]['dialogue']=bridge
  a['hooks'][0]={'variant':'A — selected','spoken':line,'visual':actions[hook],'bridge':bridge}
@@ -79,7 +79,7 @@ for a in pack['creatives']:
   for j,s in enumerate(ss):prompt+=f'\nSHOT {j+1} ({s["start"]-start}–{s["end"]-start}s): {s["visual"]} Exact spoken {a["language"]}: "{s["dialogue"]}". Natural pace. '
   if a['product']=='getreviews':prompt+='\nPRODUCT LOCK:'+PRODUCT_LOCK
   a['clips'].append(dict(id=cid,duration=duration,scenes=[s['id'] for s in ss],prompt=prompt,status='not_generated'))
- a['edit_plan']['disclosure']='NONE. No recreation/demo label.'
+ a['edit_plan'].pop('disclosure',None);a['edit_plan']['provenance']='Internal production record only; no on-screen production label.'
  a['edit_plan']['assembly']=f'{len(a["clips"])} clips, natural hard cuts, inspect identity/voice/prop joins. No music; preserve natural speech and ambience.'
  for c in a['claim_ledger']:
   if c['claim']=='Owner situation and before/after':c['restriction']='Internal provenance only; no actual-client results and no on-screen demo labels.'

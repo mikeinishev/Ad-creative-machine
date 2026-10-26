@@ -42,8 +42,8 @@ def validate(pack, *, legacy=False):
         for clip in ad['clips']:
             if not 1 <= clip['duration'] <= 15:
                 errors.append(f'{aid}: Seedance 2.0 clip exceeds limit')
-        if not ad.get('disclosure') or not ad.get('claim_ledger'):
-            errors.append(f'{aid}: missing disclosure/evidence ledger')
+        if not ad.get('claim_ledger'):
+            errors.append(f'{aid}: missing evidence ledger')
     return errors
 
 
