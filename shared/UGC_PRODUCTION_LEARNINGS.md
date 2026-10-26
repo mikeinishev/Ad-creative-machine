@@ -192,3 +192,23 @@ internal metadata and retain a claim/evidence ledger; the validator must not req
 display-label field. The current production contract still requires
 on_screen_demo_label=false. Removing a display label never authorizes fabricated customer
 outcomes or unsupported claims.
+
+### Inspect readable print and design the shot around it · 230
+Both230body and first closing had correct main brand/headline/QR layout but corrupted small
+printed prize labels when the model moved into a close-up. Wide contact sheets alone missed
+how readable the nonsense became. Inspect full-resolution frames whenever a stand approaches
+camera. Exclude a corrupted close-up even if speech passes ASR. The revised closing uses a
+fixed medium shot with the entire face visible, the stand stationary, no
+lifting/sliding/finger tracing and no product-only cutaway; it also carries the short brand
+line, so the earlier late body close-up can be removed completely. This is a reshoot
+strategy, not proof that the revised shot has passed; inspect its actual result before
+release.
+
+### Keep short hook speech concurrent with the action
+230hookv2 preserved the visual action and exact words, but DTW placed its eight-word line
+around2.2–3.8seconds in a4second clip. Keep the first-second paper action unobscured and
+begin its captions at actual speech. For new longer hook lines, explicitly ask speech to
+begin within0.3seconds while the practical action happens, rather than after a silent two-
+second action. Otherwise extend the take or shorten the line; never fix rushed speech with
+an unverified synthetic replacement. Planning word counts do not prove the actual delivery
+timing.
