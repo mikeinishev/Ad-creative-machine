@@ -233,3 +233,28 @@ reconcile with one normal reload before extending the wait. Never restart an unk
 After reload, Unlimited may be OFF: restore it and verify effective zero credits again
 before any new submission. A configured Start slot also does not prove pixel-locked
 framing:231 kept the identity/venue/props but rendered a wider view. Inspect actual output.
+
+### Assets can resolve an ambiguous creation-history spinner · 231
+Even after reload, the creation page showed a spinner without an accessible asset or
+Cancel control for231body. The regular Assets library search by its distinctive prompt
+found a playable11second result. Opening Info confirmed the exact prompt, input image,
+720x1280 size and creation time; the normal Download button saved the original. Use this
+read-only fallback before concluding that a job is stalled or restarting it. A search
+thumbnail alone is insufficient: match the opened asset metadata and downloaded file.
+Keep only one active Unlimited generation and never use history Rerun to retry.
+
+### Apply product framing constraints to body shots as well as endings
+231body pronounced GetReviews correctly in both ASR models, but its permissive handheld
+camera instruction produced a push-in and readable invented prize labels. Fix framing
+in every product-bearing take, not only the CTA. Keep the owner upright behind a stable
+stand, full head and hands visible, no leaning/push-in/lifting/sliding. Inspect actual
+print at full resolution before selecting the take. The231bodyv2 reshoot is a plan,
+not a passed take until downloaded and reviewed.
+
+### MX reference correction
+Both older product_MX references still contained the English Philly example. Active MX
+references now use the complete Spanish El Comal Taquería prop already used by226–227
+and prepared250. Preserve the old English reference in an archive, and label historical
+raster boards that still show it; updating a reference does not update old boards. For
+local251 use its own actor identity with the correct El Comal product, not the older
+English card or the male product-reference model.
