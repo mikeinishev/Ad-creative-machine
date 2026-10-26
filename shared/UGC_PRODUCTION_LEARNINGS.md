@@ -121,3 +121,28 @@ Semantic fidelity, natural speech and conversion still require real review/testi
 For a new untested speaker use `reference_kind: native_probe`,
 `reference_voice: none`, `acceptance: pending`, and `reference: pending_probe`.
 This authorizes planning a test, not claiming voice acceptance or batch propagation.
+
+## Follow-ups from the 2026-10-26 production run
+
+- A click on Generate Unlimited is not a job receipt. Require a new history card
+  with the matching prompt and duration. If no matching card appears, inspect
+  current history before retrying. A normal page reload can restore a stale form,
+  but it also resets Unlimited to OFF: enable it again and verify effective cost
+  zero. Do not restart an existing job because its spinner or observation timed out.
+- Inspect the frames around every phone turn. A prompt requesting an unreadable
+  screen can still produce a visible synthetic interface. Replace that visual
+  interval with a genuine captured screen while preserving native speech, or
+  regenerate the shot with the display out of view. Do not present a generated
+  review, map, dashboard or result as the product.
+- Repeated ASR disagreement or an unexpected verb form calls for review, not an
+  automatic corrected subtitle. When a line remains unclear, simplify the spoken
+  wording without changing its meaning and regenerate the take. Do not globally
+  ban a word on the basis of one model's transcription.
+- A localized product reference may exist inside an earlier static creative even
+  when a dedicated plate is missing. Use only its product artwork as reference;
+  do not inherit old advertising overlays, recruitment counts or result claims.
+  Inspect the full acrylic base, food photographs, main print and edge margins.
+- When the user explicitly requests autonomous continuation without review stops,
+  keep listening and subjective voice acceptance marked unverified and continue
+  authorized production. That instruction does not turn a new voice into an
+  accepted voice, authorize a paid route, or remove an actual browser approval gate.
