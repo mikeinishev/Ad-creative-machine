@@ -258,3 +258,19 @@ and prepared250. Preserve the old English reference in an archive, and label his
 raster boards that still show it; updating a reference does not update old boards. For
 local251 use its own actor identity with the correct El Comal product, not the older
 English card or the male product-reference model.
+
+### A face reframe can preserve a complete product story · 231
+The original231body had exact native speech including GetReviews in both ASR models,
+but an unwanted product push-in. Its whole head remained inside a360x640 crop at180,0.
+A2x digital reframe excluded the corrupted printed prop completely while retaining the
+owner's moving lips and native speech.4fps whole-source review verified the head/cap
+throughout; an idle first second was removed and both models matched the trimmed speech.
+The final keeps the COMPLETE physical product and optional-review mechanism in the
+separate closing, so the demonstration was not lost. All15 composition snapshots,
+whole-final motion, first/last frames and both whole-final transcripts were checked.
+Use this only when the full face survives, the reframed resolution is acceptable and
+the required product/action proof is genuinely present elsewhere. Never crop away a
+required demonstration, hide malformed words, fake a product or replace the native voice.
+Retain the uncropped source and record the digital reframe; do not claim native uncropped
+resolution. A later steadier body take was kept as an unused alternative, not called
+a rejected voice: editorial framing variety was the reason for selecting the face shot.
