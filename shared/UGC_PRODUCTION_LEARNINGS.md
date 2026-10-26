@@ -152,3 +152,17 @@ Higgsfield displayed the explicit rate-limit notice: only one Unlimited video/im
 
 ### Native speech and physical prop QA · 227, 2026-10-26
 The first closing take pronounced the conditional as si quieran (both local ASR models agreed) and laid the acrylic stand flat while removing a receipt. Reject the take; do not conceal malformed speech with corrected captions. A revised native take used the simpler explicit sentence Opinar en Google es opcional and kept hands clear of the secured upright stand; both ASR models matched all words and the full motion sheet retained the upright prop. Check the complete action interval, not only poster frames. Keep the old source/QA. Trim quiet gaps only with word handles and visible action continuity. Gain-only level matching preserves native voice; it does not prove timbre continuity or human listening approval.
+
+### Short phone turns can evade sparse review · 228–229, 2026-10-27
+A1fps sheet missed a synthetic phone screen exposed for roughly half a second at the start
+of228body. A snapshot found it. For every pickup, rotation, placement or camera-facing phone
+movement, inspect a dense local interval at8–10fps in addition to whole-take motion sheets.
+Source228's first16bodyframes were reframed to a moving close-up of the real plate/forearm
+from that same take, with all native speech retained. The first scale2 crop still exposed
+the screen edge and was rejected; a tighter plate crop passed proof frames and final decoded
+motion review. This treatment is only valid when the crop fully excludes the fake interface,
+preserves an intelligible action, and does not hide a needed product demonstration.
+Otherwise use a genuine source-captured product insert or regenerate. Keep the face out of
+such speech-over-B-roll crops, do not invent a phone back or UI, and inspect the return cut.
+Source229body's pickup was reviewed at8fps and stayed back-facing. No subjective voice
+approval follows from these visual checks.
