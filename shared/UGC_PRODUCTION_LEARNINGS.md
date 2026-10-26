@@ -224,3 +224,12 @@ contains the required product mechanism and CTA. It does not justify removing an
 offer or changing the meaning. Verify the actual trimmed audio, every seam and final tail.
 For subsequent brand speech, supply a pronunciation hint and inspect the result; a hint
 is not evidence of correct pronunciation.
+
+### Reconcile an unchanged history card before a long wait · 231
+Repeated live AX reads showed Cancel/spinner for231hook; one normal page reload then
+showed the completed asset. Its actual completion time is unknown. After several minutes
+of an unchanged history card, preserve the next draft prompt/reference/duration and
+reconcile with one normal reload before extending the wait. Never restart an unknown job.
+After reload, Unlimited may be OFF: restore it and verify effective zero credits again
+before any new submission. A configured Start slot also does not prove pixel-locked
+framing:231 kept the identity/venue/props but rendered a wider view. Inspect actual output.
