@@ -329,3 +329,6 @@ masking; shots with hands crossing the printed face need separate occlusion work
 different take. Do not blindly apply its coordinates to another shot. Preserve speech
 handles, measure the selected clip's loudness and perform final assembled-video QA.
 Subjective human listening remained unverified; visual repair does not approve a voice.
+
+### Ambiguous receipt props (235, 2026-10-27)
+A native closing take followed “blank bill” with a banknote instead of a restaurant receipt. Both ASR models matched the intended dialogue; whole-take visual review caught the wrong prop and a mutated table-tent print. Speech accuracy is not visual acceptance. Preserve the rejected source and QA. When a physical receipt is essential, specify a plain white paper restaurant receipt with no currency or banknotes; otherwise use empty-hand gestures and retain the spoken suggestion without introducing a prop. A replacement take must still pass full motion and photographic-print review before publication.
