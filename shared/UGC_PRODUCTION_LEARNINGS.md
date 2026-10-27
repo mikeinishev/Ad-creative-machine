@@ -274,3 +274,23 @@ required demonstration, hide malformed words, fake a product or replace the nati
 Retain the uncropped source and record the digital reframe; do not claim native uncropped
 resolution. A later steadier body take was kept as an unused alternative, not called
 a rejected voice: editorial framing variety was the reason for selecting the face shot.
+
+### Put the action precondition in the opening frame · 233 / planned257
+233's first four-second hook passed both local transcripts, but the owner placed the red
+sticker on the menu instead of removing it. Its short line began only around2.7seconds.
+Exact words alone did not satisfy the opening action or attention timing; retain that
+source as an unused take rather than call it a passed hook. For a peel action, start with
+the sticker ALREADY attached and a pinched lifted edge, owner already looking toward the
+colleague. Ask for one immediate removal and speech concurrent within0.2seconds; finish
+the short line by2seconds without repeating it. The new reference/prompt is only a retry
+plan until its actual motion, native speech and timing pass. Apply the same precondition
+to local257 before generating it. Do not accept a beautiful start still as evidence that
+the produced clip performs the action.
+
+### An empty Assets search is not proof that a known asset is missing · 233
+Creation history exposed completed hook233 asset24e269f6. Assets searches for its exact
+spoken phrase and for sticker returned no matches, yet clearing Search showed the new
+hook in the latest grid. Opening it confirmed the same asset ID, exact prompt,4second
+playback and720x1280 size; Download saved it. If a specific completed asset is already
+known, inspect the recent unfiltered grid and opened metadata before declaring it missing.
+Do not restart a job because the text-search index has not surfaced its result.
