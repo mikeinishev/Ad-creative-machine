@@ -305,3 +305,27 @@ country correction or preservation prompt cannot prove all elements survived. Ne
 frames were viewed with the full QR; their historical corrected raster boards already
 showed it and were not changed by copying the reference. Visual QR presence is not a
 claim that an AI-rendered code has been decoded or functionally validated.
+
+### Restore an exact photographic print with tracked video compositing · 234
+Hook234 spoke the correct line in both local ASR models, but changed the physical CTA
+from GIRA LA RULETA to GANA LA RULETA and made an extra turn. A 28-frame selection at
+24fps retained the entire native phrase in both ASR checks while excluding the full
+extra spin. A partial return during its final0.3seconds remains; record that editorial
+choice rather than claim the model performed the prompt exactly.
+
+For this unobstructed planar prop, mapping the existing product_CL photograph onto the
+printed face restored the actual food photography, wheel, headline, CTA and QR while
+retaining the generated owner, hands, acrylic edges/base and native audio. Track points
+on the printed plane between adjacent video frames; fit robust planar homographies and
+map the source print's four corners into each tracked quadrilateral. This is video
+compositing, not evidence that the generative model preserved the artwork. Retain the
+original take, exact source photograph, corner coordinates, tracking data and candidate.
+
+The234 result passed whole12fps visual review, full-resolution first/middle/last review,
+decode and two transcripts of the repaired selection. Inspect boundaries, perspective,
+hand occlusion and print stability across the entire repaired shot before selecting it.
+An inlier count alone is insufficient. This example did not require foreground hand
+masking; shots with hands crossing the printed face need separate occlusion work or a
+different take. Do not blindly apply its coordinates to another shot. Preserve speech
+handles, measure the selected clip's loudness and perform final assembled-video QA.
+Subjective human listening remained unverified; visual repair does not approve a voice.
