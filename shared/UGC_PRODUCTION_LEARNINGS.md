@@ -294,3 +294,14 @@ hook in the latest grid. Opening it confirmed the same asset ID, exact prompt,4s
 playback and720x1280 size; Download saved it. If a specific completed asset is already
 known, inspect the recent unfiltered grid and opened metadata before declaring it missing.
 Do not restart a job because the text-search index has not surfaced its result.
+
+### Correct country branding does not prove a complete product reference · PE
+A blue El Muelle product_PE.png had the right country, photos and headline but omitted
+its QR. The existing inspected238_s01_start.png contained the same complete artwork WITH
+QR. Archive the no-QR variant and copy that complete existing reference into both active
+cast reference folders before new PE frames. Inspect the actual image: wheel LEFT,
+headline/CTA/QR RIGHT, food photography and the complete acrylic base/edges. A filename,
+country correction or preservation prompt cannot prove all elements survived. New262/263
+frames were viewed with the full QR; their historical corrected raster boards already
+showed it and were not changed by copying the reference. Visual QR presence is not a
+claim that an AI-rendered code has been decoded or functionally validated.
