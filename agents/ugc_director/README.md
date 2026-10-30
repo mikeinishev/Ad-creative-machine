@@ -43,3 +43,15 @@ Inspect table-tent fidelity and actor continuity, decode and transcribe each cli
 
 ## Current acceptance contract
 Read `shared/UGC_PRODUCTION_LEARNINGS.md`. New storyboards must provide `production_contract` for each creative; default validation rejects missing hooks, late payoffs, mismatched/unaccepted native voice references, synthetic guides, missing review gates, music or demo labels. `--legacy` is only for inspecting historical packs and does not certify release. This is instruction/workflow training, not model-weight fine-tuning. Hook216 is user-preferred, not a measured conversion winner.
+
+## Turnkey tools (2026-10-30)
+Full sequence and learnings: `TURNKEY_PIPELINE.md`.
+
+```sh
+python3 agents/ugc_director/image_frames.py --from-scripts PACK/scripts.json --kind casting --out PACK/casting
+python3 agents/ugc_director/image_frames.py --from-scripts PACK/scripts.json --kind storyboard --out PACK/storyboard
+python3 agents/ugc_director/build_tz.py PACK/scripts.json --frames storyboard --title "ТЗ: …"
+python3 agents/ugc_director/higgsfield_render.py --out OUT --clip c01=OUT/c01_prompt.txt --image cast.png --image product.png --estimate   # paid route, approval required
+python3 agents/ugc_director/inspect_take.py OUT/c01.mp4 --lang es
+.venv/bin/python agents/ugc_director/compose_edit.py OUT/edit.json
+```
